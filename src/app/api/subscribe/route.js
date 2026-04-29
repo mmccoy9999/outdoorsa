@@ -26,6 +26,7 @@ export async function POST(request) {
   )
 
   const data = await res.json()
+  console.log('[subscribe] status=%d body=%s', res.status, JSON.stringify(data))
 
   if (res.ok) {
     return NextResponse.json({ success: true })
@@ -36,5 +37,15 @@ export async function POST(request) {
     return NextResponse.json({ success: true })
   }
 
-  return NextResponse.json({ error: data.detail || 'Subscription failed' }, { status: 500 })
+  return NextResponse.json(
+    {
+      error: data.detail || 'Subscription failed',
+      mailchimp_status: res.status,
+      mailchimp_title: data.title,
+      mailchimp_detail: data.detail,
+      mailchimp_errors: data.errors ?? [],
+      mailchimp_raw: data,
+    },
+    { status: 500 }
+  )
 }
