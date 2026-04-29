@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server'
+import { createHash } from 'crypto'
 
 export async function POST(request) {
   const { email } = await request.json()
@@ -8,44 +9,48 @@ export async function POST(request) {
   }
 
   const { MAILCHIMP_API_KEY, MAILCHIMP_AUDIENCE_ID, MAILCHIMP_SERVER } = process.env
+  const authHeader = { Authorization: `Bearer ${MAILCHIMP_API_KEY}`, 'Content-Type': 'application/json' }
+  const base = `https://${MAILCHIMP_SERVER}.api.mailchimp.com/3.0`
 
-  const res = await fetch(
-    `https://${MAILCHIMP_SERVER}.api.mailchimp.com/3.0/lists/${MAILCHIMP_AUDIENCE_ID}/members`,
-    {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${MAILCHIMP_API_KEY}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        email_address: email,
-        status: 'subscribed',
-        tags: [{ name: 'outdoorsa-waitlist', status: 'active' }],
-      }),
-    }
-  )
+  // Verify API key before doing anything else
+  const ping = await fetch(`${base}/ping`, { headers: authHeader })
+  if (!ping.ok) {
+    const pingBody = await ping.json()
+    console.log('[subscribe] ping failed:', ping.status, JSON.stringify(pingBody))
+    return NextResponse.json({ error: 'Mailchimp auth failed', _debug: pingBody }, { status: 500 })
+  }
+
+  // Subscribe without tags — tags applied separately below
+  const res = await fetch(`${base}/lists/${MAILCHIMP_AUDIENCE_ID}/members`, {
+    method: 'POST',
+    headers: authHeader,
+    body: JSON.stringify({ email_address: email, status: 'subscribed' }),
+  })
 
   const data = await res.json()
-  console.log('[subscribe] status=%d body=%s', res.status, JSON.stringify(data))
+  console.log('[subscribe] member status=%d body=%s', res.status, JSON.stringify(data))
 
-  if (res.ok) {
-    return NextResponse.json({ success: true })
+  if (!res.ok && data.title !== 'Member Exists') {
+    return NextResponse.json(
+      {
+        error: data.detail || 'Subscription failed',
+        mailchimp_status: res.status,
+        mailchimp_title: data.title,
+        mailchimp_errors: data.errors ?? [],
+        mailchimp_raw: data,
+      },
+      { status: 500 }
+    )
   }
 
-  // Already subscribed is not an error from the user's perspective
-  if (data.title === 'Member Exists') {
-    return NextResponse.json({ success: true })
-  }
+  // Apply tag via the dedicated tags endpoint
+  const hash = createHash('md5').update(email.toLowerCase()).digest('hex')
+  const tagRes = await fetch(`${base}/lists/${MAILCHIMP_AUDIENCE_ID}/members/${hash}/tags`, {
+    method: 'POST',
+    headers: authHeader,
+    body: JSON.stringify({ tags: [{ name: 'outdoorsa-waitlist', status: 'active' }] }),
+  })
+  console.log('[subscribe] tag status=%d', tagRes.status)
 
-  return NextResponse.json(
-    {
-      error: data.detail || 'Subscription failed',
-      mailchimp_status: res.status,
-      mailchimp_title: data.title,
-      mailchimp_detail: data.detail,
-      mailchimp_errors: data.errors ?? [],
-      mailchimp_raw: data,
-    },
-    { status: 500 }
-  )
+  return NextResponse.json({ success: true })
 }
