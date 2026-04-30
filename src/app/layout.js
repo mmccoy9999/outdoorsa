@@ -19,6 +19,9 @@ const BASE_URL = 'https://outdoorsa.com'
 export const metadata = {
   metadataBase: new URL(BASE_URL),
   title: 'OutdoorSA — San Antonio Outdoor Guide',
+  other: {
+    'google-adsense-account': 'ca-pub-9940334519327352',
+  },
   description: 'Trails, parks, bike paths, kayak spots — curated for San Antonio with shade ratings, seasonal conditions, and everything AllTrails leaves out.',
   openGraph: {
     title: 'OutdoorSA — San Antonio Outdoor Guide',

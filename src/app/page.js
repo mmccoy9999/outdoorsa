@@ -854,7 +854,7 @@ export default function Home() {
             { name: 'Cycling',         count: '18 routes',  slug: 'cycling',        img: 'https://images.unsplash.com/photo-1726506116661-f62368d9d6bb?w=400&q=75&fit=crop&auto=format' },
             { name: 'Trail Running',   count: '24 routes',  slug: 'trail_running',  img: 'https://images.unsplash.com/photo-1590646299178-1b26ab821e34?w=400&q=75&fit=crop&auto=format' },
             { name: 'Kayaking',        count: '8 launches', slug: 'kayaking',       img: 'https://images.unsplash.com/photo-1698246550885-cc4e82115944?w=400&q=75&fit=crop&auto=format' },
-            { name: 'Birding',         count: '11 sites',   slug: 'birding',        img: 'https://images.unsplash.com/photo-1748469232301-1124c0a53633?w=400&q=75&fit=crop&auto=format' },
+            { name: 'Birding',         count: '11 sites',   slug: 'birding',        img: 'https://images.unsplash.com/photo-1684769099431-6dde82c04bb0?w=400&q=75&fit=crop&auto=format' },
             { name: 'Camping',         count: '6 sites',    slug: 'camping',        img: 'https://images.unsplash.com/photo-1759665839780-b695f5f3e590?w=400&q=75&fit=crop&auto=format' },
             { name: 'Disc Golf',       count: '9 courses',  slug: 'disc_golf',      img: 'https://images.unsplash.com/photo-1689514534472-791fadb755e5?w=400&q=75&fit=crop&auto=format' },
             { name: 'Outdoor Fitness', count: '14 parks',   slug: 'outdoor_fitness',img: 'https://images.unsplash.com/photo-1686247166150-fe4ef9c56241?w=400&q=75&fit=crop&auto=format' },
