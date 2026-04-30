@@ -349,7 +349,7 @@ export default async function LocationPage({ params }) {
               <div style={{ marginBottom: 28 }}>
                 <h2 style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: 22, fontWeight: 700, color: '#2C2C2A', margin: '0 0 12px' }}>Notable Species</h2>
                 <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-                  {loc.birding.notable_species.map(s => (
+                  {(loc.birding.notable_species || loc.birding.highlight_species || []).map(s => (
                     <span key={s} style={{
                       background: '#fff', border: '1px solid #D3D1C7',
                       padding: '5px 12px', borderRadius: 20,
