@@ -1,6 +1,7 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
+import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import locations from '@/data/locations.json'
@@ -171,10 +172,16 @@ function LocationCard({ loc }) {
 }
 
 export default function LocationsPage() {
+  const searchParams = useSearchParams()
   const [activeActivity, setActiveActivity] = useState(null)
   const [shadeMins, setShadeMins] = useState(1)
   const [difficultyFilter, setDifficultyFilter] = useState(null)
   const [searchQuery, setSearchQuery] = useState('')
+
+  useEffect(() => {
+    const activity = searchParams.get('activity')
+    if (activity && ACTIVITY_LABELS[activity]) setActiveActivity(activity)
+  }, [searchParams])
 
   const usedActivities = useMemo(() => {
     const set = new Set(locations.flatMap(l => l.activities))
