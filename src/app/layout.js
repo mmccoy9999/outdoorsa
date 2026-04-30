@@ -13,7 +13,7 @@ const barlowCondensed = Barlow_Condensed({
   variable: '--font-barlow-condensed',
 })
 
-const BASE_URL = 'https://outdoorsa.com'
+const BASE_URL = 'https://outdoorsa.co'
 
 export const metadata = {
   metadataBase: new URL(BASE_URL),
