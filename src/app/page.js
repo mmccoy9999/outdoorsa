@@ -857,7 +857,7 @@ export default function Home() {
             { name: 'Birding',         count: '11 sites',   img: 'https://images.unsplash.com/photo-1748469232301-1124c0a53633?w=400&q=75&fit=crop&auto=format' },
             { name: 'Camping',         count: '6 sites',    img: 'https://images.unsplash.com/photo-1759665839780-b695f5f3e590?w=400&q=75&fit=crop&auto=format' },
             { name: 'Disc Golf',       count: '9 courses',  img: 'https://images.unsplash.com/photo-1689514534472-791fadb755e5?w=400&q=75&fit=crop&auto=format' },
-            { name: 'Outdoor Fitness', count: '14 parks',   img: 'https://images.unsplash.com/photo-1759300642211-4e81a270a358?w=400&q=75&fit=crop&auto=format' },
+            { name: 'Outdoor Fitness', count: '14 parks',   img: 'https://images.unsplash.com/photo-1686247166150-fe4ef9c56241?w=400&q=75&fit=crop&auto=format' },
           ].map((a, i) => (
             <div className="activity-tile reveal" key={a.name} style={{transitionDelay:`${i * 60}ms`}}>
               <div className="activity-tile-img">
