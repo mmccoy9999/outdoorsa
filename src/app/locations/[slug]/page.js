@@ -38,9 +38,40 @@ export async function generateMetadata({ params }) {
   const { slug } = await params
   const loc = locations.find(l => l.id === slug)
   if (!loc) return {}
+
+  const BASE_URL = 'https://outdoorsa.co'
+  const activityList = loc.activities.map(a => ACTIVITY_LABELS[a]).filter(Boolean).join(', ')
+  const title = `${loc.name} — ${activityList} in San Antonio | OutdoorSA`
+  const description = `${loc.short_desc} Shade rating: ${SHADE_LABELS[loc.shade_rating]}. ${loc.area}, San Antonio, TX.`
+
   return {
-    title: `${loc.name} — OutdoorSA`,
-    description: loc.short_desc,
+    title,
+    description,
+    keywords: [
+      loc.name,
+      ...loc.activities.map(a => ACTIVITY_LABELS[a]),
+      'San Antonio outdoor',
+      loc.area,
+      'shade rating',
+      'hiking San Antonio',
+    ].filter(Boolean),
+    openGraph: {
+      title,
+      description,
+      url: `${BASE_URL}/locations/${loc.id}`,
+      siteName: 'OutdoorSA',
+      images: [{ url: loc.hero_photo, width: 1200, alt: loc.name }],
+      type: 'article',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [loc.hero_photo],
+    },
+    alternates: {
+      canonical: `${BASE_URL}/locations/${loc.id}`,
+    },
   }
 }
 
@@ -73,10 +104,52 @@ function CheckRow({ label, value }) {
   )
 }
 
+const ACTIVITY_SCHEMA_TYPE = {
+  hiking: 'HikingTrail',
+  cycling: 'Park',
+  trail_running: 'HikingTrail',
+  kayaking: 'LakeBodyOfWater',
+  birding: 'TouristAttraction',
+  camping: 'Campground',
+  disc_golf: 'SportsActivityLocation',
+  outdoor_fitness: 'SportsActivityLocation',
+  fishing: 'TouristAttraction',
+  nature_watching: 'TouristAttraction',
+}
+
 export default async function LocationPage({ params }) {
   const { slug } = await params
   const loc = locations.find(l => l.id === slug)
   if (!loc) notFound()
+
+  const BASE_URL = 'https://outdoorsa.co'
+  const primaryType = ACTIVITY_SCHEMA_TYPE[loc.activities[0]] || 'TouristAttraction'
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': ['TouristAttraction', primaryType].filter((v, i, a) => a.indexOf(v) === i),
+    name: loc.name,
+    description: loc.long_desc,
+    url: `${BASE_URL}/locations/${loc.id}`,
+    image: loc.hero_photo,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: loc.address,
+      addressLocality: 'San Antonio',
+      addressRegion: 'TX',
+      addressCountry: 'US',
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: loc.lat,
+      longitude: loc.lng,
+    },
+    ...(loc.website ? { sameAs: loc.website } : {}),
+    touristType: loc.activities.map(a => ACTIVITY_LABELS[a]).filter(Boolean),
+    isAccessibleForFree: true,
+    publicAccess: true,
+    ...(loc.ada_accessible === 'full' ? { amenityFeature: [{ '@type': 'LocationFeatureSpecification', name: 'Wheelchair accessible', value: true }] } : {}),
+  }
 
   const difficultyColors = {
     easy: { bg: '#EAF3DE', color: '#3B6D11' },
@@ -88,6 +161,10 @@ export default async function LocationPage({ params }) {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <style>{`
         * { box-sizing: border-box; }
         body { margin: 0; background: #F7F5EF; font-family: var(--font-barlow); }
