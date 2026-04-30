@@ -2,24 +2,30 @@
   {
     "id": "leon-creek-greenway",
     "name": "Leon Creek Greenway",
-    "short_desc": "SA's longest paved trail corridor — 16 miles along a shaded creek with zero street crossings.",
-    "long_desc": "Leon Creek Greenway is the backbone of San Antonio's trail network, running 16+ miles from Lackland to Loop 1604. The paved path hugs the creek, with live oaks and cypress providing cover on most sections. Popular with cyclists, joggers, and dog walkers. Flood events can close sections after heavy rain — check conditions before heading out.",
+    "short_desc": "SA's longest paved trail corridor \u2014 16 miles along a shaded creek with zero street crossings.",
+    "long_desc": "Leon Creek Greenway is the backbone of San Antonio's trail network, running 16+ miles from Lackland to Loop 1604. The paved path hugs the creek, with live oaks and cypress providing cover on most sections. Popular with cyclists, joggers, and dog walkers. Flood events can close sections after heavy rain \u2014 check conditions before heading out.",
     "address": "Leon Creek Greenway, San Antonio, TX",
-    "lat": 29.4724,
-    "lng": -98.6121,
+    "lat": 29.5229,
+    "lng": -98.6248,
     "area": "Northwest SA",
     "website": "https://www.sanantonio.gov/ParksAndRec/Parks-Facilities/All-Parks-Facilities/Trail-Details/ArtMID/19092/ArticleID/2162",
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["hiking", "cycling", "trail_running"],
+    "activities": [
+      "hiking",
+      "cycling",
+      "trail_running"
+    ],
     "shade_rating": 3,
     "shade_notes": "Mostly shaded along creek corridor; exposed stretches near Ingram and Culebra crossings.",
     "best_time_summer": "early_morning",
     "heat_warning": false,
     "distance_miles": 16.2,
     "elevation_gain_ft": 180,
-    "surface": ["paved"],
+    "surface": [
+      "paved"
+    ],
     "terrain": "flat",
     "route_type": "point_to_point",
     "difficulty": "easy",
@@ -32,35 +38,53 @@
     "kid_friendly": true,
     "ada_accessible": "full",
     "bike_racks": true,
-    "best_months": [10, 11, 12, 1, 2, 3, 4],
+    "best_months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
     "flood_prone": true,
     "drought_impact": null,
-    "seasonal_notes": "Sections close after heavy rain. Summer mornings are manageable; avoid midday June–September.",
-    "badges": ["dog_favorite", "best_beginner", "local_favorite"],
+    "seasonal_notes": "Sections close after heavy rain. Summer mornings are manageable; avoid midday June\u2013September.",
+    "badges": [
+      "dog_favorite",
+      "best_beginner",
+      "local_favorite"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1624664267579-d94b43372f18?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "friedrich-wilderness-park",
     "name": "Friedrich Wilderness Park",
-    "short_desc": "5.5 miles of shaded oak-juniper trails in the heart of Northwest SA — rare solitude for a city park.",
+    "short_desc": "5.5 miles of shaded oak-juniper trails in the heart of Northwest SA \u2014 rare solitude for a city park.",
     "long_desc": "Friedrich Wilderness Park is one of San Antonio's best-kept secrets: 232 acres of oak-juniper woodland with well-maintained dirt trails, virtually no pavement in sight. The canopy keeps it noticeably cooler than exposed parks, making it one of the few places you can run or hike comfortably into late morning in summer. Home to Golden-cheeked Warblers in spring. Dogs are not permitted to protect nesting habitat.",
     "address": "21395 Milsa Dr, San Antonio, TX 78256",
-    "lat": 29.5894,
-    "lng": -98.6489,
+    "lat": 29.6381,
+    "lng": -98.6249,
     "area": "Northwest SA",
     "website": "https://www.sanantonio.gov/ParksAndRec/Parks-Facilities/All-Parks-Facilities/Park-Details/ArtMID/19092/ArticleID/1573",
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["hiking", "trail_running", "birding"],
+    "activities": [
+      "hiking",
+      "trail_running",
+      "birding"
+    ],
     "shade_rating": 5,
     "shade_notes": "Dense oak-juniper canopy covers nearly the entire trail system. Noticeably cooler than surrounding areas.",
     "best_time_summer": "early_morning",
     "heat_warning": false,
     "distance_miles": 5.5,
     "elevation_gain_ft": 320,
-    "surface": ["dirt"],
+    "surface": [
+      "dirt"
+    ],
     "terrain": "rolling",
     "route_type": "network",
     "difficulty": "moderate",
@@ -73,16 +97,40 @@
     "kid_friendly": true,
     "ada_accessible": "no",
     "bike_racks": false,
-    "best_months": [3, 4, 10, 11, 12, 1, 2],
+    "best_months": [
+      3,
+      4,
+      10,
+      11,
+      12,
+      1,
+      2
+    ],
     "flood_prone": false,
     "drought_impact": null,
-    "seasonal_notes": "No dogs allowed year-round. Golden-cheeked Warblers present March–June. Bring water — no fountains on trail.",
+    "seasonal_notes": "No dogs allowed year-round. Golden-cheeked Warblers present March\u2013June. Bring water \u2014 no fountains on trail.",
     "birding": {
-      "notable_species": ["Golden-cheeked Warbler", "Black-capped Vireo", "Canyon Wren", "Ladder-backed Woodpecker"],
-      "habitat": ["oak_woodland"],
-      "best_months": [3, 4, 5]
+      "notable_species": [
+        "Golden-cheeked Warbler",
+        "Black-capped Vireo",
+        "Canyon Wren",
+        "Ladder-backed Woodpecker"
+      ],
+      "habitat": [
+        "oak_woodland"
+      ],
+      "best_months": [
+        3,
+        4,
+        5
+      ]
     },
-    "badges": ["sa_summer_pick", "birding_hotspot", "hidden_gem", "most_scenic"],
+    "badges": [
+      "sa_summer_pick",
+      "birding_hotspot",
+      "hidden_gem",
+      "most_scenic"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
@@ -90,23 +138,31 @@
     "id": "government-canyon-state-natural-area",
     "name": "Government Canyon State Natural Area",
     "short_desc": "40+ miles of backcountry trails with dinosaur tracks, primitive camping, and true hill country topography.",
-    "long_desc": "Government Canyon is the most expansive natural area within San Antonio city limits — 12,000 acres of limestone plateau, dry creek beds, and cedar-oak scrub. The trail network ranges from easy family loops to rugged backcountry routes with significant elevation change. Fossil dinosaur tracks are accessible on the Savanna Loop. Primitive camping requires a permit. The park closes during burn bans.",
+    "long_desc": "Government Canyon is the most expansive natural area within San Antonio city limits \u2014 12,000 acres of limestone plateau, dry creek beds, and cedar-oak scrub. The trail network ranges from easy family loops to rugged backcountry routes with significant elevation change. Fossil dinosaur tracks are accessible on the Savanna Loop. Primitive camping requires a permit. The park closes during burn bans.",
     "address": "12861 Galm Rd, San Antonio, TX 78254",
-    "lat": 29.5703,
-    "lng": -98.7508,
+    "lat": 29.5262,
+    "lng": -98.7532,
     "area": "Northwest SA",
     "website": "https://tpwd.texas.gov/state-parks/government-canyon",
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["hiking", "camping", "birding", "trail_running"],
+    "activities": [
+      "hiking",
+      "camping",
+      "birding",
+      "trail_running"
+    ],
     "shade_rating": 3,
     "shade_notes": "Mixed cover: exposed limestone ridges alternate with shaded creek drainages. Backcountry routes more exposed.",
     "best_time_summer": "early_morning",
     "heat_warning": true,
     "distance_miles": 40,
     "elevation_gain_ft": 600,
-    "surface": ["dirt", "rocky"],
+    "surface": [
+      "dirt",
+      "rocky"
+    ],
     "terrain": "hilly",
     "route_type": "network",
     "difficulty": "moderate",
@@ -119,46 +175,80 @@
     "kid_friendly": true,
     "ada_accessible": "partial",
     "bike_racks": false,
-    "best_months": [10, 11, 12, 1, 2, 3, 4],
+    "best_months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
     "flood_prone": false,
     "drought_impact": "Dry creek crossings become impassable after heavy rain.",
     "seasonal_notes": "Park closes during Stage 2+ burn bans. Backcountry camping requires advance reservation. Carry at least 2L water per person.",
     "camping": {
-      "site_types": ["primitive"],
+      "site_types": [
+        "primitive"
+      ],
       "num_sites": 6,
       "reservations": "required",
-      "hookups": ["none"]
+      "hookups": [
+        "none"
+      ]
     },
     "birding": {
-      "notable_species": ["Golden-cheeked Warbler", "Black-capped Vireo", "Painted Bunting", "Vermilion Flycatcher"],
-      "habitat": ["oak_woodland", "grassland"],
-      "best_months": [3, 4, 5]
+      "notable_species": [
+        "Golden-cheeked Warbler",
+        "Black-capped Vireo",
+        "Painted Bunting",
+        "Vermilion Flycatcher"
+      ],
+      "habitat": [
+        "oak_woodland",
+        "grassland"
+      ],
+      "best_months": [
+        3,
+        4,
+        5
+      ]
     },
-    "badges": ["sa_summer_pick", "birding_hotspot", "most_scenic", "local_favorite"],
+    "badges": [
+      "sa_summer_pick",
+      "birding_hotspot",
+      "most_scenic",
+      "local_favorite"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "mitchell-lake-audubon-center",
     "name": "Mitchell Lake Audubon Center",
-    "short_desc": "SA's premier birding destination — over 300 species recorded on a working wetland just south of downtown.",
-    "long_desc": "Mitchell Lake is a wastewater treatment reservoir turned conservation jewel. Texas Audubon manages 1,200 acres of shallow impoundments that attract an extraordinary range of shorebirds, waterfowl, and raptors — particularly during spring and fall migration. The center has limited public access hours (weekends only) and requires advance registration. No shade on the walking routes, so arrive early.",
+    "short_desc": "SA's premier birding destination \u2014 over 300 species recorded on a working wetland just south of downtown.",
+    "long_desc": "Mitchell Lake is a wastewater treatment reservoir turned conservation jewel. Texas Audubon manages 1,200 acres of shallow impoundments that attract an extraordinary range of shorebirds, waterfowl, and raptors \u2014 particularly during spring and fall migration. The center has limited public access hours (weekends only) and requires advance registration. No shade on the walking routes, so arrive early.",
     "address": "10750 Pleasanton Rd, San Antonio, TX 78221",
-    "lat": 29.2989,
-    "lng": -98.4908,
+    "lat": 29.3101,
+    "lng": -98.4957,
     "area": "South SA",
     "website": "https://tx.audubon.org/mitchell-lake",
     "status": "seasonal",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["birding"],
+    "activities": [
+      "birding"
+    ],
     "shade_rating": 1,
     "shade_notes": "Open wetlands with no tree cover. Full sun on all walking routes.",
     "best_time_summer": "early_morning",
     "heat_warning": true,
     "distance_miles": 3.0,
     "elevation_gain_ft": 20,
-    "surface": ["gravel", "dirt"],
+    "surface": [
+      "gravel",
+      "dirt"
+    ],
     "terrain": "flat",
     "route_type": "network",
     "difficulty": "easy",
@@ -171,40 +261,74 @@
     "kid_friendly": true,
     "ada_accessible": "partial",
     "bike_racks": false,
-    "best_months": [3, 4, 9, 10, 11],
+    "best_months": [
+      3,
+      4,
+      9,
+      10,
+      11
+    ],
     "flood_prone": false,
     "drought_impact": "Low water levels can concentrate shorebirds, actually improving birding.",
-    "seasonal_notes": "Open weekends only, 7am–3pm. Advance registration required. No dogs. Spring and fall migration (March–May, Aug–Oct) offers best diversity.",
+    "seasonal_notes": "Open weekends only, 7am\u20133pm. Advance registration required. No dogs. Spring and fall migration (March\u2013May, Aug\u2013Oct) offers best diversity.",
     "birding": {
-      "notable_species": ["Roseate Spoonbill", "Black-necked Stilt", "American Avocet", "Least Tern", "White-faced Ibis", "Peregrine Falcon"],
-      "habitat": ["wetland", "grassland"],
-      "best_months": [3, 4, 9, 10]
+      "notable_species": [
+        "Roseate Spoonbill",
+        "Black-necked Stilt",
+        "American Avocet",
+        "Least Tern",
+        "White-faced Ibis",
+        "Peregrine Falcon"
+      ],
+      "habitat": [
+        "wetland",
+        "grassland"
+      ],
+      "best_months": [
+        3,
+        4,
+        9,
+        10
+      ]
     },
-    "badges": ["birding_hotspot", "hidden_gem", "avoid_midday"],
+    "badges": [
+      "birding_hotspot",
+      "hidden_gem",
+      "avoid_midday"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1653365833452-f3a1b49605cf?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "mcallister-park",
     "name": "McAllister Park",
-    "short_desc": "North SA's busiest park — mountain bike trails, disc golf, and miles of running paths under live oak canopy.",
-    "long_desc": "McAllister Park packs a lot into 976 acres: a 18-hole disc golf course, mountain bike trails, paved loops, dog parks, and some of the best live oak tree cover of any city park in SA. The mountain bike trails are intermediate-level with some technical features. The disc golf course is well-maintained with good sightlines. Popular on weekends — arrive early for parking.",
+    "short_desc": "North SA's busiest park \u2014 mountain bike trails, disc golf, and miles of running paths under live oak canopy.",
+    "long_desc": "McAllister Park packs a lot into 976 acres: a 18-hole disc golf course, mountain bike trails, paved loops, dog parks, and some of the best live oak tree cover of any city park in SA. The mountain bike trails are intermediate-level with some technical features. The disc golf course is well-maintained with good sightlines. Popular on weekends \u2014 arrive early for parking.",
     "address": "13102 Jones Maltsberger Rd, San Antonio, TX 78247",
-    "lat": 29.5697,
-    "lng": -98.4372,
+    "lat": 29.5645,
+    "lng": -98.4558,
     "area": "North SA",
     "website": "https://www.sanantonio.gov/ParksAndRec/Parks-Facilities/All-Parks-Facilities/Park-Details/ArtMID/19092/ArticleID/1563",
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["disc_golf", "cycling", "hiking", "trail_running", "outdoor_fitness"],
+    "activities": [
+      "disc_golf",
+      "cycling",
+      "hiking",
+      "trail_running",
+      "outdoor_fitness"
+    ],
     "shade_rating": 4,
     "shade_notes": "Mature live oak canopy throughout. One of the shadiest large parks in the city.",
     "best_time_summer": "early_morning",
     "heat_warning": false,
     "distance_miles": 8.0,
     "elevation_gain_ft": 120,
-    "surface": ["dirt", "paved"],
+    "surface": [
+      "dirt",
+      "paved"
+    ],
     "terrain": "rolling",
     "route_type": "network",
     "difficulty": "easy",
@@ -217,39 +341,60 @@
     "kid_friendly": true,
     "ada_accessible": "partial",
     "bike_racks": true,
-    "best_months": [10, 11, 12, 1, 2, 3, 4, 5],
+    "best_months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
     "flood_prone": false,
     "drought_impact": null,
-    "seasonal_notes": "Parking fills fast on weekend mornings. Disc golf course busiest Saturdays 9am–2pm.",
+    "seasonal_notes": "Parking fills fast on weekend mornings. Disc golf course busiest Saturdays 9am\u20132pm.",
     "disc_golf": {
       "num_holes": 18,
       "basket_condition": "good"
     },
-    "badges": ["dog_favorite", "family_first", "local_favorite", "sa_summer_pick"],
+    "badges": [
+      "dog_favorite",
+      "family_first",
+      "local_favorite",
+      "sa_summer_pick"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1689514534472-791fadb755e5?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "medina-river-natural-area",
     "name": "Medina River Natural Area",
-    "short_desc": "Shaded riparian hiking and kayak access along the Medina River — surprisingly wild for being inside city limits.",
+    "short_desc": "Shaded riparian hiking and kayak access along the Medina River \u2014 surprisingly wild for being inside city limits.",
     "long_desc": "The Medina River Natural Area is 511 acres of floodplain forest along the Medina River's lower reach. Dense stands of cypress, cottonwood, and pecan keep the trails cool even in summer. The trail network is short but rewarding, with multiple river access points suitable for carry-in kayaks and canoes. Water levels vary significantly with rainfall and Medina Lake releases upstream.",
     "address": "15890 Padre Park Dr, San Antonio, TX 78211",
-    "lat": 29.2958,
-    "lng": -98.6247,
+    "lat": 29.2662,
+    "lng": -98.5507,
     "area": "Southwest SA",
     "website": "https://www.sanantonio.gov/ParksAndRec/Parks-Facilities/All-Parks-Facilities/Park-Details/ArtMID/19092/ArticleID/1573",
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["hiking", "kayaking", "birding", "fishing"],
+    "activities": [
+      "hiking",
+      "kayaking",
+      "birding",
+      "fishing"
+    ],
     "shade_rating": 5,
-    "shade_notes": "Riparian forest canopy is dense — cypress and pecan shade most trails and the river corridor.",
+    "shade_notes": "Riparian forest canopy is dense \u2014 cypress and pecan shade most trails and the river corridor.",
     "best_time_summer": "anytime",
     "heat_warning": false,
     "distance_miles": 4.2,
     "elevation_gain_ft": 40,
-    "surface": ["dirt"],
+    "surface": [
+      "dirt"
+    ],
     "terrain": "flat",
     "route_type": "network",
     "difficulty": "easy",
@@ -262,10 +407,19 @@
     "kid_friendly": true,
     "ada_accessible": "partial",
     "bike_racks": false,
-    "best_months": [3, 4, 5, 10, 11, 12, 1, 2],
+    "best_months": [
+      3,
+      4,
+      5,
+      10,
+      11,
+      12,
+      1,
+      2
+    ],
     "flood_prone": true,
     "drought_impact": "River can drop to knee-deep or lower in drought. Check Medina Lake levels before paddling.",
-    "seasonal_notes": "Check river levels after rain — can flood quickly. Kayak access is carry-in only; no ramp.",
+    "seasonal_notes": "Check river levels after rain \u2014 can flood quickly. Kayak access is carry-in only; no ramp.",
     "kayak": {
       "launch_type": "carry_in",
       "water_body": "river",
@@ -273,19 +427,37 @@
       "drought_risk": "high"
     },
     "birding": {
-      "notable_species": ["Green Kingfisher", "Yellow-crowned Night-Heron", "Prothonotary Warbler", "Wood Duck"],
-      "habitat": ["riparian"],
-      "best_months": [4, 5, 10, 11]
+      "notable_species": [
+        "Green Kingfisher",
+        "Yellow-crowned Night-Heron",
+        "Prothonotary Warbler",
+        "Wood Duck"
+      ],
+      "habitat": [
+        "riparian"
+      ],
+      "best_months": [
+        4,
+        5,
+        10,
+        11
+      ]
     },
-    "badges": ["sa_summer_pick", "hidden_gem", "most_scenic", "birding_hotspot", "flood_risk"],
+    "badges": [
+      "sa_summer_pick",
+      "hidden_gem",
+      "most_scenic",
+      "birding_hotspot",
+      "flood_risk"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1601242926956-9fec3db8db46?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "calaveras-lake",
     "name": "Calaveras Lake",
-    "short_desc": "Year-round warm water fishery and open kayaking southeast of SA — biggest open water close to the city.",
-    "long_desc": "Calaveras Lake is a 3,450-acre cooling reservoir for the nearby power plant, which keeps water temperatures warm year-round. That makes it one of the few places you can kayak or fish in January. The lake is known for largemouth bass, catfish, and carp. Birding is excellent along the shallower northern end. No shade on the water — bring sun protection.",
+    "short_desc": "Year-round warm water fishery and open kayaking southeast of SA \u2014 biggest open water close to the city.",
+    "long_desc": "Calaveras Lake is a 3,450-acre cooling reservoir for the nearby power plant, which keeps water temperatures warm year-round. That makes it one of the few places you can kayak or fish in January. The lake is known for largemouth bass, catfish, and carp. Birding is excellent along the shallower northern end. No shade on the water \u2014 bring sun protection.",
     "address": "13101 Calaveras Rd, San Antonio, TX 78223",
     "lat": 29.2631,
     "lng": -98.3197,
@@ -294,14 +466,20 @@
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["kayaking", "fishing", "birding"],
+    "activities": [
+      "kayaking",
+      "fishing",
+      "birding"
+    ],
     "shade_rating": 1,
     "shade_notes": "Open water with no shade. Full sun on the lake surface and most launch areas.",
     "best_time_summer": "early_morning",
     "heat_warning": true,
     "distance_miles": null,
     "elevation_gain_ft": 0,
-    "surface": ["water"],
+    "surface": [
+      "water"
+    ],
     "terrain": "flat",
     "route_type": "network",
     "difficulty": "easy",
@@ -314,10 +492,17 @@
     "kid_friendly": true,
     "ada_accessible": "no",
     "bike_racks": false,
-    "best_months": [1, 2, 3, 10, 11, 12],
+    "best_months": [
+      1,
+      2,
+      3,
+      10,
+      11,
+      12
+    ],
     "flood_prone": false,
     "drought_impact": "Lake levels relatively stable due to power plant cooling needs.",
-    "seasonal_notes": "Warm water year-round due to power plant. Fishing is productive in winter when other spots are slow. Bring shade — none available.",
+    "seasonal_notes": "Warm water year-round due to power plant. Fishing is productive in winter when other spots are slow. Bring shade \u2014 none available.",
     "kayak": {
       "launch_type": "concrete_ramp",
       "water_body": "lake",
@@ -325,35 +510,58 @@
       "drought_risk": "low"
     },
     "birding": {
-      "notable_species": ["American White Pelican", "Osprey", "Double-crested Cormorant", "various ducks"],
-      "habitat": ["wetland"],
-      "best_months": [10, 11, 12, 1, 2, 3]
+      "notable_species": [
+        "American White Pelican",
+        "Osprey",
+        "Double-crested Cormorant",
+        "various ducks"
+      ],
+      "habitat": [
+        "wetland"
+      ],
+      "best_months": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ]
     },
-    "badges": ["hidden_gem", "avoid_midday"],
+    "badges": [
+      "hidden_gem",
+      "avoid_midday"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1698246550885-cc4e82115944?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "eisenhower-park",
     "name": "Eisenhower Park",
-    "short_desc": "Challenging limestone ridge hiking with sweeping views of Northwest SA — the closest thing to real hills in town.",
-    "long_desc": "Eisenhower Park sits on the Balcones Escarpment, giving hikers actual elevation change and rocky limestone terrain that's rare within city limits. The trails climb through cedar and live oak to ridge-top overlooks with views stretching across Northwest SA. More demanding than most city parks — expect some scrambling on the upper routes. One of the better sunset destinations in the city.",
+    "short_desc": "Challenging limestone ridge hiking with sweeping views of Northwest SA \u2014 the closest thing to real hills in town.",
+    "long_desc": "Eisenhower Park sits on the Balcones Escarpment, giving hikers actual elevation change and rocky limestone terrain that's rare within city limits. The trails climb through cedar and live oak to ridge-top overlooks with views stretching across Northwest SA. More demanding than most city parks \u2014 expect some scrambling on the upper routes. One of the better sunset destinations in the city.",
     "address": "19399 NW Military Hwy, San Antonio, TX 78257",
-    "lat": 29.5972,
-    "lng": -98.6206,
+    "lat": 29.6248,
+    "lng": -98.5703,
     "area": "Northwest SA",
     "website": "https://www.sanantonio.gov/ParksAndRec/Parks-Facilities/All-Parks-Facilities/Park-Details/ArtMID/19092/ArticleID/1564",
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["hiking", "trail_running"],
+    "activities": [
+      "hiking",
+      "trail_running"
+    ],
     "shade_rating": 3,
     "shade_notes": "Shaded in the lower creek drainage; exposed limestone ridge on upper trails.",
     "best_time_summer": "early_morning",
     "heat_warning": true,
     "distance_miles": 6.0,
     "elevation_gain_ft": 450,
-    "surface": ["rocky", "dirt"],
+    "surface": [
+      "rocky",
+      "dirt"
+    ],
     "terrain": "hilly",
     "route_type": "network",
     "difficulty": "moderate",
@@ -366,18 +574,30 @@
     "kid_friendly": false,
     "ada_accessible": "no",
     "bike_racks": false,
-    "best_months": [10, 11, 12, 1, 2, 3, 4],
+    "best_months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
     "flood_prone": false,
     "drought_impact": null,
-    "seasonal_notes": "Upper ridge exposed — dangerous in lightning storms. Sunset views from the ridge are exceptional October–March.",
-    "badges": ["sunset_spot", "most_scenic", "local_favorite"],
+    "seasonal_notes": "Upper ridge exposed \u2014 dangerous in lightning storms. Sunset views from the ridge are exceptional October\u2013March.",
+    "badges": [
+      "sunset_spot",
+      "most_scenic",
+      "local_favorite"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "brackenridge-park",
     "name": "Brackenridge Park",
-    "short_desc": "SA's oldest urban park — mature pecan and cypress canopy along the San Antonio River with fitness trails and birding.",
+    "short_desc": "SA's oldest urban park \u2014 mature pecan and cypress canopy along the San Antonio River with fitness trails and birding.",
     "long_desc": "Brackenridge Park has been San Antonio's green heart since 1899. The 343-acre park sits along the upper San Antonio River, with towering pecan and cypress trees creating one of the shadiest environments in the city. The River Walk connects to the park's south end. Multiple jogging/walking loops, outdoor fitness stations, and strong bird diversity along the river corridor. Very accessible from central SA.",
     "address": "3700 N St Mary's St, San Antonio, TX 78212",
     "lat": 29.4669,
@@ -387,14 +607,21 @@
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["hiking", "outdoor_fitness", "birding"],
+    "activities": [
+      "hiking",
+      "outdoor_fitness",
+      "birding"
+    ],
     "shade_rating": 5,
     "shade_notes": "Mature pecan and cypress canopy throughout. One of the shadiest parks in central SA.",
     "best_time_summer": "anytime",
     "heat_warning": false,
     "distance_miles": 3.5,
     "elevation_gain_ft": 30,
-    "surface": ["paved", "dirt"],
+    "surface": [
+      "paved",
+      "dirt"
+    ],
     "terrain": "flat",
     "route_type": "network",
     "difficulty": "easy",
@@ -407,40 +634,80 @@
     "kid_friendly": true,
     "ada_accessible": "full",
     "bike_racks": true,
-    "best_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "best_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
     "flood_prone": false,
     "drought_impact": null,
     "seasonal_notes": "Accessible year-round. Parking off Tuleta Dr fills on weekends. Connected to Museum Reach of the River Walk.",
     "birding": {
-      "notable_species": ["Green Kingfisher", "Great Blue Heron", "Ringed Kingfisher", "Black-crowned Night-Heron"],
-      "habitat": ["riparian"],
-      "best_months": [1, 2, 3, 10, 11, 12]
+      "notable_species": [
+        "Green Kingfisher",
+        "Great Blue Heron",
+        "Ringed Kingfisher",
+        "Black-crowned Night-Heron"
+      ],
+      "habitat": [
+        "riparian"
+      ],
+      "best_months": [
+        1,
+        2,
+        3,
+        10,
+        11,
+        12
+      ]
     },
-    "badges": ["sa_summer_pick", "family_first", "dog_favorite", "birding_hotspot", "best_beginner", "afuera_pick"],
+    "badges": [
+      "sa_summer_pick",
+      "family_first",
+      "dog_favorite",
+      "birding_hotspot",
+      "best_beginner",
+      "afuera_pick"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "salado-creek-greenway",
     "name": "Salado Creek Greenway",
-    "short_desc": "12 miles of paved trail threading through North SA neighborhoods — flat, creek-shaded, and dog-friendly.",
+    "short_desc": "12 miles of paved trail threading through North SA neighborhoods \u2014 flat, creek-shaded, and dog-friendly.",
     "long_desc": "Salado Creek Greenway runs 12 paved miles from Wurzbach Pkwy north to Thousand Oaks, following Salado Creek through established North SA neighborhoods. The route is flatter than Leon Creek Greenway with more consistent shade from the riparian corridor. Several pocket parks and benches along the route make it good for casual outings. Popular with families and dog walkers.",
     "address": "Salado Creek Greenway, San Antonio, TX",
-    "lat": 29.5283,
-    "lng": -98.4089,
+    "lat": 29.5315,
+    "lng": -98.4281,
     "area": "North SA",
     "website": "https://www.sanantonio.gov/ParksAndRec/Parks-Facilities/All-Parks-Facilities/Trail-Details/ArtMID/19092/ArticleID/2163",
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["hiking", "cycling", "trail_running"],
+    "activities": [
+      "hiking",
+      "cycling",
+      "trail_running"
+    ],
     "shade_rating": 3,
     "shade_notes": "Intermittent shade from creek vegetation. More consistent cover than exposed suburban trail alternatives.",
     "best_time_summer": "early_morning",
     "heat_warning": false,
     "distance_miles": 12.0,
     "elevation_gain_ft": 80,
-    "surface": ["paved"],
+    "surface": [
+      "paved"
+    ],
     "terrain": "flat",
     "route_type": "point_to_point",
     "difficulty": "easy",
@@ -453,11 +720,23 @@
     "kid_friendly": true,
     "ada_accessible": "full",
     "bike_racks": false,
-    "best_months": [10, 11, 12, 1, 2, 3, 4],
+    "best_months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
     "flood_prone": true,
     "drought_impact": null,
-    "seasonal_notes": "No restrooms or water on most of the route — plan accordingly. Sections near creek can flood.",
-    "badges": ["dog_favorite", "best_beginner", "family_first"],
+    "seasonal_notes": "No restrooms or water on most of the route \u2014 plan accordingly. Sections near creek can flood.",
+    "badges": [
+      "dog_favorite",
+      "best_beginner",
+      "family_first"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1476820865390-c52aeebb9891?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
@@ -465,23 +744,31 @@
     "id": "phil-hardberger-park",
     "name": "Phil Hardberger Park",
     "short_desc": "330 acres of oak woodland with connected trails, a land bridge over Wurzbach Pkwy, and some of the best urban birding in SA.",
-    "long_desc": "Phil Hardberger Park is split by Wurzbach Parkway but connected by a wildlife land bridge — one of only a handful in the US. The east and west units together offer 330 acres of live oak and Ashe juniper woodland with well-signed loop trails. The canopy is mature enough to make summer hiking tolerable into mid-morning. Strong bird diversity, particularly along the wooded edges near the creek drainages.",
+    "long_desc": "Phil Hardberger Park is split by Wurzbach Parkway but connected by a wildlife land bridge \u2014 one of only a handful in the US. The east and west units together offer 330 acres of live oak and Ashe juniper woodland with well-signed loop trails. The canopy is mature enough to make summer hiking tolerable into mid-morning. Strong bird diversity, particularly along the wooded edges near the creek drainages.",
     "address": "8400 NW Military Hwy, San Antonio, TX 78231",
-    "lat": 29.5596,
-    "lng": -98.5658,
+    "lat": 29.5498,
+    "lng": -98.5301,
     "area": "Northwest SA",
     "website": "https://www.sanantonio.gov/ParksAndRec/Parks-Facilities/All-Parks-Facilities/Park-Details/ArtMID/19092/ArticleID/1568",
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["hiking", "trail_running", "birding", "outdoor_fitness"],
+    "activities": [
+      "hiking",
+      "trail_running",
+      "birding",
+      "outdoor_fitness"
+    ],
     "shade_rating": 4,
     "shade_notes": "Mature live oak and juniper canopy throughout most of the trail network. Exposed only near the parking areas.",
     "best_time_summer": "early_morning",
     "heat_warning": false,
     "distance_miles": 5.0,
     "elevation_gain_ft": 180,
-    "surface": ["dirt", "gravel"],
+    "surface": [
+      "dirt",
+      "gravel"
+    ],
     "terrain": "rolling",
     "route_type": "network",
     "difficulty": "easy",
@@ -494,40 +781,74 @@
     "kid_friendly": true,
     "ada_accessible": "partial",
     "bike_racks": true,
-    "best_months": [10, 11, 12, 1, 2, 3, 4, 5],
+    "best_months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
     "flood_prone": false,
     "drought_impact": null,
     "seasonal_notes": "The wildlife land bridge is a must-see. West unit has more challenging terrain; east unit is better for families and beginners.",
     "birding": {
-      "notable_species": ["Carolina Wren", "Painted Bunting", "Great Horned Owl", "Red-shouldered Hawk"],
-      "habitat": ["oak_woodland"],
-      "best_months": [4, 5, 10, 11]
+      "notable_species": [
+        "Carolina Wren",
+        "Painted Bunting",
+        "Great Horned Owl",
+        "Red-shouldered Hawk"
+      ],
+      "habitat": [
+        "oak_woodland"
+      ],
+      "best_months": [
+        4,
+        5,
+        10,
+        11
+      ]
     },
-    "badges": ["sa_summer_pick", "birding_hotspot", "dog_favorite", "family_first", "hidden_gem"],
+    "badges": [
+      "sa_summer_pick",
+      "birding_hotspot",
+      "dog_favorite",
+      "family_first",
+      "hidden_gem"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "op-schnabel-park",
     "name": "O.P. Schnabel Park",
-    "short_desc": "Rugged limestone mountain bike trails and hiking in a wooded canyon — the best technical riding inside city limits.",
+    "short_desc": "Rugged limestone mountain bike trails and hiking in a wooded canyon \u2014 the best technical riding inside city limits.",
     "long_desc": "O.P. Schnabel Park is the go-to spot for mountain bikers in San Antonio, with 8+ miles of singletrack ranging from flowy beginner loops to rocky technical lines through limestone canyon terrain. Hikers share the lower trails. The creek drainage provides decent shade in the lower sections; the ridge trails are more exposed. Trails can get muddy and slippery after rain.",
     "address": "9606 Bandera Rd, San Antonio, TX 78250",
-    "lat": 29.5367,
-    "lng": -98.6344,
+    "lat": 29.5335,
+    "lng": -98.646,
     "area": "Northwest SA",
     "website": "https://www.sanantonio.gov/ParksAndRec/Parks-Facilities/All-Parks-Facilities/Park-Details/ArtMID/19092/ArticleID/1572",
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["cycling", "hiking", "trail_running"],
+    "activities": [
+      "cycling",
+      "hiking",
+      "trail_running"
+    ],
     "shade_rating": 3,
     "shade_notes": "Shaded in canyon and creek drainage; exposed on upper ridge sections.",
     "best_time_summer": "early_morning",
     "heat_warning": true,
     "distance_miles": 8.5,
     "elevation_gain_ft": 380,
-    "surface": ["dirt", "rocky"],
+    "surface": [
+      "dirt",
+      "rocky"
+    ],
     "terrain": "hilly",
     "route_type": "network",
     "difficulty": "moderate",
@@ -540,11 +861,22 @@
     "kid_friendly": false,
     "ada_accessible": "no",
     "bike_racks": true,
-    "best_months": [10, 11, 12, 1, 2, 3, 4],
+    "best_months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
     "flood_prone": false,
     "drought_impact": null,
-    "seasonal_notes": "Avoid after rain — limestone becomes extremely slippery. Bring your own water.",
-    "badges": ["local_favorite", "hidden_gem"],
+    "seasonal_notes": "Avoid after rain \u2014 limestone becomes extremely slippery. Bring your own water.",
+    "badges": [
+      "local_favorite",
+      "hidden_gem"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
@@ -552,23 +884,30 @@
     "id": "mission-reach-trail",
     "name": "Mission Reach Hike & Bike Trail",
     "short_desc": "8 miles of paved riverside trail connecting four UNESCO World Heritage missions through restored riparian habitat.",
-    "long_desc": "The Mission Reach is the southern extension of the San Antonio River Walk — 8 miles of paved trail connecting Mission Concepción to Mission Espada along a restored stretch of the San Antonio River. The habitat restoration project has brought back native cottonwood and cypress, improving shade significantly. The missions themselves are free to visit and worth stopping for. Strong birding along the river corridor.",
-    "address": "Mission Concepción, 807 Mission Rd, San Antonio, TX 78210",
+    "long_desc": "The Mission Reach is the southern extension of the San Antonio River Walk \u2014 8 miles of paved trail connecting Mission Concepci\u00f3n to Mission Espada along a restored stretch of the San Antonio River. The habitat restoration project has brought back native cottonwood and cypress, improving shade significantly. The missions themselves are free to visit and worth stopping for. Strong birding along the river corridor.",
+    "address": "Mission Concepci\u00f3n, 807 Mission Rd, San Antonio, TX 78210",
     "lat": 29.3947,
-    "lng": -98.4650,
+    "lng": -98.465,
     "area": "South SA",
     "website": "https://www.sanantonio.gov/ParksAndRec/Parks-Facilities/All-Parks-Facilities/Trail-Details/ArtMID/19092/ArticleID/2166",
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["hiking", "cycling", "trail_running", "birding"],
+    "activities": [
+      "hiking",
+      "cycling",
+      "trail_running",
+      "birding"
+    ],
     "shade_rating": 2,
     "shade_notes": "Young riparian plantings are maturing but shade is still patchy. More shade near the river crossings.",
     "best_time_summer": "early_morning",
     "heat_warning": true,
     "distance_miles": 8.0,
     "elevation_gain_ft": 40,
-    "surface": ["paved"],
+    "surface": [
+      "paved"
+    ],
     "terrain": "flat",
     "route_type": "point_to_point",
     "difficulty": "easy",
@@ -581,40 +920,75 @@
     "kid_friendly": true,
     "ada_accessible": "full",
     "bike_racks": true,
-    "best_months": [10, 11, 12, 1, 2, 3, 4],
+    "best_months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
     "flood_prone": true,
     "drought_impact": null,
     "seasonal_notes": "River Walk extension is an out-and-back or point-to-point with Uber back. Missions open daily, free entry. Sections near the river can flood.",
     "birding": {
-      "notable_species": ["Green Kingfisher", "Black-bellied Whistling-Duck", "Great Egret", "Neotropic Cormorant"],
-      "habitat": ["riparian"],
-      "best_months": [10, 11, 12, 1, 2, 3]
+      "notable_species": [
+        "Green Kingfisher",
+        "Black-bellied Whistling-Duck",
+        "Great Egret",
+        "Neotropic Cormorant"
+      ],
+      "habitat": [
+        "riparian"
+      ],
+      "best_months": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ]
     },
-    "badges": ["best_beginner", "family_first", "birding_hotspot", "most_scenic", "afuera_pick"],
+    "badges": [
+      "best_beginner",
+      "family_first",
+      "birding_hotspot",
+      "most_scenic",
+      "afuera_pick"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "pearsall-park",
     "name": "Pearsall Park",
-    "short_desc": "South SA's largest park — 511 acres with disc golf, outdoor fitness stations, and a splash pad under a live oak canopy.",
+    "short_desc": "South SA's largest park \u2014 511 acres with disc golf, outdoor fitness stations, and a splash pad under a live oak canopy.",
     "long_desc": "Pearsall Park is one of San Antonio's newest large parks, opened in 2016 with modern amenities throughout. The 18-hole disc golf course runs through mature live oaks, making it one of the shadier courses in the region. Multiple outdoor fitness stations are scattered through the park. A splash pad makes it a summer destination for families. The trail system is modest but well-maintained.",
     "address": "4700 Pearsall Rd, San Antonio, TX 78242",
-    "lat": 29.3264,
-    "lng": -98.5583,
+    "lat": 29.3391,
+    "lng": -98.6241,
     "area": "South SA",
     "website": "https://www.sanantonio.gov/ParksAndRec/Parks-Facilities/All-Parks-Facilities/Park-Details/ArtMID/19092/ArticleID/1575",
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["disc_golf", "outdoor_fitness", "hiking"],
+    "activities": [
+      "disc_golf",
+      "outdoor_fitness",
+      "hiking"
+    ],
     "shade_rating": 4,
     "shade_notes": "Live oak canopy throughout the disc golf course and most of the park. One of the shadiest courses in SA.",
     "best_time_summer": "early_morning",
     "heat_warning": false,
     "distance_miles": 3.0,
     "elevation_gain_ft": 40,
-    "surface": ["paved", "dirt"],
+    "surface": [
+      "paved",
+      "dirt"
+    ],
     "terrain": "flat",
     "route_type": "network",
     "difficulty": "easy",
@@ -627,7 +1001,16 @@
     "kid_friendly": true,
     "ada_accessible": "full",
     "bike_racks": true,
-    "best_months": [1, 2, 3, 4, 5, 10, 11, 12],
+    "best_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      10,
+      11,
+      12
+    ],
     "flood_prone": false,
     "drought_impact": null,
     "seasonal_notes": "Splash pad open Memorial Day through Labor Day. Disc golf busiest Saturday mornings.",
@@ -635,31 +1018,41 @@
       "num_holes": 18,
       "basket_condition": "excellent"
     },
-    "badges": ["sa_summer_pick", "family_first", "dog_favorite", "afuera_pick"],
+    "badges": [
+      "sa_summer_pick",
+      "family_first",
+      "dog_favorite",
+      "afuera_pick"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "braunig-lake",
     "name": "Braunig Lake",
-    "short_desc": "1,350-acre warm-water reservoir southeast of SA — year-round kayaking and fishing with no crowds.",
-    "long_desc": "Braunig Lake is a CPS Energy cooling reservoir that stays warm year-round, similar to Calaveras Lake. It's less well-known than Calaveras, making it quieter on weekends. The lake is managed by the City of San Antonio for recreation, with a boat ramp, fishing pier, and open water for kayaking. Largemouth bass and catfish are the main draws. No shade on the water — bring sun protection.",
+    "short_desc": "1,350-acre warm-water reservoir southeast of SA \u2014 year-round kayaking and fishing with no crowds.",
+    "long_desc": "Braunig Lake is a CPS Energy cooling reservoir that stays warm year-round, similar to Calaveras Lake. It's less well-known than Calaveras, making it quieter on weekends. The lake is managed by the City of San Antonio for recreation, with a boat ramp, fishing pier, and open water for kayaking. Largemouth bass and catfish are the main draws. No shade on the water \u2014 bring sun protection.",
     "address": "19202 Braunig Lake Rd, San Antonio, TX 78220",
-    "lat": 29.2767,
-    "lng": -98.3683,
+    "lat": 29.3024,
+    "lng": -98.3798,
     "area": "Southeast SA",
     "website": null,
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["kayaking", "fishing"],
+    "activities": [
+      "kayaking",
+      "fishing"
+    ],
     "shade_rating": 1,
     "shade_notes": "Open water with no shade. Full sun on the lake and at all launch areas.",
     "best_time_summer": "early_morning",
     "heat_warning": true,
     "distance_miles": null,
     "elevation_gain_ft": 0,
-    "surface": ["water"],
+    "surface": [
+      "water"
+    ],
     "terrain": "flat",
     "route_type": "network",
     "difficulty": "easy",
@@ -672,9 +1065,16 @@
     "kid_friendly": true,
     "ada_accessible": "partial",
     "bike_racks": false,
-    "best_months": [1, 2, 3, 10, 11, 12],
+    "best_months": [
+      1,
+      2,
+      3,
+      10,
+      11,
+      12
+    ],
     "flood_prone": false,
-    "drought_impact": "Levels stable — maintained for power plant cooling.",
+    "drought_impact": "Levels stable \u2014 maintained for power plant cooling.",
     "seasonal_notes": "Day use fee required. Warmer than most lakes year-round due to power plant. Quieter than Calaveras on weekends.",
     "kayak": {
       "launch_type": "concrete_ramp",
@@ -682,31 +1082,40 @@
       "current": "calm",
       "drought_risk": "low"
     },
-    "badges": ["hidden_gem", "avoid_midday"],
+    "badges": [
+      "hidden_gem",
+      "avoid_midday"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "woodlawn-lake-park",
     "name": "Woodlawn Lake Park",
-    "short_desc": "Shaded 1.5-mile loop around a small lake in the heart of West SA — the city's best after-work walk.",
-    "long_desc": "Woodlawn Lake Park is a 62-acre park built around a small urban lake on the west side of San Antonio. The paved loop around the lake is one of the most popular walking and jogging routes in the city — flat, well-lit, and shaded by mature pecan trees. Community events are frequent. A second, unpaved path runs through the wooded interior with more bird activity. Strong year-round use.",
+    "short_desc": "Shaded 1.5-mile loop around a small lake in the heart of West SA \u2014 the city's best after-work walk.",
+    "long_desc": "Woodlawn Lake Park is a 62-acre park built around a small urban lake on the west side of San Antonio. The paved loop around the lake is one of the most popular walking and jogging routes in the city \u2014 flat, well-lit, and shaded by mature pecan trees. Community events are frequent. A second, unpaved path runs through the wooded interior with more bird activity. Strong year-round use.",
     "address": "1103 Cincinnati Ave, San Antonio, TX 78201",
-    "lat": 29.4456,
-    "lng": -98.5239,
+    "lat": 29.4499,
+    "lng": -98.5273,
     "area": "West SA",
     "website": "https://www.sanantonio.gov/ParksAndRec/Parks-Facilities/All-Parks-Facilities/Park-Details/ArtMID/19092/ArticleID/1583",
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["hiking", "outdoor_fitness", "birding"],
+    "activities": [
+      "hiking",
+      "outdoor_fitness",
+      "birding"
+    ],
     "shade_rating": 4,
     "shade_notes": "Mature pecan trees line the lake loop and the interior paths, providing consistent shade.",
     "best_time_summer": "anytime",
     "heat_warning": false,
     "distance_miles": 1.5,
     "elevation_gain_ft": 10,
-    "surface": ["paved"],
+    "surface": [
+      "paved"
+    ],
     "terrain": "flat",
     "route_type": "loop",
     "difficulty": "easy",
@@ -719,24 +1128,58 @@
     "kid_friendly": true,
     "ada_accessible": "full",
     "bike_racks": false,
-    "best_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "best_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
     "flood_prone": false,
     "drought_impact": null,
     "seasonal_notes": "Usable year-round including summer due to shade. Well-lit for early morning and evening use. Popular running path.",
     "birding": {
-      "notable_species": ["Great Blue Heron", "Pied-billed Grebe", "Belted Kingfisher", "various ducks"],
-      "habitat": ["wetland", "riparian"],
-      "best_months": [10, 11, 12, 1, 2, 3]
+      "notable_species": [
+        "Great Blue Heron",
+        "Pied-billed Grebe",
+        "Belted Kingfisher",
+        "various ducks"
+      ],
+      "habitat": [
+        "wetland",
+        "riparian"
+      ],
+      "best_months": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ]
     },
-    "badges": ["sa_summer_pick", "best_beginner", "family_first", "dog_favorite", "afuera_pick"],
+    "badges": [
+      "sa_summer_pick",
+      "best_beginner",
+      "family_first",
+      "dog_favorite",
+      "afuera_pick"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "crownridge-canyon-natural-area",
     "name": "Crownridge Canyon Natural Area",
-    "short_desc": "Steep canyon trails and limestone bluffs on the northwest edge of SA — challenging terrain with surprising solitude.",
-    "long_desc": "Crownridge Canyon Natural Area covers 522 acres of rugged hill country terrain tucked between suburban neighborhoods in northwest SA. The trail network drops into a limestone canyon with exposed bedrock and cedar-oak scrub. It's more physically demanding than most city parks and less visited — a good option for hikers who've done Friedrich and Government Canyon and want something new. No dogs allowed to protect wildlife.",
+    "short_desc": "Steep canyon trails and limestone bluffs on the northwest edge of SA \u2014 challenging terrain with surprising solitude.",
+    "long_desc": "Crownridge Canyon Natural Area covers 522 acres of rugged hill country terrain tucked between suburban neighborhoods in northwest SA. The trail network drops into a limestone canyon with exposed bedrock and cedar-oak scrub. It's more physically demanding than most city parks and less visited \u2014 a good option for hikers who've done Friedrich and Government Canyon and want something new. No dogs allowed to protect wildlife.",
     "address": "20025 Alsatian Dr, San Antonio, TX 78256",
     "lat": 29.5756,
     "lng": -98.6628,
@@ -745,14 +1188,20 @@
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["hiking", "trail_running"],
+    "activities": [
+      "hiking",
+      "trail_running"
+    ],
     "shade_rating": 3,
     "shade_notes": "Shaded in the canyon bottom; exposed on bluff ridgelines and open cedar breaks.",
     "best_time_summer": "early_morning",
     "heat_warning": true,
     "distance_miles": 4.8,
     "elevation_gain_ft": 420,
-    "surface": ["rocky", "dirt"],
+    "surface": [
+      "rocky",
+      "dirt"
+    ],
     "terrain": "hilly",
     "route_type": "network",
     "difficulty": "hard",
@@ -765,35 +1214,51 @@
     "kid_friendly": false,
     "ada_accessible": "no",
     "bike_racks": false,
-    "best_months": [10, 11, 12, 1, 2, 3],
+    "best_months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
     "flood_prone": false,
     "drought_impact": null,
-    "seasonal_notes": "No restrooms or water — plan accordingly. No dogs. Bring navigation as signage is sparse. One of SA's quieter natural areas.",
-    "badges": ["hidden_gem", "most_scenic", "local_favorite"],
+    "seasonal_notes": "No restrooms or water \u2014 plan accordingly. No dogs. Bring navigation as signage is sparse. One of SA's quieter natural areas.",
+    "badges": [
+      "hidden_gem",
+      "most_scenic",
+      "local_favorite"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "san-pedro-springs-park",
     "name": "San Pedro Springs Park",
-    "short_desc": "America's second-oldest public park — a shaded spring-fed oasis with walking paths and fitness stations near downtown.",
+    "short_desc": "America's second-oldest public park \u2014 a shaded spring-fed oasis with walking paths and fitness stations near downtown.",
     "long_desc": "San Pedro Springs Park, established in 1729, is one of the oldest public parks in the United States. The spring-fed San Pedro Creek runs through the park, flanked by massive cypress and pecan trees that create exceptional shade. Walking paths, a spring-fed swimming pool (open summers), picnic areas, and outdoor fitness stations are all within 46 acres. Located just north of downtown, it's a neighborhood park that punches well above its size.",
     "address": "1315 San Pedro Ave, San Antonio, TX 78212",
-    "lat": 29.4418,
-    "lng": -98.4983,
+    "lat": 29.4465,
+    "lng": -98.4999,
     "area": "Central SA",
     "website": "https://www.sanantonio.gov/ParksAndRec/Parks-Facilities/All-Parks-Facilities/Park-Details/ArtMID/19092/ArticleID/1577",
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["hiking", "outdoor_fitness"],
+    "activities": [
+      "hiking",
+      "outdoor_fitness"
+    ],
     "shade_rating": 5,
     "shade_notes": "Massive cypress and pecan trees provide near-total shade throughout the park.",
     "best_time_summer": "anytime",
     "heat_warning": false,
     "distance_miles": 1.2,
     "elevation_gain_ft": 10,
-    "surface": ["paved"],
+    "surface": [
+      "paved"
+    ],
     "terrain": "flat",
     "route_type": "network",
     "difficulty": "easy",
@@ -806,35 +1271,62 @@
     "kid_friendly": true,
     "ada_accessible": "full",
     "bike_racks": false,
-    "best_months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "best_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
     "flood_prone": false,
     "drought_impact": "Spring may reduce to a trickle in severe drought.",
     "seasonal_notes": "Spring-fed pool open Memorial Day through Labor Day. Park is walkable from Deco District and SAC campus.",
-    "badges": ["sa_summer_pick", "best_beginner", "family_first", "most_scenic", "afuera_pick", "local_favorite"],
+    "badges": [
+      "sa_summer_pick",
+      "best_beginner",
+      "family_first",
+      "most_scenic",
+      "afuera_pick",
+      "local_favorite"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "cibolo-nature-center",
     "name": "Cibolo Nature Center & Farm",
-    "short_desc": "100 acres of creek, marsh, and prairie trails 30 minutes north of SA — the hill country edge without the drive.",
-    "long_desc": "The Cibolo Nature Center sits along Cibolo Creek in Boerne, 30 minutes north of San Antonio on the doorstep of the Hill Country. Four distinct habitat types — marsh, prairie, woodland, and creek — are accessible on a short trail network. The creek trail is particularly good for birding, with bald cypress providing shade. The adjacent working farm hosts educational programs. A short but rewarding destination when paired with a trip to Boerne's downtown.",
+    "short_desc": "100 acres of creek, marsh, and prairie trails 30 minutes north of SA \u2014 the hill country edge without the drive.",
+    "long_desc": "The Cibolo Nature Center sits along Cibolo Creek in Boerne, 30 minutes north of San Antonio on the doorstep of the Hill Country. Four distinct habitat types \u2014 marsh, prairie, woodland, and creek \u2014 are accessible on a short trail network. The creek trail is particularly good for birding, with bald cypress providing shade. The adjacent working farm hosts educational programs. A short but rewarding destination when paired with a trip to Boerne's downtown.",
     "address": "140 City Park Rd, Boerne, TX 78006",
-    "lat": 29.7956,
-    "lng": -98.7317,
+    "lat": 29.786,
+    "lng": -98.7105,
     "area": "Hill Country Edge",
     "website": "https://www.cibolo.org",
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["hiking", "birding", "nature_watching"],
+    "activities": [
+      "hiking",
+      "birding",
+      "nature_watching"
+    ],
     "shade_rating": 3,
     "shade_notes": "Bald cypress shade along the creek trail; open prairie and marsh sections are fully exposed.",
     "best_time_summer": "early_morning",
     "heat_warning": false,
     "distance_miles": 3.5,
     "elevation_gain_ft": 60,
-    "surface": ["dirt", "gravel"],
+    "surface": [
+      "dirt",
+      "gravel"
+    ],
     "terrain": "flat",
     "route_type": "network",
     "difficulty": "easy",
@@ -847,24 +1339,53 @@
     "kid_friendly": true,
     "ada_accessible": "partial",
     "bike_racks": false,
-    "best_months": [3, 4, 5, 10, 11, 12, 1, 2],
+    "best_months": [
+      3,
+      4,
+      5,
+      10,
+      11,
+      12,
+      1,
+      2
+    ],
     "flood_prone": true,
     "drought_impact": "Cibolo Creek can drop significantly in drought, reducing wildlife activity near the water.",
-    "seasonal_notes": "Worth pairing with Boerne's historic downtown. Creek trails close after heavy rain. Spring migration (March–May) is exceptional for warblers.",
+    "seasonal_notes": "Worth pairing with Boerne's historic downtown. Creek trails close after heavy rain. Spring migration (March\u2013May) is exceptional for warblers.",
     "birding": {
-      "notable_species": ["Painted Bunting", "Yellow-billed Cuckoo", "Belted Kingfisher", "Eastern Bluebird", "various warblers"],
-      "habitat": ["riparian", "grassland", "wetland"],
-      "best_months": [4, 5, 10, 11]
+      "notable_species": [
+        "Painted Bunting",
+        "Yellow-billed Cuckoo",
+        "Belted Kingfisher",
+        "Eastern Bluebird",
+        "various warblers"
+      ],
+      "habitat": [
+        "riparian",
+        "grassland",
+        "wetland"
+      ],
+      "best_months": [
+        4,
+        5,
+        10,
+        11
+      ]
     },
-    "badges": ["birding_hotspot", "family_first", "most_scenic", "best_beginner"],
+    "badges": [
+      "birding_hotspot",
+      "family_first",
+      "most_scenic",
+      "best_beginner"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "garner-state-park",
     "name": "Garner State Park",
-    "short_desc": "The Hill Country's most popular overnight destination — swimming, camping, and hiking on the Frio River, 90 minutes from SA.",
-    "long_desc": "Garner State Park on the Frio River is the most visited state park in Texas, and for good reason. The crystal-clear Frio River runs cold even in July, the bald cypress canopy is exceptional, and the overnight camping under the stars is hard to beat. Hiking trails climb limestone bluffs above the river for sweeping canyon views. Reservations are essential — it books out months in advance for summer weekends. Day-use passes also fill up fast.",
+    "short_desc": "The Hill Country's most popular overnight destination \u2014 swimming, camping, and hiking on the Frio River, 90 minutes from SA.",
+    "long_desc": "Garner State Park on the Frio River is the most visited state park in Texas, and for good reason. The crystal-clear Frio River runs cold even in July, the bald cypress canopy is exceptional, and the overnight camping under the stars is hard to beat. Hiking trails climb limestone bluffs above the river for sweeping canyon views. Reservations are essential \u2014 it books out months in advance for summer weekends. Day-use passes also fill up fast.",
     "address": "234 RR 1050, Concan, TX 78838",
     "lat": 29.5897,
     "lng": -99.7458,
@@ -873,14 +1394,22 @@
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["hiking", "camping", "kayaking"],
+    "activities": [
+      "hiking",
+      "camping",
+      "kayaking"
+    ],
     "shade_rating": 4,
     "shade_notes": "Dense bald cypress canopy along the river and campground. Bluff trails are more exposed.",
     "best_time_summer": "anytime",
     "heat_warning": false,
     "distance_miles": 6.0,
     "elevation_gain_ft": 520,
-    "surface": ["dirt", "rocky", "paved"],
+    "surface": [
+      "dirt",
+      "rocky",
+      "paved"
+    ],
     "terrain": "hilly",
     "route_type": "network",
     "difficulty": "moderate",
@@ -893,15 +1422,29 @@
     "kid_friendly": true,
     "ada_accessible": "partial",
     "bike_racks": false,
-    "best_months": [5, 6, 7, 8, 9, 10],
+    "best_months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
     "flood_prone": true,
-    "drought_impact": "Frio River can drop in severe drought — check water levels before summer trips.",
-    "seasonal_notes": "Book camping 6+ months ahead for summer weekends — it sells out. Day-use also fills fast. The Frio River is cold enough to swim in July. Jukebox dances on summer evenings are a Texas tradition.",
+    "drought_impact": "Frio River can drop in severe drought \u2014 check water levels before summer trips.",
+    "seasonal_notes": "Book camping 6+ months ahead for summer weekends \u2014 it sells out. Day-use also fills fast. The Frio River is cold enough to swim in July. Jukebox dances on summer evenings are a Texas tradition.",
     "camping": {
-      "site_types": ["tent", "rv"],
+      "site_types": [
+        "tent",
+        "rv"
+      ],
       "num_sites": 364,
       "reservations": "required",
-      "hookups": ["water", "electric", "full"]
+      "hookups": [
+        "water",
+        "electric",
+        "full"
+      ]
     },
     "kayak": {
       "launch_type": "carry_in",
@@ -909,31 +1452,46 @@
       "current": "mild",
       "drought_risk": "medium"
     },
-    "badges": ["sa_summer_pick", "most_scenic", "local_favorite", "sunset_spot"],
+    "badges": [
+      "sa_summer_pick",
+      "most_scenic",
+      "local_favorite",
+      "sunset_spot"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "guadalupe-river-state-park",
     "name": "Guadalupe River State Park",
-    "short_desc": "Clear cypress-lined river 40 minutes from SA — the best swim-and-hike day trip when SA temperatures hit triple digits.",
+    "short_desc": "Clear cypress-lined river 40 minutes from SA \u2014 the best swim-and-hike day trip when SA temperatures hit triple digits.",
     "long_desc": "Guadalupe River State Park sits on a beautiful stretch of the Guadalupe River near Bulverde, 40 minutes north of San Antonio. Towering bald cypress trees line the riverbank, providing excellent shade and keeping the river corridor noticeably cooler than surrounding areas. Tubing, swimming, and kayaking on the river are the main draws in summer. The hiking trails explore cedar and oak uplands above the river with occasional limestone bluff views. A reliable summer escape when SA gets unbearable.",
     "address": "3350 Park Road 31, Spring Branch, TX 78070",
-    "lat": 29.8608,
-    "lng": -98.4897,
+    "lat": 29.8723,
+    "lng": -98.4845,
     "area": "Hill Country Edge",
     "website": "https://tpwd.texas.gov/state-parks/guadalupe-river",
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["hiking", "kayaking", "camping", "swimming", "fishing"],
+    "activities": [
+      "hiking",
+      "kayaking",
+      "camping",
+      "swimming",
+      "fishing"
+    ],
     "shade_rating": 4,
     "shade_notes": "Dense bald cypress canopy along the river corridor; upland trails more exposed.",
     "best_time_summer": "anytime",
     "heat_warning": false,
     "distance_miles": 8.0,
     "elevation_gain_ft": 220,
-    "surface": ["dirt", "rocky", "paved"],
+    "surface": [
+      "dirt",
+      "rocky",
+      "paved"
+    ],
     "terrain": "rolling",
     "route_type": "network",
     "difficulty": "easy",
@@ -946,15 +1504,28 @@
     "kid_friendly": true,
     "ada_accessible": "partial",
     "bike_racks": false,
-    "best_months": [5, 6, 7, 8, 9, 10],
+    "best_months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
     "flood_prone": true,
     "drought_impact": "River levels drop in drought; swimming is less appealing below certain flows.",
-    "seasonal_notes": "Day-use capacity fills fast on summer weekends — arrive before 9am or book in advance. Tubes available for rent nearby. Flash flooding possible after heavy rain upstream.",
+    "seasonal_notes": "Day-use capacity fills fast on summer weekends \u2014 arrive before 9am or book in advance. Tubes available for rent nearby. Flash flooding possible after heavy rain upstream.",
     "camping": {
-      "site_types": ["tent", "rv"],
+      "site_types": [
+        "tent",
+        "rv"
+      ],
       "num_sites": 85,
       "reservations": "required",
-      "hookups": ["water", "electric"]
+      "hookups": [
+        "water",
+        "electric"
+      ]
     },
     "kayak": {
       "launch_type": "carry_in",
@@ -962,31 +1533,42 @@
       "current": "mild",
       "drought_risk": "medium"
     },
-    "badges": ["sa_summer_pick", "family_first", "most_scenic", "local_favorite"],
+    "badges": [
+      "sa_summer_pick",
+      "family_first",
+      "most_scenic",
+      "local_favorite"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "enchanted-rock-sna",
     "name": "Enchanted Rock State Natural Area",
-    "short_desc": "A 425-foot granite dome rising from the Hill Country — the most iconic hike within 90 minutes of San Antonio.",
-    "long_desc": "Enchanted Rock is one of the largest exposed plutons in the United States — a massive pink granite dome that rises 425 feet above the surrounding Hill Country and offers sweeping 360-degree views. The Summit Trail is a steep scramble on open rock; the base loop is an easier route through granite outcrops and oak woodland. Zero shade on the summit. Stargazing is exceptional after dark from the dome. Day-use passes sell out on most weekends — book online in advance.",
+    "short_desc": "A 425-foot granite dome rising from the Hill Country \u2014 the most iconic hike within 90 minutes of San Antonio.",
+    "long_desc": "Enchanted Rock is one of the largest exposed plutons in the United States \u2014 a massive pink granite dome that rises 425 feet above the surrounding Hill Country and offers sweeping 360-degree views. The Summit Trail is a steep scramble on open rock; the base loop is an easier route through granite outcrops and oak woodland. Zero shade on the summit. Stargazing is exceptional after dark from the dome. Day-use passes sell out on most weekends \u2014 book online in advance.",
     "address": "16710 Ranch Road 965, Fredericksburg, TX 78624",
-    "lat": 30.5050,
+    "lat": 30.505,
     "lng": -98.8197,
     "area": "Hill Country",
     "website": "https://tpwd.texas.gov/state-parks/enchanted-rock",
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["hiking", "camping", "nature_watching"],
+    "activities": [
+      "hiking",
+      "camping",
+      "nature_watching"
+    ],
     "shade_rating": 1,
     "shade_notes": "Virtually no shade on the summit dome. The base loop has limited shade from oak mottes. Avoid midday in summer.",
     "best_time_summer": "early_morning",
     "heat_warning": true,
     "distance_miles": 4.5,
     "elevation_gain_ft": 650,
-    "surface": ["rocky"],
+    "surface": [
+      "rocky"
+    ],
     "terrain": "hilly",
     "route_type": "network",
     "difficulty": "moderate",
@@ -999,41 +1581,67 @@
     "kid_friendly": true,
     "ada_accessible": "no",
     "bike_racks": false,
-    "best_months": [10, 11, 12, 1, 2, 3, 4],
+    "best_months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
     "flood_prone": false,
     "drought_impact": null,
-    "seasonal_notes": "Day-use passes sell out weeks ahead on spring and fall weekends — book the moment they open (2 weeks prior). Summer sunrise hikes start at 6am before the heat. Bring 2L+ water — none on the summit.",
+    "seasonal_notes": "Day-use passes sell out weeks ahead on spring and fall weekends \u2014 book the moment they open (2 weeks prior). Summer sunrise hikes start at 6am before the heat. Bring 2L+ water \u2014 none on the summit.",
     "camping": {
-      "site_types": ["tent", "primitive"],
+      "site_types": [
+        "tent",
+        "primitive"
+      ],
       "num_sites": 40,
       "reservations": "required",
-      "hookups": ["none"]
+      "hookups": [
+        "none"
+      ]
     },
-    "badges": ["most_scenic", "sunset_spot", "sunrise_spot", "local_favorite", "avoid_midday"],
+    "badges": [
+      "most_scenic",
+      "sunset_spot",
+      "sunrise_spot",
+      "local_favorite",
+      "avoid_midday"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "canyon-lake",
     "name": "Canyon Lake",
-    "short_desc": "8,240 acres of clear Hill Country reservoir 45 minutes from SA — the go-to for open-water kayaking and lakeside camping.",
+    "short_desc": "8,240 acres of clear Hill Country reservoir 45 minutes from SA \u2014 the go-to for open-water kayaking and lakeside camping.",
     "long_desc": "Canyon Lake is a US Army Corps of Engineers reservoir on the Guadalupe River near New Braunfels, formed by Canyon Dam. Its clear water and hill country surroundings make it one of the nicest lakes within easy range of San Antonio. Multiple USACE parks around the perimeter offer boat ramps, camping, and swimming areas. The Guadalupe below the dam runs frigid year-round, making it a popular trout fishing destination in an otherwise warm-water state.",
     "address": "601 Canyon Dam Rd, Canyon Lake, TX 78133",
-    "lat": 29.8700,
-    "lng": -98.2000,
+    "lat": 29.87,
+    "lng": -98.2,
     "area": "Hill Country Edge",
     "website": "https://www.swf-wc.usace.army.mil/canyon/",
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["kayaking", "camping", "fishing", "swimming"],
+    "activities": [
+      "kayaking",
+      "camping",
+      "fishing",
+      "swimming"
+    ],
     "shade_rating": 2,
     "shade_notes": "Open lake with limited shade. Some shade at shoreline campsites with cedar and oak.",
     "best_time_summer": "early_morning",
     "heat_warning": false,
     "distance_miles": null,
     "elevation_gain_ft": 0,
-    "surface": ["water"],
+    "surface": [
+      "water"
+    ],
     "terrain": "flat",
     "route_type": "network",
     "difficulty": "easy",
@@ -1046,15 +1654,28 @@
     "kid_friendly": true,
     "ada_accessible": "partial",
     "bike_racks": false,
-    "best_months": [5, 6, 7, 8, 9, 10],
+    "best_months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
     "flood_prone": false,
     "drought_impact": "Lake levels drop in drought but the reservoir is large enough to remain usable.",
-    "seasonal_notes": "Multiple parks around the lake — Cranes Mill, Potter's Creek, Canyon Park. Below-dam Guadalupe section offers cold-water fishing. Boat rental available at Canyon Lake Marina.",
+    "seasonal_notes": "Multiple parks around the lake \u2014 Cranes Mill, Potter's Creek, Canyon Park. Below-dam Guadalupe section offers cold-water fishing. Boat rental available at Canyon Lake Marina.",
     "camping": {
-      "site_types": ["tent", "rv"],
+      "site_types": [
+        "tent",
+        "rv"
+      ],
       "num_sites": 120,
       "reservations": "recommended",
-      "hookups": ["water", "electric"]
+      "hookups": [
+        "water",
+        "electric"
+      ]
     },
     "kayak": {
       "launch_type": "concrete_ramp",
@@ -1062,15 +1683,19 @@
       "current": "calm",
       "drought_risk": "low"
     },
-    "badges": ["family_first", "local_favorite", "most_scenic"],
+    "badges": [
+      "family_first",
+      "local_favorite",
+      "most_scenic"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "pedernales-falls-state-park",
     "name": "Pedernales Falls State Park",
-    "short_desc": "Limestone falls, swimming holes, and 23 miles of trails along the Pedernales River — 90 minutes from SA.",
-    "long_desc": "Pedernales Falls State Park is centered on the Pedernales River's dramatic staircase limestone falls — sheets of water cascading over ancient rock layers in a wide, photogenic formation. Swimming in the river pools below is a summer highlight. The trail network extends through cedar-juniper woodland and open grassland, with good birding throughout. Flash flooding is a serious risk — swimming areas close frequently and without warning.",
+    "short_desc": "Limestone falls, swimming holes, and 23 miles of trails along the Pedernales River \u2014 90 minutes from SA.",
+    "long_desc": "Pedernales Falls State Park is centered on the Pedernales River's dramatic staircase limestone falls \u2014 sheets of water cascading over ancient rock layers in a wide, photogenic formation. Swimming in the river pools below is a summer highlight. The trail network extends through cedar-juniper woodland and open grassland, with good birding throughout. Flash flooding is a serious risk \u2014 swimming areas close frequently and without warning.",
     "address": "2585 Park Road 6026, Johnson City, TX 78636",
     "lat": 30.3089,
     "lng": -98.2567,
@@ -1079,14 +1704,22 @@
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["hiking", "camping", "birding", "fishing"],
+    "activities": [
+      "hiking",
+      "camping",
+      "birding",
+      "fishing"
+    ],
     "shade_rating": 2,
     "shade_notes": "Exposed at the falls overlook and river. Some shade on woodland trails inland.",
     "best_time_summer": "early_morning",
     "heat_warning": true,
     "distance_miles": 23.0,
     "elevation_gain_ft": 400,
-    "surface": ["dirt", "rocky"],
+    "surface": [
+      "dirt",
+      "rocky"
+    ],
     "terrain": "rolling",
     "route_type": "network",
     "difficulty": "moderate",
@@ -1099,30 +1732,66 @@
     "kid_friendly": true,
     "ada_accessible": "partial",
     "bike_racks": false,
-    "best_months": [3, 4, 5, 10, 11, 12, 1, 2],
+    "best_months": [
+      3,
+      4,
+      5,
+      10,
+      11,
+      12,
+      1,
+      2
+    ],
     "flood_prone": true,
     "drought_impact": "River levels and swimming area availability vary significantly with rainfall.",
-    "seasonal_notes": "Flash flood risk is real — the swimming area closes without warning. Check park alerts before going. The falls are most dramatic after rain but also flood-closed. Sunrise at the falls is worth the early drive.",
+    "seasonal_notes": "Flash flood risk is real \u2014 the swimming area closes without warning. Check park alerts before going. The falls are most dramatic after rain but also flood-closed. Sunrise at the falls is worth the early drive.",
     "camping": {
-      "site_types": ["tent", "rv", "primitive"],
+      "site_types": [
+        "tent",
+        "rv",
+        "primitive"
+      ],
       "num_sites": 69,
       "reservations": "required",
-      "hookups": ["water", "electric", "none"]
+      "hookups": [
+        "water",
+        "electric",
+        "none"
+      ]
     },
     "birding": {
-      "notable_species": ["Golden-cheeked Warbler", "Black-capped Vireo", "Painted Bunting", "Yellow-billed Cuckoo"],
-      "habitat": ["oak_woodland", "grassland", "riparian"],
-      "best_months": [4, 5, 10, 11]
+      "notable_species": [
+        "Golden-cheeked Warbler",
+        "Black-capped Vireo",
+        "Painted Bunting",
+        "Yellow-billed Cuckoo"
+      ],
+      "habitat": [
+        "oak_woodland",
+        "grassland",
+        "riparian"
+      ],
+      "best_months": [
+        4,
+        5,
+        10,
+        11
+      ]
     },
-    "badges": ["most_scenic", "birding_hotspot", "sunrise_spot", "flood_risk"],
+    "badges": [
+      "most_scenic",
+      "birding_hotspot",
+      "sunrise_spot",
+      "flood_risk"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "lost-maples-state-natural-area",
     "name": "Lost Maples State Natural Area",
-    "short_desc": "Texas's best fall foliage — a remote canyon holding a relic population of Uvalde bigtooth maples 2 hours from SA.",
-    "long_desc": "Lost Maples State Natural Area protects a relict population of Uvalde bigtooth maples that survived in the cool, moist canyons of the Sabinal River long after the last ice age. In October and early November, these maples turn vivid shades of red, orange, and yellow — producing fall color more typical of New England than Texas. The trails descend into steep limestone canyons with the Sabinal River running through. Outside of fall, it's a peaceful, undervisited gem with strong birding and dramatic canyon scenery.",
+    "short_desc": "Texas's best fall foliage \u2014 a remote canyon holding a relic population of Uvalde bigtooth maples 2 hours from SA.",
+    "long_desc": "Lost Maples State Natural Area protects a relict population of Uvalde bigtooth maples that survived in the cool, moist canyons of the Sabinal River long after the last ice age. In October and early November, these maples turn vivid shades of red, orange, and yellow \u2014 producing fall color more typical of New England than Texas. The trails descend into steep limestone canyons with the Sabinal River running through. Outside of fall, it's a peaceful, undervisited gem with strong birding and dramatic canyon scenery.",
     "address": "37221 FM 187, Vanderpool, TX 78885",
     "lat": 29.8091,
     "lng": -99.5722,
@@ -1131,14 +1800,21 @@
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["hiking", "camping", "birding"],
+    "activities": [
+      "hiking",
+      "camping",
+      "birding"
+    ],
     "shade_rating": 4,
     "shade_notes": "Canyon trails well-shaded by maples, sycamores, and canyon oaks. Ridge trails more exposed.",
     "best_time_summer": "early_morning",
     "heat_warning": false,
     "distance_miles": 10.5,
     "elevation_gain_ft": 700,
-    "surface": ["dirt", "rocky"],
+    "surface": [
+      "dirt",
+      "rocky"
+    ],
     "terrain": "hilly",
     "route_type": "network",
     "difficulty": "moderate",
@@ -1151,46 +1827,83 @@
     "kid_friendly": false,
     "ada_accessible": "no",
     "bike_racks": false,
-    "best_months": [10, 11, 3, 4, 5],
+    "best_months": [
+      10,
+      11,
+      3,
+      4,
+      5
+    ],
     "flood_prone": true,
     "drought_impact": "Low water in the Sabinal reduces the lushness of canyon vegetation.",
-    "seasonal_notes": "Fall color peaks late October through mid-November — day-use passes sell out weeks ahead. Book camping 5–6 months out for fall weekends. Off-season (spring, early summer) is beautiful and crowd-free.",
+    "seasonal_notes": "Fall color peaks late October through mid-November \u2014 day-use passes sell out weeks ahead. Book camping 5\u20136 months out for fall weekends. Off-season (spring, early summer) is beautiful and crowd-free.",
     "camping": {
-      "site_types": ["tent", "primitive"],
+      "site_types": [
+        "tent",
+        "primitive"
+      ],
       "num_sites": 30,
       "reservations": "required",
-      "hookups": ["none"]
+      "hookups": [
+        "none"
+      ]
     },
     "birding": {
-      "notable_species": ["Green Kingfisher", "Zone-tailed Hawk", "Colima Warbler", "Black-capped Vireo"],
-      "habitat": ["riparian", "oak_woodland"],
-      "best_months": [4, 5, 10, 11]
+      "notable_species": [
+        "Green Kingfisher",
+        "Zone-tailed Hawk",
+        "Colima Warbler",
+        "Black-capped Vireo"
+      ],
+      "habitat": [
+        "riparian",
+        "oak_woodland"
+      ],
+      "best_months": [
+        4,
+        5,
+        10,
+        11
+      ]
     },
-    "badges": ["most_scenic", "birding_hotspot", "hidden_gem", "sunrise_spot"],
+    "badges": [
+      "most_scenic",
+      "birding_hotspot",
+      "hidden_gem",
+      "sunrise_spot"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "blanco-state-park",
     "name": "Blanco State Park",
-    "short_desc": "A small park with outsized appeal — the clear, spring-fed Blanco River runs through it and the swimming is excellent.",
-    "long_desc": "Blanco State Park is one of the smallest Texas state parks at just 105 acres, but it sits right on the spring-fed Blanco River in the town of Blanco, 50 minutes from San Antonio. The park offers direct river access for swimming, tubing, fishing, and kayaking. A short trail runs along the riverbank through pecan and cypress shade. The town of Blanco is worth exploring — good food, local wineries, and a charming square. Combine with a drive through the Hill Country for a full day.",
+    "short_desc": "A small park with outsized appeal \u2014 the clear, spring-fed Blanco River runs through it and the swimming is excellent.",
+    "long_desc": "Blanco State Park is one of the smallest Texas state parks at just 105 acres, but it sits right on the spring-fed Blanco River in the town of Blanco, 50 minutes from San Antonio. The park offers direct river access for swimming, tubing, fishing, and kayaking. A short trail runs along the riverbank through pecan and cypress shade. The town of Blanco is worth exploring \u2014 good food, local wineries, and a charming square. Combine with a drive through the Hill Country for a full day.",
     "address": "101 Park Road 23, Blanco, TX 78606",
-    "lat": 30.0958,
-    "lng": -98.4261,
+    "lat": 30.0896,
+    "lng": -98.4252,
     "area": "Hill Country Edge",
     "website": "https://tpwd.texas.gov/state-parks/blanco",
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["hiking", "kayaking", "camping", "fishing"],
+    "activities": [
+      "hiking",
+      "kayaking",
+      "camping",
+      "fishing"
+    ],
     "shade_rating": 4,
     "shade_notes": "Mature pecan and cypress canopy along the river provides consistent shade.",
     "best_time_summer": "anytime",
     "heat_warning": false,
     "distance_miles": 1.5,
     "elevation_gain_ft": 20,
-    "surface": ["paved", "dirt"],
+    "surface": [
+      "paved",
+      "dirt"
+    ],
     "terrain": "flat",
     "route_type": "loop",
     "difficulty": "easy",
@@ -1203,15 +1916,28 @@
     "kid_friendly": true,
     "ada_accessible": "partial",
     "bike_racks": false,
-    "best_months": [5, 6, 7, 8, 9, 10],
+    "best_months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
     "flood_prone": true,
     "drought_impact": "Blanco River can drop significantly in drought. Check conditions before swimming-focused trips.",
-    "seasonal_notes": "The Blanco River floods — sometimes dramatically. Check park status before driving. Combine with Blanco's wineries and local restaurants for a full day trip.",
+    "seasonal_notes": "The Blanco River floods \u2014 sometimes dramatically. Check park status before driving. Combine with Blanco's wineries and local restaurants for a full day trip.",
     "camping": {
-      "site_types": ["tent", "rv"],
+      "site_types": [
+        "tent",
+        "rv"
+      ],
       "num_sites": 31,
       "reservations": "recommended",
-      "hookups": ["water", "electric"]
+      "hookups": [
+        "water",
+        "electric"
+      ]
     },
     "kayak": {
       "launch_type": "carry_in",
@@ -1219,14 +1945,19 @@
       "current": "mild",
       "drought_risk": "high"
     },
-    "badges": ["sa_summer_pick", "family_first", "most_scenic", "hidden_gem"],
+    "badges": [
+      "sa_summer_pick",
+      "family_first",
+      "most_scenic",
+      "hidden_gem"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1601242926956-9fec3db8db46?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "palmetto-state-park",
     "name": "Palmetto State Park",
-    "short_desc": "A subtropical oasis unlike anything else near SA — dwarf palmettos, artesian springs, and world-class birding near Gonzales.",
+    "short_desc": "A subtropical oasis unlike anything else near SA \u2014 dwarf palmettos, artesian springs, and world-class birding near Gonzales.",
     "long_desc": "Palmetto State Park is an anomaly in Central Texas: a lush, subtropical environment fed by artesian springs where dwarf palmetto palms grow alongside the San Marcos River. The park looks like it belongs in the Gulf Coast lowlands, not the Texas Hill Country. The combination of water, dense vegetation, and habitat diversity makes it one of the top birding sites in Texas. Trails are short and easy, but birders come from across the country during spring migration. The artesian well still flows year-round.",
     "address": "78 Park Road 11 S, Gonzales, TX 78629",
     "lat": 29.5928,
@@ -1236,14 +1967,22 @@
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["hiking", "birding", "camping", "fishing"],
+    "activities": [
+      "hiking",
+      "birding",
+      "camping",
+      "fishing"
+    ],
     "shade_rating": 5,
     "shade_notes": "Dense riparian and palmetto canopy throughout. One of the most shaded state parks in the region.",
     "best_time_summer": "anytime",
     "heat_warning": false,
     "distance_miles": 3.0,
     "elevation_gain_ft": 30,
-    "surface": ["paved", "dirt"],
+    "surface": [
+      "paved",
+      "dirt"
+    ],
     "terrain": "flat",
     "route_type": "network",
     "difficulty": "easy",
@@ -1256,46 +1995,85 @@
     "kid_friendly": true,
     "ada_accessible": "partial",
     "bike_racks": false,
-    "best_months": [3, 4, 5, 10, 11],
+    "best_months": [
+      3,
+      4,
+      5,
+      10,
+      11
+    ],
     "flood_prone": true,
     "drought_impact": "Artesian spring continues flowing even in drought; river levels drop.",
-    "seasonal_notes": "Spring migration (April–May) is exceptional — warblers, vireos, and flycatchers in numbers unusual for inland Texas. Bring bug spray in summer.",
+    "seasonal_notes": "Spring migration (April\u2013May) is exceptional \u2014 warblers, vireos, and flycatchers in numbers unusual for inland Texas. Bring bug spray in summer.",
     "camping": {
-      "site_types": ["tent", "rv"],
+      "site_types": [
+        "tent",
+        "rv"
+      ],
       "num_sites": 36,
       "reservations": "recommended",
-      "hookups": ["water", "electric"]
+      "hookups": [
+        "water",
+        "electric"
+      ]
     },
     "birding": {
-      "notable_species": ["Prothonotary Warbler", "Yellow-throated Warbler", "Wood Duck", "Roseate Spoonbill", "Anhinga"],
-      "habitat": ["riparian", "wetland"],
-      "best_months": [4, 5, 10, 11]
+      "notable_species": [
+        "Prothonotary Warbler",
+        "Yellow-throated Warbler",
+        "Wood Duck",
+        "Roseate Spoonbill",
+        "Anhinga"
+      ],
+      "habitat": [
+        "riparian",
+        "wetland"
+      ],
+      "best_months": [
+        4,
+        5,
+        10,
+        11
+      ]
     },
-    "badges": ["birding_hotspot", "sa_summer_pick", "hidden_gem", "most_scenic"],
+    "badges": [
+      "birding_hotspot",
+      "sa_summer_pick",
+      "hidden_gem",
+      "most_scenic"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "kerrville-schreiner-park",
     "name": "Kerrville-Schreiner Park",
-    "short_desc": "Quiet Guadalupe River camping and hiking 75 minutes from SA — the Hill Country destination without the weekend crowds.",
+    "short_desc": "Quiet Guadalupe River camping and hiking 75 minutes from SA \u2014 the Hill Country destination without the weekend crowds.",
     "long_desc": "Kerrville-Schreiner Park is a 517-acre city park on the Guadalupe River just south of Kerrville, operated by the City of Kerrville. It offers some of the Hill Country's best camping under mature live oak and cedar along the river. The hiking trails wander through rocky cedar-juniper terrain with good views of the river valley. Less crowded than Garner and Guadalupe River state parks, and often has availability when those parks are full.",
     "address": "2385 Bandera Hwy, Kerrville, TX 78028",
-    "lat": 30.0011,
-    "lng": -99.1389,
+    "lat": 30.0108,
+    "lng": -99.1205,
     "area": "Hill Country",
     "website": "https://www.kerrvilletx.gov/485/Kerrville-Schreiner-Park",
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["hiking", "camping", "fishing", "kayaking"],
+    "activities": [
+      "hiking",
+      "camping",
+      "fishing",
+      "kayaking"
+    ],
     "shade_rating": 3,
     "shade_notes": "Good shade along the river and in campground; more exposed on ridge hiking trails.",
     "best_time_summer": "early_morning",
     "heat_warning": false,
     "distance_miles": 7.5,
     "elevation_gain_ft": 350,
-    "surface": ["dirt", "rocky"],
+    "surface": [
+      "dirt",
+      "rocky"
+    ],
     "terrain": "rolling",
     "route_type": "network",
     "difficulty": "moderate",
@@ -1308,15 +2086,29 @@
     "kid_friendly": true,
     "ada_accessible": "partial",
     "bike_racks": false,
-    "best_months": [3, 4, 5, 10, 11, 12],
+    "best_months": [
+      3,
+      4,
+      5,
+      10,
+      11,
+      12
+    ],
     "flood_prone": true,
     "drought_impact": "Guadalupe levels drop in drought but swimming is usually viable at normal flow.",
     "seasonal_notes": "Good fallback when Garner State Park is full. The campground is well-maintained. Kerrville downtown has good food and the Museum of Western Art.",
     "camping": {
-      "site_types": ["tent", "rv"],
+      "site_types": [
+        "tent",
+        "rv"
+      ],
       "num_sites": 122,
       "reservations": "recommended",
-      "hookups": ["water", "electric", "full"]
+      "hookups": [
+        "water",
+        "electric",
+        "full"
+      ]
     },
     "kayak": {
       "launch_type": "carry_in",
@@ -1324,15 +2116,19 @@
       "current": "mild",
       "drought_risk": "medium"
     },
-    "badges": ["hidden_gem", "family_first", "local_favorite"],
+    "badges": [
+      "hidden_gem",
+      "family_first",
+      "local_favorite"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1476820865390-c52aeebb9891?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "san-marcos-river",
-    "name": "San Marcos River — Rio Vista Park",
-    "short_desc": "The clearest spring-fed river in Texas — 72°F year-round tubing and kayaking 45 minutes from SA.",
-    "long_desc": "The San Marcos River flows from one of the largest springs in the world at Spring Lake, maintaining a constant 72°F year-round. Rio Vista Park in downtown San Marcos provides the main public access point with a small dam that creates a tubing chute and calm swimming area. The river corridor runs through city parkland with cypress and pecan shade. Clear enough to see the bottom in 8 feet of water. Texas State University paddling club keeps tubes and kayaks rentable nearby.",
+    "name": "San Marcos River \u2014 Rio Vista Park",
+    "short_desc": "The clearest spring-fed river in Texas \u2014 72\u00b0F year-round tubing and kayaking 45 minutes from SA.",
+    "long_desc": "The San Marcos River flows from one of the largest springs in the world at Spring Lake, maintaining a constant 72\u00b0F year-round. Rio Vista Park in downtown San Marcos provides the main public access point with a small dam that creates a tubing chute and calm swimming area. The river corridor runs through city parkland with cypress and pecan shade. Clear enough to see the bottom in 8 feet of water. Texas State University paddling club keeps tubes and kayaks rentable nearby.",
     "address": "555 CM Allen Pkwy, San Marcos, TX 78666",
     "lat": 29.8784,
     "lng": -97.9445,
@@ -1341,14 +2137,21 @@
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["kayaking", "hiking", "nature_watching"],
+    "activities": [
+      "kayaking",
+      "hiking",
+      "nature_watching"
+    ],
     "shade_rating": 3,
     "shade_notes": "Cypress and pecan shade along the river corridor; open in some sections near the dam.",
     "best_time_summer": "anytime",
     "heat_warning": false,
     "distance_miles": 2.0,
     "elevation_gain_ft": 10,
-    "surface": ["paved", "water"],
+    "surface": [
+      "paved",
+      "water"
+    ],
     "terrain": "flat",
     "route_type": "network",
     "difficulty": "easy",
@@ -1361,41 +2164,59 @@
     "kid_friendly": true,
     "ada_accessible": "partial",
     "bike_racks": true,
-    "best_months": [5, 6, 7, 8, 9, 10],
+    "best_months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
     "flood_prone": true,
-    "drought_impact": "Spring-fed — largely drought-proof, though flow reduces slightly in severe drought.",
-    "seasonal_notes": "The 72°F water is the main draw in summer. Tube rentals available. Texas State University campus nearby. Combine with a visit to Wonder World Cave.",
+    "drought_impact": "Spring-fed \u2014 largely drought-proof, though flow reduces slightly in severe drought.",
+    "seasonal_notes": "The 72\u00b0F water is the main draw in summer. Tube rentals available. Texas State University campus nearby. Combine with a visit to Wonder World Cave.",
     "kayak": {
       "launch_type": "carry_in",
       "water_body": "river",
       "current": "mild",
       "drought_risk": "low"
     },
-    "badges": ["sa_summer_pick", "family_first", "most_scenic", "best_beginner"],
+    "badges": [
+      "sa_summer_pick",
+      "family_first",
+      "most_scenic",
+      "best_beginner"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1601242926956-9fec3db8db46?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "medina-lake",
     "name": "Medina Lake",
-    "short_desc": "San Antonio's closest large reservoir — kayaking, fishing, and quiet coves 50 minutes southwest of the city.",
-    "long_desc": "Medina Lake is a 5,575-acre reservoir formed by Medina Dam on the Medina River, about 50 minutes southwest of San Antonio. It's the closest large lake to the city and popular for weekend boating, fishing, and kayaking. The lake level fluctuates significantly with drought — during the 2011–2015 drought it dropped to under 5% capacity, exposing the original river canyon. It's recovered substantially since and is now a reliable outdoor destination. Several private marinas provide launch access.",
+    "short_desc": "San Antonio's closest large reservoir \u2014 kayaking, fishing, and quiet coves 50 minutes southwest of the city.",
+    "long_desc": "Medina Lake is a 5,575-acre reservoir formed by Medina Dam on the Medina River, about 50 minutes southwest of San Antonio. It's the closest large lake to the city and popular for weekend boating, fishing, and kayaking. The lake level fluctuates significantly with drought \u2014 during the 2011\u20132015 drought it dropped to under 5% capacity, exposing the original river canyon. It's recovered substantially since and is now a reliable outdoor destination. Several private marinas provide launch access.",
     "address": "Medina Lake, Lakehills, TX 78063",
-    "lat": 29.5469,
-    "lng": -99.0242,
+    "lat": 29.568,
+    "lng": -98.9573,
     "area": "Hill Country Edge",
     "website": null,
     "status": "active",
     "verified": true,
     "updated_at": "2026-04-30",
-    "activities": ["kayaking", "fishing", "birding"],
+    "activities": [
+      "kayaking",
+      "fishing",
+      "birding"
+    ],
     "shade_rating": 1,
     "shade_notes": "Open water with no shade. Some shade at marina and picnic areas.",
     "best_time_summer": "early_morning",
     "heat_warning": true,
     "distance_miles": null,
     "elevation_gain_ft": 0,
-    "surface": ["water"],
+    "surface": [
+      "water"
+    ],
     "terrain": "flat",
     "route_type": "network",
     "difficulty": "easy",
@@ -1408,10 +2229,17 @@
     "kid_friendly": true,
     "ada_accessible": "no",
     "bike_racks": false,
-    "best_months": [3, 4, 5, 10, 11, 12],
+    "best_months": [
+      3,
+      4,
+      5,
+      10,
+      11,
+      12
+    ],
     "flood_prone": false,
-    "drought_impact": "Lake level drops dramatically in drought — check current level before planning a trip. Can fall below 50% capacity in extended drought.",
-    "seasonal_notes": "Check lake level before visiting — Medina is drought-sensitive. Access via Lakehills Marina or Medina Lake Park.",
+    "drought_impact": "Lake level drops dramatically in drought \u2014 check current level before planning a trip. Can fall below 50% capacity in extended drought.",
+    "seasonal_notes": "Check lake level before visiting \u2014 Medina is drought-sensitive. Access via Lakehills Marina or Medina Lake Park.",
     "kayak": {
       "launch_type": "concrete_ramp",
       "water_body": "lake",
@@ -1419,11 +2247,29 @@
       "drought_risk": "high"
     },
     "birding": {
-      "notable_species": ["Osprey", "Bald Eagle", "Great Blue Heron", "various ducks"],
-      "habitat": ["wetland"],
-      "best_months": [10, 11, 12, 1, 2, 3]
+      "notable_species": [
+        "Osprey",
+        "Bald Eagle",
+        "Great Blue Heron",
+        "various ducks"
+      ],
+      "habitat": [
+        "wetland"
+      ],
+      "best_months": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ]
     },
-    "badges": ["local_favorite", "avoid_midday", "flood_risk"],
+    "badges": [
+      "local_favorite",
+      "avoid_midday",
+      "flood_risk"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
@@ -1431,23 +2277,31 @@
     "id": "comanche-lookout-park",
     "name": "Comanche Lookout Park",
     "short_desc": "Highest point in Bexar County with panoramic hilltop trails and disc golf",
-    "long_desc": "At 1,340 feet, Comanche Lookout is the highest natural point in Bexar County, offering sweeping views across San Antonio and the surrounding Hill Country. The 4.8-mile trail network winds through limestone terrain with cedar and live oak. The disc golf course is one of the hilliest in the city. Go early — the exposed hilltop offers zero shade and becomes brutal by mid-morning in summer.",
+    "long_desc": "At 1,340 feet, Comanche Lookout is the highest natural point in Bexar County, offering sweeping views across San Antonio and the surrounding Hill Country. The 4.8-mile trail network winds through limestone terrain with cedar and live oak. The disc golf course is one of the hilliest in the city. Go early \u2014 the exposed hilltop offers zero shade and becomes brutal by mid-morning in summer.",
     "address": "15551 Nacogdoches Rd, San Antonio, TX 78247",
-    "lat": 29.5489,
-    "lng": -98.3584,
+    "lat": 29.5829,
+    "lng": -98.3661,
     "area": "Northeast San Antonio",
     "website": "https://www.sanantonio.gov/ParksAndRec/Parks-Facilities/All-Park-Facilities/comanche-lookout-park",
     "status": "open",
     "verified": true,
     "updated_at": "2025-01-15",
-    "activities": ["hiking", "disc_golf", "dog_walking", "birding"],
+    "activities": [
+      "hiking",
+      "disc_golf",
+      "dog_walking",
+      "birding"
+    ],
     "shade_rating": 1,
     "shade_notes": "Almost entirely exposed hilltop. A few cedar clusters near the trailhead offer minimal shade. This is a sunrise or early morning only location in summer.",
     "best_time_summer": "Before 8am",
     "heat_warning": true,
     "distance_miles": 4.8,
     "elevation_gain_ft": 280,
-    "surface": ["dirt", "limestone"],
+    "surface": [
+      "dirt",
+      "limestone"
+    ],
     "terrain": "hilly",
     "route_type": "loop",
     "difficulty": "moderate",
@@ -1460,16 +2314,30 @@
     "kid_friendly": true,
     "ada_accessible": false,
     "bike_racks": false,
-    "best_months": ["oct", "nov", "dec", "jan", "feb", "mar", "apr"],
+    "best_months": [
+      "oct",
+      "nov",
+      "dec",
+      "jan",
+      "feb",
+      "mar",
+      "apr"
+    ],
     "flood_prone": false,
     "drought_impact": "low",
-    "seasonal_notes": "Avoid May–September unless going before sunrise. Stunning views after a cold front clears the air.",
+    "seasonal_notes": "Avoid May\u2013September unless going before sunrise. Stunning views after a cold front clears the air.",
     "disc_golf": {
       "holes": 18,
-      "tees": ["recreational", "advanced"],
-      "terrain_notes": "Hilly elevation changes make for challenging distance judgments. Bring extra discs — shots off the hilltop can roll far."
+      "tees": [
+        "recreational",
+        "advanced"
+      ],
+      "terrain_notes": "Hilly elevation changes make for challenging distance judgments. Bring extra discs \u2014 shots off the hilltop can roll far."
     },
-    "badges": ["great-views", "dog-friendly"],
+    "badges": [
+      "great-views",
+      "dog-friendly"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
@@ -1486,14 +2354,21 @@
     "status": "open",
     "verified": true,
     "updated_at": "2025-01-15",
-    "activities": ["birding", "hiking", "dog_walking"],
+    "activities": [
+      "birding",
+      "hiking",
+      "dog_walking"
+    ],
     "shade_rating": 3,
     "shade_notes": "Creek corridor offers good shade under mature oaks and pecans. Open grassland sections are exposed. Mostly shaded hiking if you stick to the creek trail.",
     "best_time_summer": "Before 9am",
     "heat_warning": false,
     "distance_miles": 3.2,
     "elevation_gain_ft": 40,
-    "surface": ["dirt", "gravel"],
+    "surface": [
+      "dirt",
+      "gravel"
+    ],
     "terrain": "flat",
     "route_type": "out-and-back",
     "difficulty": "easy",
@@ -1506,16 +2381,33 @@
     "kid_friendly": true,
     "ada_accessible": false,
     "bike_racks": false,
-    "best_months": ["mar", "apr", "may", "sep", "oct", "nov"],
+    "best_months": [
+      "mar",
+      "apr",
+      "may",
+      "sep",
+      "oct",
+      "nov"
+    ],
     "flood_prone": true,
     "drought_impact": "medium",
-    "seasonal_notes": "Peak birding during spring migration (April–May) and fall migration (September–October). Flood closures possible after heavy rain.",
+    "seasonal_notes": "Peak birding during spring migration (April\u2013May) and fall migration (September\u2013October). Flood closures possible after heavy rain.",
     "birding": {
-      "highlight_species": ["Painted Bunting", "Golden-cheeked Warbler", "Yellow-billed Cuckoo", "Dickcissel", "Swainson's Hawk"],
+      "highlight_species": [
+        "Painted Bunting",
+        "Golden-cheeked Warbler",
+        "Yellow-billed Cuckoo",
+        "Dickcissel",
+        "Swainson's Hawk"
+      ],
       "best_season": "spring and fall migration",
       "ebird_hotspot": true
     },
-    "badges": ["bird-sanctuary", "dog-friendly", "hidden-gem"],
+    "badges": [
+      "bird-sanctuary",
+      "dog-friendly",
+      "hidden-gem"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1522926193341-e9ffd686c60f?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
@@ -1532,14 +2424,22 @@
     "status": "open",
     "verified": true,
     "updated_at": "2025-01-15",
-    "activities": ["hiking", "biking", "dog_walking", "birding"],
+    "activities": [
+      "hiking",
+      "biking",
+      "dog_walking",
+      "birding"
+    ],
     "shade_rating": 2,
     "shade_notes": "Scattered cedar and live oak. South-facing slopes are exposed and hot. Morning rides on the shaded north-slope trails are manageable in summer.",
     "best_time_summer": "Before 9am",
     "heat_warning": true,
     "distance_miles": 8.5,
     "elevation_gain_ft": 320,
-    "surface": ["limestone", "dirt"],
+    "surface": [
+      "limestone",
+      "dirt"
+    ],
     "terrain": "hilly",
     "route_type": "loop",
     "difficulty": "moderate",
@@ -1552,11 +2452,21 @@
     "kid_friendly": false,
     "ada_accessible": false,
     "bike_racks": false,
-    "best_months": ["oct", "nov", "dec", "jan", "feb", "mar"],
+    "best_months": [
+      "oct",
+      "nov",
+      "dec",
+      "jan",
+      "feb",
+      "mar"
+    ],
     "flood_prone": false,
     "drought_impact": "low",
-    "seasonal_notes": "Best in cooler months. Trail conditions can be slick after rain. No facilities — bring everything you need.",
-    "badges": ["hidden-gem", "dog-friendly"],
+    "seasonal_notes": "Best in cooler months. Trail conditions can be slick after rain. No facilities \u2014 bring everything you need.",
+    "badges": [
+      "hidden-gem",
+      "dog-friendly"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
@@ -1566,21 +2476,33 @@
     "short_desc": "Sprawling floodplain park in north SA with trails, disc golf, and Olmos Creek",
     "long_desc": "Olmos Basin Park stretches across the floodplain of Olmos Creek just north of Alamo Heights, offering a surprisingly wild feel within the city. The 18-hole disc golf course winds through mature oaks and varied terrain. Paved and unpaved trails make it popular for morning runs, dog walks, and easy family hikes. The creek attracts herons, kingfishers, and wading birds year-round.",
     "address": "100 Jackson Keller Rd, San Antonio, TX 78216",
-    "lat": 29.5058,
-    "lng": -98.4697,
+    "lat": 29.4936,
+    "lng": -98.4938,
     "area": "North San Antonio",
     "website": "https://www.sanantonio.gov/ParksAndRec/Parks-Facilities/All-Park-Facilities/olmos-basin",
     "status": "open",
     "verified": true,
     "updated_at": "2025-01-15",
-    "activities": ["hiking", "biking", "disc_golf", "birding", "dog_walking", "outdoor_fitness", "picnicking"],
+    "activities": [
+      "hiking",
+      "biking",
+      "disc_golf",
+      "birding",
+      "dog_walking",
+      "outdoor_fitness",
+      "picnicking"
+    ],
     "shade_rating": 3,
     "shade_notes": "Mature live oaks and pecans provide good shade along the creek and central areas. Open fields are exposed. Overall more manageable than exposed hilltop parks.",
     "best_time_summer": "Before 10am",
     "heat_warning": false,
     "distance_miles": 3.0,
     "elevation_gain_ft": 30,
-    "surface": ["paved", "dirt", "grass"],
+    "surface": [
+      "paved",
+      "dirt",
+      "grass"
+    ],
     "terrain": "flat",
     "route_type": "loop",
     "difficulty": "easy",
@@ -1593,16 +2515,32 @@
     "kid_friendly": true,
     "ada_accessible": true,
     "bike_racks": true,
-    "best_months": ["oct", "nov", "dec", "jan", "feb", "mar", "apr", "may"],
+    "best_months": [
+      "oct",
+      "nov",
+      "dec",
+      "jan",
+      "feb",
+      "mar",
+      "apr",
+      "may"
+    ],
     "flood_prone": true,
     "drought_impact": "medium",
-    "seasonal_notes": "Can flood after heavy rain — check conditions before visiting. Creek dries significantly in drought years but park remains open.",
+    "seasonal_notes": "Can flood after heavy rain \u2014 check conditions before visiting. Creek dries significantly in drought years but park remains open.",
     "disc_golf": {
       "holes": 18,
-      "tees": ["recreational", "advanced"],
+      "tees": [
+        "recreational",
+        "advanced"
+      ],
       "terrain_notes": "Flat to gently rolling. Mix of open fairways and wooded shots along the creek. Good for beginners."
     },
-    "badges": ["dog-friendly", "kid-friendly", "free"],
+    "badges": [
+      "dog-friendly",
+      "kid-friendly",
+      "free"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
@@ -1610,7 +2548,7 @@
     "id": "hill-country-state-natural-area",
     "name": "Hill Country State Natural Area",
     "short_desc": "Remote 5,370-acre wilderness near Bandera with hiking, mountain biking, and primitive camping",
-    "long_desc": "The most rugged and remote public land close to San Antonio, Hill Country State Natural Area spans 5,370 acres of dramatic limestone terrain southwest of Bandera. Forty miles of multi-use trails wind through creek canyons, granite outcrops, and open grassland. Horses and mountain bikers share the trails with hikers. Primitive campsites sit along West Verde Creek. No generators, no hookups — this is backcountry camping at its best near SA.",
+    "long_desc": "The most rugged and remote public land close to San Antonio, Hill Country State Natural Area spans 5,370 acres of dramatic limestone terrain southwest of Bandera. Forty miles of multi-use trails wind through creek canyons, granite outcrops, and open grassland. Horses and mountain bikers share the trails with hikers. Primitive campsites sit along West Verde Creek. No generators, no hookups \u2014 this is backcountry camping at its best near SA.",
     "address": "10600 Bandera Creek Rd, Bandera, TX 78003",
     "lat": 29.6083,
     "lng": -99.0972,
@@ -1619,14 +2557,23 @@
     "status": "open",
     "verified": true,
     "updated_at": "2025-01-15",
-    "activities": ["hiking", "biking", "camping", "birding"],
+    "activities": [
+      "hiking",
+      "biking",
+      "camping",
+      "birding"
+    ],
     "shade_rating": 2,
     "shade_notes": "Creek canyon bottoms are shaded by cypress and sycamore. Ridge trails are exposed. Plan routes to use creek corridors during the heat of the day.",
     "best_time_summer": "Early morning or stay in camp",
     "heat_warning": true,
     "distance_miles": 40.0,
     "elevation_gain_ft": 800,
-    "surface": ["limestone", "dirt", "rock"],
+    "surface": [
+      "limestone",
+      "dirt",
+      "rock"
+    ],
     "terrain": "hilly",
     "route_type": "loop",
     "difficulty": "strenuous",
@@ -1639,7 +2586,15 @@
     "kid_friendly": false,
     "ada_accessible": false,
     "bike_racks": false,
-    "best_months": ["oct", "nov", "dec", "jan", "feb", "mar", "apr"],
+    "best_months": [
+      "oct",
+      "nov",
+      "dec",
+      "jan",
+      "feb",
+      "mar",
+      "apr"
+    ],
     "flood_prone": true,
     "drought_impact": "medium",
     "seasonal_notes": "West Verde Creek crossings can be impassable after heavy rain. Summer camping requires carrying all water. Fall and winter are ideal. Horses have trail priority.",
@@ -1651,11 +2606,20 @@
       "notes": "Primitive sites only along West Verde Creek. Pack out all waste. Water available at park HQ only."
     },
     "birding": {
-      "highlight_species": ["Golden-cheeked Warbler", "Black-capped Vireo", "Painted Bunting", "Zone-tailed Hawk"],
+      "highlight_species": [
+        "Golden-cheeked Warbler",
+        "Black-capped Vireo",
+        "Painted Bunting",
+        "Zone-tailed Hawk"
+      ],
       "best_season": "spring",
       "ebird_hotspot": true
     },
-    "badges": ["hidden-gem", "great-views", "bird-sanctuary"],
+    "badges": [
+      "hidden-gem",
+      "great-views",
+      "bird-sanctuary"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
@@ -1663,23 +2627,33 @@
     "id": "landa-park",
     "name": "Landa Park & Comal River",
     "short_desc": "Spring-fed river park in New Braunfels with swimming, paddling, and family access",
-    "long_desc": "Landa Park in New Braunfels is built around the headwaters of the Comal River — the shortest river in Texas and one of the most reliably clear spring-fed waterways in the state. The park offers a free swimming lake, paddleboat rentals, shaded picnic areas, and direct access to the Comal River tube chute. Water stays around 70°F year-round, making it one of the best hot-weather escapes within an hour of San Antonio.",
+    "long_desc": "Landa Park in New Braunfels is built around the headwaters of the Comal River \u2014 the shortest river in Texas and one of the most reliably clear spring-fed waterways in the state. The park offers a free swimming lake, paddleboat rentals, shaded picnic areas, and direct access to the Comal River tube chute. Water stays around 70\u00b0F year-round, making it one of the best hot-weather escapes within an hour of San Antonio.",
     "address": "100 Landa Park Dr, New Braunfels, TX 78130",
-    "lat": 29.7080,
+    "lat": 29.708,
     "lng": -98.1234,
     "area": "South Texas Edge",
     "website": "https://www.nbtexas.org/256/Landa-Park",
     "status": "open",
     "verified": true,
     "updated_at": "2025-01-15",
-    "activities": ["swimming", "kayaking", "fishing", "picnicking", "outdoor_fitness", "dog_walking"],
+    "activities": [
+      "swimming",
+      "kayaking",
+      "fishing",
+      "picnicking",
+      "outdoor_fitness",
+      "dog_walking"
+    ],
     "shade_rating": 4,
     "shade_notes": "Huge oak and pecan trees shade most of the park grounds. The river itself is partially shaded. One of the better summer options for midday visits.",
-    "best_time_summer": "Anytime — water stays 70°F",
+    "best_time_summer": "Anytime \u2014 water stays 70\u00b0F",
     "heat_warning": false,
     "distance_miles": 1.5,
     "elevation_gain_ft": 10,
-    "surface": ["paved", "grass"],
+    "surface": [
+      "paved",
+      "grass"
+    ],
     "terrain": "flat",
     "route_type": "loop",
     "difficulty": "easy",
@@ -1692,17 +2666,30 @@
     "kid_friendly": true,
     "ada_accessible": true,
     "bike_racks": true,
-    "best_months": ["apr", "may", "jun", "jul", "aug", "sep", "oct"],
+    "best_months": [
+      "apr",
+      "may",
+      "jun",
+      "jul",
+      "aug",
+      "sep",
+      "oct"
+    ],
     "flood_prone": false,
     "drought_impact": "low",
-    "seasonal_notes": "Spring-fed — not dependent on rainfall. Busy on summer weekends; arrive by 9am for parking. Tube chute and paddleboat rentals seasonal (Memorial Day–Labor Day).",
+    "seasonal_notes": "Spring-fed \u2014 not dependent on rainfall. Busy on summer weekends; arrive by 9am for parking. Tube chute and paddleboat rentals seasonal (Memorial Day\u2013Labor Day).",
     "kayak": {
       "launch": "Landa Park boat ramp",
       "difficulty": "flatwater",
       "typical_run_miles": 1.5,
-      "notes": "Comal River is short and gentle — great for beginners and kids. Tube rentals available nearby."
+      "notes": "Comal River is short and gentle \u2014 great for beginners and kids. Tube rentals available nearby."
     },
-    "badges": ["swimming-hole", "kid-friendly", "shade-friendly", "free"],
+    "badges": [
+      "swimming-hole",
+      "kid-friendly",
+      "shade-friendly",
+      "free"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1468581264429-2548ef9eb732?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
@@ -1710,7 +2697,7 @@
     "id": "guadalupe-river-gruene",
     "name": "Guadalupe River at Gruene",
     "short_desc": "Classic Texas river tubing and kayaking near the historic Gruene district",
-    "long_desc": "The stretch of the Guadalupe River running through Gruene is the quintessential Texas summer river experience. Clear spring-fed water, Class I–II rapids, rope swings, and cold beer at Gruene Hall afterward. Multiple outfitters rent tubes and kayaks with shuttle service. The river stays refreshingly cool through summer thanks to canyon shading and spring inflows from Canyon Lake upstream.",
+    "long_desc": "The stretch of the Guadalupe River running through Gruene is the quintessential Texas summer river experience. Clear spring-fed water, Class I\u2013II rapids, rope swings, and cold beer at Gruene Hall afterward. Multiple outfitters rent tubes and kayaks with shuttle service. The river stays refreshingly cool through summer thanks to canyon shading and spring inflows from Canyon Lake upstream.",
     "address": "Gruene Rd & Guadalupe River, New Braunfels, TX 78130",
     "lat": 29.7376,
     "lng": -98.0866,
@@ -1719,14 +2706,21 @@
     "status": "open",
     "verified": true,
     "updated_at": "2025-01-15",
-    "activities": ["kayaking", "swimming", "fishing"],
+    "activities": [
+      "kayaking",
+      "swimming",
+      "fishing"
+    ],
     "shade_rating": 3,
     "shade_notes": "Canyon walls and cypress trees provide intermittent shade on the river. More shaded than open reservoir paddling. Gravel bars and launch areas are fully exposed.",
-    "best_time_summer": "On the water anytime — air temp matters less",
+    "best_time_summer": "On the water anytime \u2014 air temp matters less",
     "heat_warning": false,
     "distance_miles": 5.0,
     "elevation_gain_ft": 0,
-    "surface": ["water", "gravel"],
+    "surface": [
+      "water",
+      "gravel"
+    ],
     "terrain": "river",
     "route_type": "point-to-point",
     "difficulty": "easy",
@@ -1739,25 +2733,35 @@
     "kid_friendly": true,
     "ada_accessible": false,
     "bike_racks": false,
-    "best_months": ["may", "jun", "jul", "aug", "sep"],
+    "best_months": [
+      "may",
+      "jun",
+      "jul",
+      "aug",
+      "sep"
+    ],
     "flood_prone": true,
     "drought_impact": "medium",
-    "seasonal_notes": "Flash flood warnings close the river quickly — check TCEQ river levels before going. Summer weekends are very busy. Outfitters pull people off the water immediately at first warning.",
+    "seasonal_notes": "Flash flood warnings close the river quickly \u2014 check TCEQ river levels before going. Summer weekends are very busy. Outfitters pull people off the water immediately at first warning.",
     "kayak": {
       "launch": "Multiple outfitter launches along Gruene Rd",
       "difficulty": "Class I-II",
       "typical_run_miles": 5.0,
       "notes": "Shuttle service available from multiple outfitters. Tubes and sit-on-top kayaks available for rent. Bring a dry bag for keys/phone."
     },
-    "badges": ["swimming-hole", "kid-friendly", "dog-friendly"],
+    "badges": [
+      "swimming-hole",
+      "kid-friendly",
+      "dog-friendly"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "canyon-lake-gorge",
     "name": "Canyon Lake Gorge",
-    "short_desc": "Geological wonder carved by a single 2002 flood — guided hikes through dinosaur tracks and fossils",
-    "long_desc": "In July 2002, a massive flood overtopped Canyon Lake's spillway and carved a 1.5-mile gorge up to 80 feet deep in just three days — exposing dinosaur tracks, ancient fossils, and rock layers formed 100 million years ago. The Guadalupe-Blanco River Authority runs guided hikes through the gorge on weekends (reservation required). It's one of the most geologically significant sites in Texas and remains relatively unknown.",
+    "short_desc": "Geological wonder carved by a single 2002 flood \u2014 guided hikes through dinosaur tracks and fossils",
+    "long_desc": "In July 2002, a massive flood overtopped Canyon Lake's spillway and carved a 1.5-mile gorge up to 80 feet deep in just three days \u2014 exposing dinosaur tracks, ancient fossils, and rock layers formed 100 million years ago. The Guadalupe-Blanco River Authority runs guided hikes through the gorge on weekends (reservation required). It's one of the most geologically significant sites in Texas and remains relatively unknown.",
     "address": "601 Canyon Lake Dr, Canyon Lake, TX 78133",
     "lat": 29.8744,
     "lng": -98.2014,
@@ -1766,14 +2770,19 @@
     "status": "open",
     "verified": true,
     "updated_at": "2025-01-15",
-    "activities": ["hiking"],
+    "activities": [
+      "hiking"
+    ],
     "shade_rating": 2,
     "shade_notes": "The gorge bottom offers some shade from the canyon walls. Most of the hike is in direct sun. Morning guided tours are more comfortable in summer.",
     "best_time_summer": "Morning tours only",
     "heat_warning": true,
     "distance_miles": 3.0,
     "elevation_gain_ft": 80,
-    "surface": ["rock", "dirt"],
+    "surface": [
+      "rock",
+      "dirt"
+    ],
     "terrain": "canyon",
     "route_type": "out-and-back",
     "difficulty": "moderate",
@@ -1786,19 +2795,31 @@
     "kid_friendly": true,
     "ada_accessible": false,
     "bike_racks": false,
-    "best_months": ["oct", "nov", "dec", "jan", "feb", "mar", "apr", "may"],
+    "best_months": [
+      "oct",
+      "nov",
+      "dec",
+      "jan",
+      "feb",
+      "mar",
+      "apr",
+      "may"
+    ],
     "flood_prone": false,
     "drought_impact": "none",
-    "seasonal_notes": "Guided tours only — reservations required through GBRA. Tours run Saturday and Sunday mornings. Summer tours are hot; bring plenty of water.",
-    "badges": ["hidden-gem", "great-views"],
+    "seasonal_notes": "Guided tours only \u2014 reservations required through GBRA. Tours run Saturday and Sunday mornings. Summer tours are hot; bring plenty of water.",
+    "badges": [
+      "hidden-gem",
+      "great-views"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1601242926956-9fec3db8db46?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "choke-canyon-state-park",
     "name": "Choke Canyon State Park",
-    "short_desc": "South Texas reservoir 65 miles south of SA — outstanding bass fishing and birding",
-    "long_desc": "Choke Canyon Reservoir is a premier South Texas destination for largemouth bass and crappie fishing, but it doubles as one of the best birding spots in the state. The Calliham Unit sits on the lake's north shore and offers camping, boat ramps, and access to thorny brush habitat holding species rarely found further north — Ferruginous Pygmy-Owl, Tropical Kingbird, and the occasional Ringed Kingfisher. Winter birding here can be exceptional.",
+    "short_desc": "South Texas reservoir 65 miles south of SA \u2014 outstanding bass fishing and birding",
+    "long_desc": "Choke Canyon Reservoir is a premier South Texas destination for largemouth bass and crappie fishing, but it doubles as one of the best birding spots in the state. The Calliham Unit sits on the lake's north shore and offers camping, boat ramps, and access to thorny brush habitat holding species rarely found further north \u2014 Ferruginous Pygmy-Owl, Tropical Kingbird, and the occasional Ringed Kingfisher. Winter birding here can be exceptional.",
     "address": "1 Park Road 8, Three Rivers, TX 78071",
     "lat": 28.9667,
     "lng": -98.3367,
@@ -1807,14 +2828,23 @@
     "status": "open",
     "verified": true,
     "updated_at": "2025-01-15",
-    "activities": ["fishing", "camping", "birding", "kayaking", "picnicking"],
+    "activities": [
+      "fishing",
+      "camping",
+      "birding",
+      "kayaking",
+      "picnicking"
+    ],
     "shade_rating": 2,
-    "shade_notes": "Minimal shade on open lakeside areas. Mesquite and thorny brush provide some cover along trails. Deep South Texas — shade is always scarce.",
+    "shade_notes": "Minimal shade on open lakeside areas. Mesquite and thorny brush provide some cover along trails. Deep South Texas \u2014 shade is always scarce.",
     "best_time_summer": "On the water early morning",
     "heat_warning": true,
     "distance_miles": 5.0,
     "elevation_gain_ft": 20,
-    "surface": ["dirt", "gravel"],
+    "surface": [
+      "dirt",
+      "gravel"
+    ],
     "terrain": "flat",
     "route_type": "loop",
     "difficulty": "easy",
@@ -1827,10 +2857,17 @@
     "kid_friendly": true,
     "ada_accessible": true,
     "bike_racks": false,
-    "best_months": ["oct", "nov", "dec", "jan", "feb", "mar"],
+    "best_months": [
+      "oct",
+      "nov",
+      "dec",
+      "jan",
+      "feb",
+      "mar"
+    ],
     "flood_prone": false,
     "drought_impact": "high",
-    "seasonal_notes": "Lake levels fluctuate significantly with drought — check TWDB water levels before visiting. Winter is peak season for both fishing and birding.",
+    "seasonal_notes": "Lake levels fluctuate significantly with drought \u2014 check TWDB water levels before visiting. Winter is peak season for both fishing and birding.",
     "camping": {
       "sites": 55,
       "hookups": true,
@@ -1839,19 +2876,28 @@
       "notes": "Full hookup sites and water/electric available. Screened shelters bookable in advance."
     },
     "birding": {
-      "highlight_species": ["Ferruginous Pygmy-Owl", "Tropical Kingbird", "Ringed Kingfisher", "Crested Caracara", "Couch's Kingbird"],
+      "highlight_species": [
+        "Ferruginous Pygmy-Owl",
+        "Tropical Kingbird",
+        "Ringed Kingfisher",
+        "Crested Caracara",
+        "Couch's Kingbird"
+      ],
       "best_season": "winter",
       "ebird_hotspot": true
     },
-    "badges": ["bird-sanctuary", "hidden-gem"],
+    "badges": [
+      "bird-sanctuary",
+      "hidden-gem"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1471958680802-1345a694ba6d?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "inks-lake-state-park",
     "name": "Inks Lake State Park",
-    "short_desc": "Granite-rimmed Hill Country lake 90 miles north — swimming, kayaking, and cliff jumping",
-    "long_desc": "Inks Lake is arguably the most beautiful state park within a 2-hour drive of San Antonio. The deep blue water is framed by pink granite outcrops, and the calm lake is perfect for kayaking, swimming, and fishing. Devil's Waterhole — a natural granite swimming hole fed by a small waterfall — is the highlight. Camping fills up months in advance on summer weekends. The 7-mile hiking trail circles the lake with constant views.",
+    "short_desc": "Granite-rimmed Hill Country lake 90 miles north \u2014 swimming, kayaking, and cliff jumping",
+    "long_desc": "Inks Lake is arguably the most beautiful state park within a 2-hour drive of San Antonio. The deep blue water is framed by pink granite outcrops, and the calm lake is perfect for kayaking, swimming, and fishing. Devil's Waterhole \u2014 a natural granite swimming hole fed by a small waterfall \u2014 is the highlight. Camping fills up months in advance on summer weekends. The 7-mile hiking trail circles the lake with constant views.",
     "address": "3630 Park Road 4 W, Burnet, TX 78611",
     "lat": 30.7394,
     "lng": -98.3706,
@@ -1860,14 +2906,25 @@
     "status": "open",
     "verified": true,
     "updated_at": "2025-01-15",
-    "activities": ["hiking", "camping", "kayaking", "swimming", "fishing", "birding", "rock_climbing"],
+    "activities": [
+      "hiking",
+      "camping",
+      "kayaking",
+      "swimming",
+      "fishing",
+      "birding",
+      "rock_climbing"
+    ],
     "shade_rating": 2,
     "shade_notes": "Live oaks around campsites provide good shade. The lake and granite outcrops are mostly exposed. Water temperature makes sun exposure manageable on the lake.",
     "best_time_summer": "On the water or in camp shade",
     "heat_warning": false,
     "distance_miles": 7.0,
     "elevation_gain_ft": 150,
-    "surface": ["rock", "dirt"],
+    "surface": [
+      "rock",
+      "dirt"
+    ],
     "terrain": "rocky",
     "route_type": "loop",
     "difficulty": "moderate",
@@ -1880,10 +2937,18 @@
     "kid_friendly": true,
     "ada_accessible": true,
     "bike_racks": false,
-    "best_months": ["apr", "may", "jun", "jul", "aug", "sep", "oct"],
+    "best_months": [
+      "apr",
+      "may",
+      "jun",
+      "jul",
+      "aug",
+      "sep",
+      "oct"
+    ],
     "flood_prone": false,
     "drought_impact": "medium",
-    "seasonal_notes": "Book camping 6+ months out for summer weekends. Devil's Waterhole swimming hole is the most popular spot — crowded by 10am on summer weekends. October has perfect weather and smaller crowds.",
+    "seasonal_notes": "Book camping 6+ months out for summer weekends. Devil's Waterhole swimming hole is the most popular spot \u2014 crowded by 10am on summer weekends. October has perfect weather and smaller crowds.",
     "camping": {
       "sites": 145,
       "hookups": true,
@@ -1898,11 +2963,20 @@
       "notes": "Calm lake, great for all skill levels. Kayak rentals available at the park. Paddle to Devil's Waterhole for swimming."
     },
     "birding": {
-      "highlight_species": ["Golden-cheeked Warbler", "Black-capped Vireo", "Painted Bunting", "Canyon Wren"],
+      "highlight_species": [
+        "Golden-cheeked Warbler",
+        "Black-capped Vireo",
+        "Painted Bunting",
+        "Canyon Wren"
+      ],
       "best_season": "spring",
       "ebird_hotspot": true
     },
-    "badges": ["swimming-hole", "great-views", "kid-friendly"],
+    "badges": [
+      "swimming-hole",
+      "great-views",
+      "kid-friendly"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
@@ -1910,7 +2984,7 @@
     "id": "boerne-city-park",
     "name": "Boerne City Park & Cibolo Creek",
     "short_desc": "Historic cypress-shaded swimming hole on Cibolo Creek in downtown Boerne",
-    "long_desc": "Boerne City Park sits along Cibolo Creek just off Boerne's historic downtown and has been a local swimming hole for over a century. The clear spring-influenced creek runs through a canopy of enormous cypress trees that keep the park cool well into the morning. A short loop trail connects to the Cibolo Nature Center trail system. The park fills up with families on summer weekends — come early or on a weekday.",
+    "long_desc": "Boerne City Park sits along Cibolo Creek just off Boerne's historic downtown and has been a local swimming hole for over a century. The clear spring-influenced creek runs through a canopy of enormous cypress trees that keep the park cool well into the morning. A short loop trail connects to the Cibolo Nature Center trail system. The park fills up with families on summer weekends \u2014 come early or on a weekday.",
     "address": "Main Plaza, Boerne, TX 78006",
     "lat": 29.7977,
     "lng": -98.7314,
@@ -1919,14 +2993,24 @@
     "status": "open",
     "verified": true,
     "updated_at": "2025-01-15",
-    "activities": ["swimming", "hiking", "picnicking", "dog_walking", "birding"],
+    "activities": [
+      "swimming",
+      "hiking",
+      "picnicking",
+      "dog_walking",
+      "birding"
+    ],
     "shade_rating": 5,
     "shade_notes": "Some of the best creek shade in the Hill Country. Enormous bald cypress trees form a full canopy over the creek. Midday here is comfortable even in July.",
-    "best_time_summer": "Anytime — excellent shade",
+    "best_time_summer": "Anytime \u2014 excellent shade",
     "heat_warning": false,
     "distance_miles": 1.5,
     "elevation_gain_ft": 20,
-    "surface": ["paved", "dirt", "grass"],
+    "surface": [
+      "paved",
+      "dirt",
+      "grass"
+    ],
     "terrain": "flat",
     "route_type": "loop",
     "difficulty": "easy",
@@ -1939,19 +3023,33 @@
     "kid_friendly": true,
     "ada_accessible": true,
     "bike_racks": true,
-    "best_months": ["apr", "may", "jun", "jul", "aug", "sep", "oct"],
+    "best_months": [
+      "apr",
+      "may",
+      "jun",
+      "jul",
+      "aug",
+      "sep",
+      "oct"
+    ],
     "flood_prone": true,
     "drought_impact": "medium",
-    "seasonal_notes": "Swimming hole depth depends on recent rainfall. After drought, may be shallow. Cypress foliage turns golden in November — beautiful fall color.",
-    "badges": ["shade-friendly", "swimming-hole", "kid-friendly", "dog-friendly", "free"],
+    "seasonal_notes": "Swimming hole depth depends on recent rainfall. After drought, may be shallow. Cypress foliage turns golden in November \u2014 beautiful fall color.",
+    "badges": [
+      "shade-friendly",
+      "swimming-hole",
+      "kid-friendly",
+      "dog-friendly",
+      "free"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1468581264429-2548ef9eb732?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "old-tunnel-state-park",
     "name": "Old Tunnel State Park",
-    "short_desc": "Abandoned railroad tunnel housing 3 million bats — summer evening bat flights are unforgettable",
-    "long_desc": "An old railroad tunnel dug in 1913 and abandoned by 1942 now houses one of the largest bat colonies in Texas — up to 3 million Mexican free-tailed bats emerge at dusk from late May through October. The viewing area sits directly over the tunnel entrance; rangers narrate as the column of bats spirals upward for 20–30 minutes. A short nature trail connects to nearby woodland. Upper viewing platforms require a fee; the lower area is free.",
+    "short_desc": "Abandoned railroad tunnel housing 3 million bats \u2014 summer evening bat flights are unforgettable",
+    "long_desc": "An old railroad tunnel dug in 1913 and abandoned by 1942 now houses one of the largest bat colonies in Texas \u2014 up to 3 million Mexican free-tailed bats emerge at dusk from late May through October. The viewing area sits directly over the tunnel entrance; rangers narrate as the column of bats spirals upward for 20\u201330 minutes. A short nature trail connects to nearby woodland. Upper viewing platforms require a fee; the lower area is free.",
     "address": "10619 Old San Antonio Rd, Fredericksburg, TX 78624",
     "lat": 30.0672,
     "lng": -98.8606,
@@ -1960,14 +3058,20 @@
     "status": "open",
     "verified": true,
     "updated_at": "2025-01-15",
-    "activities": ["birding", "hiking"],
+    "activities": [
+      "birding",
+      "hiking"
+    ],
     "shade_rating": 3,
     "shade_notes": "Live oak woodland around the viewing area provides decent shade. Evening visits don't require shade since the bats emerge at dusk.",
-    "best_time_summer": "Evening bat flight — arrive 30 min before sunset",
+    "best_time_summer": "Evening bat flight \u2014 arrive 30 min before sunset",
     "heat_warning": false,
     "distance_miles": 0.5,
     "elevation_gain_ft": 30,
-    "surface": ["gravel", "dirt"],
+    "surface": [
+      "gravel",
+      "dirt"
+    ],
     "terrain": "flat",
     "route_type": "out-and-back",
     "difficulty": "easy",
@@ -1980,16 +3084,31 @@
     "kid_friendly": true,
     "ada_accessible": true,
     "bike_racks": false,
-    "best_months": ["may", "jun", "jul", "aug", "sep", "oct"],
+    "best_months": [
+      "may",
+      "jun",
+      "jul",
+      "aug",
+      "sep",
+      "oct"
+    ],
     "flood_prone": false,
     "drought_impact": "none",
-    "seasonal_notes": "Bat season runs roughly May–October. Colony peaks August–September. Upper platform reservations recommended. Check TPWD site for current bat count estimates. Bring insect repellent.",
+    "seasonal_notes": "Bat season runs roughly May\u2013October. Colony peaks August\u2013September. Upper platform reservations recommended. Check TPWD site for current bat count estimates. Bring insect repellent.",
     "birding": {
-      "highlight_species": ["Mexican Free-tailed Bat", "Painted Bunting", "Chuck-will's-widow", "Ash-throated Flycatcher"],
+      "highlight_species": [
+        "Mexican Free-tailed Bat",
+        "Painted Bunting",
+        "Chuck-will's-widow",
+        "Ash-throated Flycatcher"
+      ],
       "best_season": "summer evenings",
       "ebird_hotspot": true
     },
-    "badges": ["hidden-gem", "kid-friendly"],
+    "badges": [
+      "hidden-gem",
+      "kid-friendly"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
@@ -1997,7 +3116,7 @@
     "id": "medina-river-bandera",
     "name": "Medina River at Bandera",
     "short_desc": "Spring-fed river tubing and kayaking through the 'Cowboy Capital of the World'",
-    "long_desc": "The Medina River runs clear and cool through the heart of Bandera, Texas. Several outfitters on the edge of town offer tube and kayak rentals with shuttle service on a 3–5 mile float through cypress-lined banks. The water stays refreshingly cool thanks to spring contributions, and the shaded canyon makes this one of the more comfortable summer floats in the Hill Country. Bandera's Western heritage, honky-tonks, and restaurants make the trip complete.",
+    "long_desc": "The Medina River runs clear and cool through the heart of Bandera, Texas. Several outfitters on the edge of town offer tube and kayak rentals with shuttle service on a 3\u20135 mile float through cypress-lined banks. The water stays refreshingly cool thanks to spring contributions, and the shaded canyon makes this one of the more comfortable summer floats in the Hill Country. Bandera's Western heritage, honky-tonks, and restaurants make the trip complete.",
     "address": "Pecan St river access, Bandera, TX 78003",
     "lat": 29.7214,
     "lng": -99.0739,
@@ -2006,14 +3125,22 @@
     "status": "open",
     "verified": true,
     "updated_at": "2025-01-15",
-    "activities": ["kayaking", "swimming", "fishing", "picnicking"],
+    "activities": [
+      "kayaking",
+      "swimming",
+      "fishing",
+      "picnicking"
+    ],
     "shade_rating": 4,
     "shade_notes": "Cypress and sycamore canopy shades most of the river corridor. Possibly the most shaded float trip close to San Antonio.",
     "best_time_summer": "On the water anytime",
     "heat_warning": false,
     "distance_miles": 5.0,
     "elevation_gain_ft": 0,
-    "surface": ["water", "gravel"],
+    "surface": [
+      "water",
+      "gravel"
+    ],
     "terrain": "river",
     "route_type": "point-to-point",
     "difficulty": "easy",
@@ -2026,17 +3153,28 @@
     "kid_friendly": true,
     "ada_accessible": false,
     "bike_racks": false,
-    "best_months": ["may", "jun", "jul", "aug", "sep"],
+    "best_months": [
+      "may",
+      "jun",
+      "jul",
+      "aug",
+      "sep"
+    ],
     "flood_prone": true,
     "drought_impact": "medium",
-    "seasonal_notes": "Check river levels before going — flash flood warnings close the river immediately. Shallow during drought years but usually still floatable.",
+    "seasonal_notes": "Check river levels before going \u2014 flash flood warnings close the river immediately. Shallow during drought years but usually still floatable.",
     "kayak": {
       "launch": "Multiple outfitter launches in Bandera",
       "difficulty": "flatwater",
       "typical_run_miles": 5.0,
       "notes": "Tube and kayak rentals with shuttle available from local outfitters. Class I only."
     },
-    "badges": ["swimming-hole", "shade-friendly", "kid-friendly", "dog-friendly"],
+    "badges": [
+      "swimming-hole",
+      "shade-friendly",
+      "kid-friendly",
+      "dog-friendly"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
@@ -2053,14 +3191,20 @@
     "status": "open",
     "verified": true,
     "updated_at": "2025-01-15",
-    "activities": ["hiking", "birding"],
+    "activities": [
+      "hiking",
+      "birding"
+    ],
     "shade_rating": 3,
     "shade_notes": "Mixed cedar and live oak provides intermittent shade. The natural bridge formation itself creates a shaded overhang.",
     "best_time_summer": "Before 9am",
     "heat_warning": false,
     "distance_miles": 9.0,
     "elevation_gain_ft": 180,
-    "surface": ["limestone", "dirt"],
+    "surface": [
+      "limestone",
+      "dirt"
+    ],
     "terrain": "hilly",
     "route_type": "loop",
     "difficulty": "moderate",
@@ -2073,18 +3217,30 @@
     "kid_friendly": true,
     "ada_accessible": false,
     "bike_racks": false,
-    "best_months": ["oct", "nov", "dec", "jan", "feb", "mar", "apr"],
+    "best_months": [
+      "oct",
+      "nov",
+      "dec",
+      "jan",
+      "feb",
+      "mar",
+      "apr"
+    ],
     "flood_prone": false,
     "drought_impact": "low",
     "seasonal_notes": "Trails are free and accessible outside of paid cavern tour hours. Check website for trail access times. Wildlife is most active before tour buses arrive.",
-    "badges": ["hidden-gem", "dog-friendly", "free"],
+    "badges": [
+      "hidden-gem",
+      "dog-friendly",
+      "free"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "apache-creek-linear-park",
     "name": "Apache Creek Linear Park",
-    "short_desc": "West SA greenway trail along Apache Creek — paved, flat, and dog-friendly",
+    "short_desc": "West SA greenway trail along Apache Creek \u2014 paved, flat, and dog-friendly",
     "long_desc": "The Apache Creek Linear Park runs through west and southwest San Antonio along the Apache Creek floodplain. The paved trail is mostly flat and connects several neighborhood parks, making it a practical everyday-use greenway for walkers, joggers, and cyclists. Cottonwood, willow, and pecan trees line the creek corridor and provide intermittent shade. Less crowded than Leon Creek Greenway but offers similar utility for short runs and dog walks.",
     "address": "Apache Creek at Zarzamora St, San Antonio, TX 78207",
     "lat": 29.4194,
@@ -2094,14 +3250,21 @@
     "status": "open",
     "verified": true,
     "updated_at": "2025-01-15",
-    "activities": ["hiking", "biking", "dog_walking", "outdoor_fitness"],
+    "activities": [
+      "hiking",
+      "biking",
+      "dog_walking",
+      "outdoor_fitness"
+    ],
     "shade_rating": 3,
-    "shade_notes": "Creek-side trees provide decent shade in the mornings. Urban greenway — more exposed than wilderness trails but better than fully paved neighborhoods.",
+    "shade_notes": "Creek-side trees provide decent shade in the mornings. Urban greenway \u2014 more exposed than wilderness trails but better than fully paved neighborhoods.",
     "best_time_summer": "Before 9am or after 6pm",
     "heat_warning": false,
     "distance_miles": 6.0,
     "elevation_gain_ft": 20,
-    "surface": ["paved"],
+    "surface": [
+      "paved"
+    ],
     "terrain": "flat",
     "route_type": "out-and-back",
     "difficulty": "easy",
@@ -2114,11 +3277,23 @@
     "kid_friendly": true,
     "ada_accessible": true,
     "bike_racks": false,
-    "best_months": ["oct", "nov", "dec", "jan", "feb", "mar", "apr", "may"],
+    "best_months": [
+      "oct",
+      "nov",
+      "dec",
+      "jan",
+      "feb",
+      "mar",
+      "apr",
+      "may"
+    ],
     "flood_prone": true,
     "drought_impact": "low",
-    "seasonal_notes": "Paved trail — usable year-round except during flooding. Creek can rise rapidly during thunderstorms. Connects to Elmendorf Lake Park at the south end.",
-    "badges": ["dog-friendly", "free"],
+    "seasonal_notes": "Paved trail \u2014 usable year-round except during flooding. Creek can rise rapidly during thunderstorms. Connects to Elmendorf Lake Park at the south end.",
+    "badges": [
+      "dog-friendly",
+      "free"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1476362555312-ab9e108a0b7e?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
@@ -2126,23 +3301,33 @@
     "id": "stone-oak-park",
     "name": "Stone Oak Park",
     "short_desc": "North SA neighborhood park with 18-hole disc golf under mature live oaks",
-    "long_desc": "Stone Oak Park in north San Antonio sits within a mature oak woodland and offers an 18-hole disc golf course, multiple sports fields, playgrounds, and a paved loop trail. The live oak canopy makes this one of the more comfortable summer parks for disc golf and family activities. The course winds through shaded fairways with moderate technical challenge — good for intermediate players and open enough for beginners.",
-    "address": "24345 Wilderness Oak, San Antonio, TX 78258",
-    "lat": 29.6079,
-    "lng": -98.4906,
+    "long_desc": "Stone Oak Park in north San Antonio sits within a mature oak woodland and offers an 18-hole disc golf course, multiple sports fields, playgrounds, and a paved loop trail. The live oak canopy makes this one of the more comfortable summer parks for disc golf and family activities. The course winds through shaded fairways with moderate technical challenge \u2014 good for intermediate players and open enough for beginners.",
+    "address": "20395 Stone Oak Pkwy, San Antonio, TX 78258",
+    "lat": 29.6258,
+    "lng": -98.495,
     "area": "North San Antonio",
     "website": "https://www.sanantonio.gov/ParksAndRec/Parks-Facilities/All-Park-Facilities/stone-oak-park",
     "status": "open",
     "verified": true,
     "updated_at": "2025-01-15",
-    "activities": ["disc_golf", "hiking", "picnicking", "dog_walking", "outdoor_fitness"],
+    "activities": [
+      "disc_golf",
+      "hiking",
+      "picnicking",
+      "dog_walking",
+      "outdoor_fitness"
+    ],
     "shade_rating": 4,
     "shade_notes": "Mature live oaks provide overhead canopy on most disc golf fairways and walking paths. One of the better-shaded disc golf courses in San Antonio for summer play.",
-    "best_time_summer": "Morning or late afternoon — shade extends usable hours",
+    "best_time_summer": "Morning or late afternoon \u2014 shade extends usable hours",
     "heat_warning": false,
     "distance_miles": 2.0,
     "elevation_gain_ft": 40,
-    "surface": ["grass", "dirt", "paved"],
+    "surface": [
+      "grass",
+      "dirt",
+      "paved"
+    ],
     "terrain": "gently rolling",
     "route_type": "loop",
     "difficulty": "easy",
@@ -2155,16 +3340,34 @@
     "kid_friendly": true,
     "ada_accessible": true,
     "bike_racks": true,
-    "best_months": ["oct", "nov", "dec", "jan", "feb", "mar", "apr", "may", "sep"],
+    "best_months": [
+      "oct",
+      "nov",
+      "dec",
+      "jan",
+      "feb",
+      "mar",
+      "apr",
+      "may",
+      "sep"
+    ],
     "flood_prone": false,
     "drought_impact": "low",
-    "seasonal_notes": "Course can be muddy after heavy rain. Busy on weekend mornings year-round. Bring your own discs — no rentals at the park.",
+    "seasonal_notes": "Course can be muddy after heavy rain. Busy on weekend mornings year-round. Bring your own discs \u2014 no rentals at the park.",
     "disc_golf": {
       "holes": 18,
-      "tees": ["recreational", "advanced"],
-      "terrain_notes": "Oak-canopied fairways with moderate technical shots. Good intermediate course — challenging enough to be fun but not punishing for beginners."
+      "tees": [
+        "recreational",
+        "advanced"
+      ],
+      "terrain_notes": "Oak-canopied fairways with moderate technical shots. Good intermediate course \u2014 challenging enough to be fun but not punishing for beginners."
     },
-    "badges": ["shade-friendly", "dog-friendly", "kid-friendly", "free"],
+    "badges": [
+      "shade-friendly",
+      "dog-friendly",
+      "kid-friendly",
+      "free"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1547347298-4074fc3086f0?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
@@ -2172,7 +3375,7 @@
     "id": "lake-dunlap",
     "name": "Lake Dunlap",
     "short_desc": "Peaceful Guadalupe River impoundment near Seguin with fishing, kayaking, and birding",
-    "long_desc": "Lake Dunlap is a quiet, undeveloped Guadalupe River reservoir near New Braunfels that sees a fraction of the traffic of larger Hill Country lakes. The relatively shallow lake with flooded timber edges is excellent for bass and crappie fishing and attracts a variety of wading birds. Canoe and kayak access points are informal — launch at the county park and explore the coves.",
+    "long_desc": "Lake Dunlap is a quiet, undeveloped Guadalupe River reservoir near New Braunfels that sees a fraction of the traffic of larger Hill Country lakes. The relatively shallow lake with flooded timber edges is excellent for bass and crappie fishing and attracts a variety of wading birds. Canoe and kayak access points are informal \u2014 launch at the county park and explore the coves.",
     "address": "Lake Dunlap Rd, New Braunfels, TX 78130",
     "lat": 29.6892,
     "lng": -98.0803,
@@ -2181,14 +3384,22 @@
     "status": "open",
     "verified": true,
     "updated_at": "2025-01-15",
-    "activities": ["fishing", "kayaking", "birding", "picnicking"],
+    "activities": [
+      "fishing",
+      "kayaking",
+      "birding",
+      "picnicking"
+    ],
     "shade_rating": 2,
     "shade_notes": "Exposed lakeside launch area. Cedar and live oak along the upper coves provide some shade. Afternoon glare on the water can be intense.",
     "best_time_summer": "Early morning fishing and paddling",
     "heat_warning": true,
     "distance_miles": 3.0,
     "elevation_gain_ft": 10,
-    "surface": ["gravel", "grass"],
+    "surface": [
+      "gravel",
+      "grass"
+    ],
     "terrain": "flat",
     "route_type": "loop",
     "difficulty": "easy",
@@ -2201,30 +3412,48 @@
     "kid_friendly": true,
     "ada_accessible": false,
     "bike_racks": false,
-    "best_months": ["oct", "nov", "dec", "jan", "feb", "mar", "apr", "may"],
+    "best_months": [
+      "oct",
+      "nov",
+      "dec",
+      "jan",
+      "feb",
+      "mar",
+      "apr",
+      "may"
+    ],
     "flood_prone": false,
     "drought_impact": "high",
-    "seasonal_notes": "Dam controls lake level — can drop significantly in drought years. Check GBRA dam operations before visiting. Good bass fishing in spring and fall.",
+    "seasonal_notes": "Dam controls lake level \u2014 can drop significantly in drought years. Check GBRA dam operations before visiting. Good bass fishing in spring and fall.",
     "kayak": {
       "launch": "Informal launch at county park",
       "difficulty": "flatwater",
       "typical_run_miles": 3.0,
-      "notes": "Explore flooded timber edges and upper coves. No rentals available — bring your own kayak."
+      "notes": "Explore flooded timber edges and upper coves. No rentals available \u2014 bring your own kayak."
     },
     "birding": {
-      "highlight_species": ["Great Blue Heron", "Little Blue Heron", "Osprey", "Belted Kingfisher", "Wood Duck"],
+      "highlight_species": [
+        "Great Blue Heron",
+        "Little Blue Heron",
+        "Osprey",
+        "Belted Kingfisher",
+        "Wood Duck"
+      ],
       "best_season": "winter",
       "ebird_hotspot": false
     },
-    "badges": ["hidden-gem", "dog-friendly"],
+    "badges": [
+      "hidden-gem",
+      "dog-friendly"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1471958680802-1345a694ba6d?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "coleto-creek-reservoir",
     "name": "Coleto Creek Park & Reservoir",
-    "short_desc": "South Texas reservoir 90 miles SE — exceptional birding and bass fishing near the Coastal Bend",
-    "long_desc": "Coleto Creek Reservoir sits 90 miles southeast of San Antonio near the transition between South Texas brush country and the Coastal Bend. The reservoir and surrounding brush attract an impressive array of South Texas specialties — Crested Caracara, White-tailed Kite, and Roseate Spoonbill in season. Bass fishing is excellent, and the campground has good facilities. The park manages significant brushy habitat that rewards birders who walk the perimeter road.",
+    "short_desc": "South Texas reservoir 90 miles SE \u2014 exceptional birding and bass fishing near the Coastal Bend",
+    "long_desc": "Coleto Creek Reservoir sits 90 miles southeast of San Antonio near the transition between South Texas brush country and the Coastal Bend. The reservoir and surrounding brush attract an impressive array of South Texas specialties \u2014 Crested Caracara, White-tailed Kite, and Roseate Spoonbill in season. Bass fishing is excellent, and the campground has good facilities. The park manages significant brushy habitat that rewards birders who walk the perimeter road.",
     "address": "365 Coleto Park Rd, Fannin, TX 77960",
     "lat": 28.7103,
     "lng": -97.1989,
@@ -2233,14 +3462,23 @@
     "status": "open",
     "verified": true,
     "updated_at": "2025-01-15",
-    "activities": ["fishing", "camping", "kayaking", "birding", "picnicking"],
+    "activities": [
+      "fishing",
+      "camping",
+      "kayaking",
+      "birding",
+      "picnicking"
+    ],
     "shade_rating": 2,
     "shade_notes": "South Texas brush provides some shade along the perimeter road. Lakeside areas and boat ramps are fully exposed. Bring a canopy for afternoon stays.",
     "best_time_summer": "Early morning",
     "heat_warning": true,
     "distance_miles": 4.0,
     "elevation_gain_ft": 10,
-    "surface": ["dirt", "gravel"],
+    "surface": [
+      "dirt",
+      "gravel"
+    ],
     "terrain": "flat",
     "route_type": "loop",
     "difficulty": "easy",
@@ -2253,10 +3491,17 @@
     "kid_friendly": true,
     "ada_accessible": true,
     "bike_racks": false,
-    "best_months": ["oct", "nov", "dec", "jan", "feb", "mar"],
+    "best_months": [
+      "oct",
+      "nov",
+      "dec",
+      "jan",
+      "feb",
+      "mar"
+    ],
     "flood_prone": false,
     "drought_impact": "high",
-    "seasonal_notes": "Winter and spring are best for birding. Bass fishing peaks in spring. Summer is brutal heat — come for multi-day camping with early morning activities.",
+    "seasonal_notes": "Winter and spring are best for birding. Bass fishing peaks in spring. Summer is brutal heat \u2014 come for multi-day camping with early morning activities.",
     "camping": {
       "sites": 85,
       "hookups": true,
@@ -2265,11 +3510,20 @@
       "notes": "Full hookup and water/electric sites. Screened shelters available. Good base for Coastal Bend birding day trips."
     },
     "birding": {
-      "highlight_species": ["Crested Caracara", "White-tailed Kite", "Roseate Spoonbill", "Mottled Duck", "Black-bellied Whistling Duck"],
+      "highlight_species": [
+        "Crested Caracara",
+        "White-tailed Kite",
+        "Roseate Spoonbill",
+        "Mottled Duck",
+        "Black-bellied Whistling Duck"
+      ],
       "best_season": "winter",
       "ebird_hotspot": true
     },
-    "badges": ["bird-sanctuary", "hidden-gem"],
+    "badges": [
+      "bird-sanctuary",
+      "hidden-gem"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1522926193341-e9ffd686c60f?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
@@ -2277,7 +3531,7 @@
     "id": "purgatory-creek-natural-area",
     "name": "Purgatory Creek Natural Area",
     "short_desc": "900-acre cedar forest preserve in San Marcos with mountain biking and spring birding",
-    "long_desc": "Purgatory Creek Natural Area protects 900+ acres of Balcones Escarpment cedar-oak woodland on the edge of San Marcos, about 45 miles northeast of San Antonio. The trail network is particularly popular with mountain bikers — technical limestone singletrack through dense cedar makes for challenging riding. Hikers share a subset of the trails. The preserve sits on critical golden-cheeked warbler habitat and is excellent for spring birding.",
+    "long_desc": "Purgatory Creek Natural Area protects 900+ acres of Balcones Escarpment cedar-oak woodland on the edge of San Marcos, about 45 miles northeast of San Antonio. The trail network is particularly popular with mountain bikers \u2014 technical limestone singletrack through dense cedar makes for challenging riding. Hikers share a subset of the trails. The preserve sits on critical golden-cheeked warbler habitat and is excellent for spring birding.",
     "address": "Sessom Creek Dr, San Marcos, TX 78666",
     "lat": 29.8693,
     "lng": -97.9528,
@@ -2286,14 +3540,22 @@
     "status": "open",
     "verified": true,
     "updated_at": "2025-01-15",
-    "activities": ["hiking", "biking", "birding", "dog_walking"],
+    "activities": [
+      "hiking",
+      "biking",
+      "birding",
+      "dog_walking"
+    ],
     "shade_rating": 3,
-    "shade_notes": "Dense cedar provides heavy shade on most trails. Actually one of the cooler summer trail options — cedar canopy blocks direct sun effectively.",
+    "shade_notes": "Dense cedar provides heavy shade on most trails. Actually one of the cooler summer trail options \u2014 cedar canopy blocks direct sun effectively.",
     "best_time_summer": "Before 10am",
     "heat_warning": false,
     "distance_miles": 12.0,
     "elevation_gain_ft": 350,
-    "surface": ["limestone", "dirt"],
+    "surface": [
+      "limestone",
+      "dirt"
+    ],
     "terrain": "hilly",
     "route_type": "loop",
     "difficulty": "moderate",
@@ -2306,23 +3568,41 @@
     "kid_friendly": false,
     "ada_accessible": false,
     "bike_racks": false,
-    "best_months": ["oct", "nov", "dec", "jan", "feb", "mar", "apr"],
+    "best_months": [
+      "oct",
+      "nov",
+      "dec",
+      "jan",
+      "feb",
+      "mar",
+      "apr"
+    ],
     "flood_prone": false,
     "drought_impact": "low",
-    "seasonal_notes": "Spring is best for birding (April–May for warblers). Mountain biking trails can be technical — full-suspension handles the limestone better. No facilities; bring water.",
+    "seasonal_notes": "Spring is best for birding (April\u2013May for warblers). Mountain biking trails can be technical \u2014 full-suspension handles the limestone better. No facilities; bring water.",
     "birding": {
-      "highlight_species": ["Golden-cheeked Warbler", "Black-capped Vireo", "Painted Bunting", "Yellow-throated Vireo"],
+      "highlight_species": [
+        "Golden-cheeked Warbler",
+        "Black-capped Vireo",
+        "Painted Bunting",
+        "Yellow-throated Vireo"
+      ],
       "best_season": "spring",
       "ebird_hotspot": true
     },
-    "badges": ["hidden-gem", "dog-friendly", "bird-sanctuary", "free"],
+    "badges": [
+      "hidden-gem",
+      "dog-friendly",
+      "bird-sanctuary",
+      "free"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1476362555312-ab9e108a0b7e?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   },
   {
     "id": "boerne-lake",
     "name": "Boerne Lake",
-    "short_desc": "Quiet kayaking and fishing lake on the edge of Boerne — uncrowded Hill Country reservoir",
+    "short_desc": "Quiet kayaking and fishing lake on the edge of Boerne \u2014 uncrowded Hill Country reservoir",
     "long_desc": "Boerne Lake is a small City of Boerne reservoir that sees a fraction of the traffic of larger Hill Country lakes. The lake is popular with local anglers targeting bass and catfish, and the flat water makes for easy kayaking and canoe exploration. A short hiking trail follows the shoreline through cedar and live oak. The lake is within minutes of Boerne's historic downtown, making it an easy add-on to a Hill Country day trip.",
     "address": "Boerne Lake Rd, Boerne, TX 78006",
     "lat": 29.8014,
@@ -2332,14 +3612,23 @@
     "status": "open",
     "verified": true,
     "updated_at": "2025-01-15",
-    "activities": ["fishing", "kayaking", "birding", "picnicking", "hiking"],
+    "activities": [
+      "fishing",
+      "kayaking",
+      "birding",
+      "picnicking",
+      "hiking"
+    ],
     "shade_rating": 3,
     "shade_notes": "Cedar and live oak shoreline provides shade on the trail and some lakeside picnic areas. Open water is exposed. Morning visits offer best shade on the hiking trail.",
     "best_time_summer": "Early morning",
     "heat_warning": false,
     "distance_miles": 2.5,
     "elevation_gain_ft": 40,
-    "surface": ["gravel", "dirt"],
+    "surface": [
+      "gravel",
+      "dirt"
+    ],
     "terrain": "gently rolling",
     "route_type": "loop",
     "difficulty": "easy",
@@ -2352,22 +3641,40 @@
     "kid_friendly": true,
     "ada_accessible": false,
     "bike_racks": false,
-    "best_months": ["oct", "nov", "dec", "jan", "feb", "mar", "apr", "may"],
+    "best_months": [
+      "oct",
+      "nov",
+      "dec",
+      "jan",
+      "feb",
+      "mar",
+      "apr",
+      "may"
+    ],
     "flood_prone": false,
     "drought_impact": "medium",
-    "seasonal_notes": "Lake level drops in drought. Bass fishing is best in spring. Quiet on weekdays — good alternative to crowded Canyon Lake for a peaceful morning paddle.",
+    "seasonal_notes": "Lake level drops in drought. Bass fishing is best in spring. Quiet on weekdays \u2014 good alternative to crowded Canyon Lake for a peaceful morning paddle.",
     "kayak": {
       "launch": "Boat ramp at the park",
       "difficulty": "flatwater",
       "typical_run_miles": 2.5,
-      "notes": "Small lake — full perimeter paddle in under 2 hours. Explore coves for fishing. No rentals available."
+      "notes": "Small lake \u2014 full perimeter paddle in under 2 hours. Explore coves for fishing. No rentals available."
     },
     "birding": {
-      "highlight_species": ["Osprey", "Great Blue Heron", "Belted Kingfisher", "Painted Bunting"],
+      "highlight_species": [
+        "Osprey",
+        "Great Blue Heron",
+        "Belted Kingfisher",
+        "Painted Bunting"
+      ],
       "best_season": "spring and fall",
       "ebird_hotspot": false
     },
-    "badges": ["hidden-gem", "dog-friendly", "free"],
+    "badges": [
+      "hidden-gem",
+      "dog-friendly",
+      "free"
+    ],
     "hero_photo": "https://images.unsplash.com/photo-1471922694854-ff1b63b20054?w=1200&q=80&fit=crop&auto=format",
     "photos": []
   }
