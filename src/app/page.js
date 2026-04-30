@@ -712,9 +712,9 @@ export default function Home() {
           <span className="outdoor">OUTDOOR</span><span className="sa">SA</span>
         </div>
         <ul className="nav-links">
-          <li><a href="#activities">Activities</a></li>
-          <li><a href="#trails">Trails</a></li>
-          <li><a href="#parks">Parks</a></li>
+          <li><a href="/locations">Locations</a></li>
+          <li><a href="/locations?activity=hiking">Trails</a></li>
+          <li><a href="/locations?activity=outdoor_fitness">Parks</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#early" className="nav-cta">Get Early Access</a></li>
         </ul>
@@ -850,25 +850,27 @@ export default function Home() {
         <div className="section-title reveal" style={{transitionDelay:'80ms'}}>Every way to get outside.</div>
         <div className="activity-grid">
           {[
-            { name: 'Hiking',          count: '32 spots',   img: 'https://images.unsplash.com/photo-1759938894506-965368ace0f8?w=400&q=75&fit=crop&auto=format' },
-            { name: 'Cycling',         count: '18 routes',  img: 'https://images.unsplash.com/photo-1726506116661-f62368d9d6bb?w=400&q=75&fit=crop&auto=format' },
-            { name: 'Trail Running',   count: '24 routes',  img: 'https://images.unsplash.com/photo-1590646299178-1b26ab821e34?w=400&q=75&fit=crop&auto=format' },
-            { name: 'Kayaking',        count: '8 launches', img: 'https://images.unsplash.com/photo-1698246550885-cc4e82115944?w=400&q=75&fit=crop&auto=format' },
-            { name: 'Birding',         count: '11 sites',   img: 'https://images.unsplash.com/photo-1748469232301-1124c0a53633?w=400&q=75&fit=crop&auto=format' },
-            { name: 'Camping',         count: '6 sites',    img: 'https://images.unsplash.com/photo-1759665839780-b695f5f3e590?w=400&q=75&fit=crop&auto=format' },
-            { name: 'Disc Golf',       count: '9 courses',  img: 'https://images.unsplash.com/photo-1689514534472-791fadb755e5?w=400&q=75&fit=crop&auto=format' },
-            { name: 'Outdoor Fitness', count: '14 parks',   img: 'https://images.unsplash.com/photo-1686247166150-fe4ef9c56241?w=400&q=75&fit=crop&auto=format' },
+            { name: 'Hiking',          count: '32 spots',   slug: 'hiking',         img: 'https://images.unsplash.com/photo-1759938894506-965368ace0f8?w=400&q=75&fit=crop&auto=format' },
+            { name: 'Cycling',         count: '18 routes',  slug: 'cycling',        img: 'https://images.unsplash.com/photo-1726506116661-f62368d9d6bb?w=400&q=75&fit=crop&auto=format' },
+            { name: 'Trail Running',   count: '24 routes',  slug: 'trail_running',  img: 'https://images.unsplash.com/photo-1590646299178-1b26ab821e34?w=400&q=75&fit=crop&auto=format' },
+            { name: 'Kayaking',        count: '8 launches', slug: 'kayaking',       img: 'https://images.unsplash.com/photo-1698246550885-cc4e82115944?w=400&q=75&fit=crop&auto=format' },
+            { name: 'Birding',         count: '11 sites',   slug: 'birding',        img: 'https://images.unsplash.com/photo-1748469232301-1124c0a53633?w=400&q=75&fit=crop&auto=format' },
+            { name: 'Camping',         count: '6 sites',    slug: 'camping',        img: 'https://images.unsplash.com/photo-1759665839780-b695f5f3e590?w=400&q=75&fit=crop&auto=format' },
+            { name: 'Disc Golf',       count: '9 courses',  slug: 'disc_golf',      img: 'https://images.unsplash.com/photo-1689514534472-791fadb755e5?w=400&q=75&fit=crop&auto=format' },
+            { name: 'Outdoor Fitness', count: '14 parks',   slug: 'outdoor_fitness',img: 'https://images.unsplash.com/photo-1686247166150-fe4ef9c56241?w=400&q=75&fit=crop&auto=format' },
           ].map((a, i) => (
-            <div className="activity-tile reveal" key={a.name} style={{transitionDelay:`${i * 60}ms`}}>
-              <div className="activity-tile-img">
-                <Image src={a.img} alt={a.name} fill style={{objectFit:'cover'}} sizes="(max-width: 768px) 50vw, 160px" />
+            <a href={`/locations?activity=${a.slug}`} key={a.name} style={{textDecoration:'none',color:'inherit'}}>
+              <div className="activity-tile reveal" style={{transitionDelay:`${i * 60}ms`}}>
+                <div className="activity-tile-img">
+                  <Image src={a.img} alt={a.name} fill style={{objectFit:'cover'}} sizes="(max-width: 768px) 50vw, 160px" />
+                </div>
+                <div className="activity-tile-overlay" />
+                <div className="activity-tile-content">
+                  <span className="activity-name">{a.name}</span>
+                  <span className="activity-count">{a.count}</span>
+                </div>
               </div>
-              <div className="activity-tile-overlay" />
-              <div className="activity-tile-content">
-                <span className="activity-name">{a.name}</span>
-                <span className="activity-count">{a.count}</span>
-              </div>
-            </div>
+            </a>
           ))}
         </div>
       </section>
@@ -912,10 +914,10 @@ export default function Home() {
           <span className="outdoor">OUTDOOR</span><span className="sa">SA</span>
         </div>
         <ul className="footer-links">
-          <li><a href="#">Trails</a></li>
-          <li><a href="#">Parks</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="/locations?activity=hiking">Trails</a></li>
+          <li><a href="/locations?activity=outdoor_fitness">Parks</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#early">Contact</a></li>
           <li><a href="#" style={{color:'rgba(151,196,89,0.6)'}}>Afuera SA →</a></li>
         </ul>
         <div className="footer-copy">© 2026 OutdoorSA · San Antonio, TX</div>
