@@ -292,9 +292,16 @@ export default async function LocationPage({ params }) {
               </div>
             </div>
 
-            {/* Ad — between stats bar and About */}
-            <div style={{ marginBottom: 28 }}>
-              <AdUnit slot="SLOT_ID_LEADERBOARD" format="auto" />
+            {/* Amenities — moved from sidebar */}
+            <div style={{ background: '#fff', borderRadius: 10, padding: '16px 20px', border: '1px solid #D3D1C7', marginBottom: 28 }}>
+              <h3 style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: 18, fontWeight: 700, color: '#2C2C2A', margin: '0 0 4px' }}>Amenities</h3>
+              <CheckRow label="Parking" value={loc.parking} />
+              <CheckRow label="Restrooms" value={loc.restrooms} />
+              <CheckRow label="Water fountain" value={loc.water_fountain} />
+              <CheckRow label="Picnic tables" value={loc.picnic_tables} />
+              <CheckRow label="Playground" value={loc.playground} />
+              <CheckRow label="Bike racks" value={loc.bike_racks} />
+              <CheckRow label="ADA accessible" value={loc.ada_accessible} />
             </div>
 
             {/* Description */}
@@ -379,16 +386,9 @@ export default async function LocationPage({ params }) {
 
           {/* Sidebar */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-            {/* Amenities */}
-            <div style={{ background: '#fff', borderRadius: 10, padding: '16px 20px', border: '1px solid #D3D1C7' }}>
-              <h3 style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: 18, fontWeight: 700, color: '#2C2C2A', margin: '0 0 4px' }}>Amenities</h3>
-              <CheckRow label="Parking" value={loc.parking} />
-              <CheckRow label="Restrooms" value={loc.restrooms} />
-              <CheckRow label="Water fountain" value={loc.water_fountain} />
-              <CheckRow label="Picnic tables" value={loc.picnic_tables} />
-              <CheckRow label="Playground" value={loc.playground} />
-              <CheckRow label="Bike racks" value={loc.bike_racks} />
-              <CheckRow label="ADA accessible" value={loc.ada_accessible} />
+            {/* Ad — top of sidebar */}
+            <div style={{ borderRadius: 10, overflow: 'hidden' }}>
+              <AdUnit slot="SLOT_ID_SIDEBAR" format="auto" style={{ minHeight: 100 }} />
             </div>
 
             {/* Who it's for */}
@@ -429,11 +429,6 @@ export default async function LocationPage({ params }) {
                 {loc.disc_golf.tees && <CheckRow label="Tees" value={loc.disc_golf.tees.join(', ')} />}
               </div>
             )}
-
-            {/* Ad — bottom of sidebar */}
-            <div style={{ borderRadius: 10, overflow: 'hidden' }}>
-              <AdUnit slot="SLOT_ID_SIDEBAR" format="auto" style={{ minHeight: 100 }} />
-            </div>
 
             {/* Official site */}
             {loc.website && (
