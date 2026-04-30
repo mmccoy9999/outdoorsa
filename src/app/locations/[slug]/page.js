@@ -403,8 +403,10 @@ export default async function LocationPage({ params }) {
             {loc.kayak && (
               <div style={{ background: '#fff', borderRadius: 10, padding: '16px 20px', border: '1px solid #D3D1C7' }}>
                 <h3 style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: 18, fontWeight: 700, color: '#2C2C2A', margin: '0 0 4px' }}>Kayaking</h3>
-                <CheckRow label="Launch type" value={loc.kayak.launch_type} />
+                <CheckRow label="Launch" value={loc.kayak.launch_type || loc.kayak.launch} />
                 <CheckRow label="Water body" value={loc.kayak.water_body} />
+                <CheckRow label="Difficulty" value={loc.kayak.difficulty} />
+                <CheckRow label="Typical run" value={loc.kayak.typical_run_miles ? `${loc.kayak.typical_run_miles} mi` : null} />
                 <CheckRow label="Current" value={loc.kayak.current} />
                 <CheckRow label="Drought risk" value={loc.kayak.drought_risk} />
               </div>
@@ -412,16 +414,19 @@ export default async function LocationPage({ params }) {
             {loc.camping && (
               <div style={{ background: '#fff', borderRadius: 10, padding: '16px 20px', border: '1px solid #D3D1C7' }}>
                 <h3 style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: 18, fontWeight: 700, color: '#2C2C2A', margin: '0 0 4px' }}>Camping</h3>
-                <CheckRow label="Site types" value={loc.camping.site_types.join(', ')} />
-                <CheckRow label="Sites" value={loc.camping.num_sites} />
+                {loc.camping.site_types && <CheckRow label="Site types" value={loc.camping.site_types.join(', ')} />}
+                <CheckRow label="Sites" value={loc.camping.num_sites || loc.camping.sites} />
+                <CheckRow label="Hookups" value={loc.camping.hookups} />
                 <CheckRow label="Reservations" value={loc.camping.reservations} />
+                {loc.camping.fee_per_night && <CheckRow label="Fee/night" value={`$${loc.camping.fee_per_night}`} />}
               </div>
             )}
             {loc.disc_golf && (
               <div style={{ background: '#fff', borderRadius: 10, padding: '16px 20px', border: '1px solid #D3D1C7' }}>
                 <h3 style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: 18, fontWeight: 700, color: '#2C2C2A', margin: '0 0 4px' }}>Disc Golf</h3>
-                <CheckRow label="Holes" value={loc.disc_golf.num_holes} />
+                <CheckRow label="Holes" value={loc.disc_golf.num_holes || loc.disc_golf.holes} />
                 <CheckRow label="Basket condition" value={loc.disc_golf.basket_condition} />
+                {loc.disc_golf.tees && <CheckRow label="Tees" value={loc.disc_golf.tees.join(', ')} />}
               </div>
             )}
 
