@@ -24,6 +24,19 @@ const ACTIVITY_LABELS = {
 const SHADE_LABELS = ['', 'Full Sun', 'Mostly Sun', 'Mixed', 'Mostly Shaded', 'Full Shade']
 const ALL_ACTIVITIES = Object.keys(ACTIVITY_LABELS)
 
+// Shade reduces effective heat index — full shade (~15°F cooler than full sun)
+const SHADE_ADJ = [0, 0, -3, -7, -11, -15]
+
+function getComfort(feelsLike, shadeRating) {
+  if (feelsLike == null) return null
+  const adjusted = feelsLike + SHADE_ADJ[shadeRating ?? 1]
+  if (adjusted >= 105) return { label: 'Avoid', color: '#B91C1C', bg: '#FDE8E8' }
+  if (adjusted >= 95)  return { label: 'Hot',   color: '#BA7517', bg: '#FAEEDA' }
+  if (adjusted >= 80)  return { label: 'Warm',  color: '#BA7517', bg: '#FFF9EC' }
+  if (adjusted >= 55)  return { label: 'Good',  color: '#3B6D11', bg: '#EAF3DE' }
+  return                      { label: 'Great', color: '#3B6D11', bg: '#EAF3DE' }
+}
+
 function ShadeBar({ rating }) {
   return (
     <div style={{ display: 'flex', gap: '3px', alignItems: 'center' }}>
@@ -41,7 +54,8 @@ function DifficultyPill({ difficulty }) {
   return <span style={{ background: s.bg, color: s.color, fontSize: 11, fontWeight: 700, letterSpacing: '0.05em', padding: '2px 8px', borderRadius: 4, textTransform: 'uppercase', fontFamily: 'var(--font-barlow-condensed)' }}>{difficulty}</span>
 }
 
-function LocationCard({ loc, highlighted, onMouseEnter, onMouseLeave }) {
+function LocationCard({ loc, highlighted, onMouseEnter, onMouseLeave, weather }) {
+  const comfort = weather ? getComfort(weather.feelsLike, loc.shade_rating) : null
   return (
     <Link href={`/locations/${loc.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
       <div
@@ -77,9 +91,14 @@ function LocationCard({ loc, highlighted, onMouseEnter, onMouseLeave }) {
           </div>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 8 }}>
             <ShadeBar rating={loc.shade_rating} />
-            <div style={{ display: 'flex', gap: 8, fontSize: 11, color: '#5F5E5A', fontFamily: 'var(--font-barlow)' }}>
+            <div style={{ display: 'flex', gap: 6, alignItems: 'center', fontSize: 11, color: '#5F5E5A', fontFamily: 'var(--font-barlow)' }}>
               {loc.distance_miles && <span>{loc.distance_miles} mi</span>}
               {(loc.dog_friendly === 'leash_required' || loc.dog_friendly === 'yes') && <span>🐕</span>}
+              {comfort && (
+                <span style={{ background: comfort.bg, color: comfort.color, fontWeight: 700, fontSize: 10, padding: '2px 7px', borderRadius: 4, letterSpacing: '0.04em', fontFamily: 'var(--font-barlow-condensed)', textTransform: 'uppercase' }}>
+                  {comfort.label}
+                </span>
+              )}
             </div>
           </div>
         </div>
@@ -96,11 +115,16 @@ function LocationsContent() {
   const [searchQuery, setSearchQuery] = useState('')
   const [view, setView] = useState('split') // 'list' | 'map' | 'split'
   const [hoveredId, setHoveredId] = useState(null)
+  const [weather, setWeather] = useState(null)
 
   useEffect(() => {
     const activity = searchParams.get('activity')
     if (activity && ACTIVITY_LABELS[activity]) setActiveActivity(activity)
   }, [searchParams])
+
+  useEffect(() => {
+    fetch('/api/weather').then(r => r.json()).then(setWeather).catch(() => {})
+  }, [])
 
   const usedActivities = useMemo(() => {
     const set = new Set(locations.flatMap(l => l.activities))
@@ -190,6 +214,13 @@ function LocationsContent() {
           </button>
         ))}
         <span style={{ fontSize: 12, color: '#5F5E5A', fontFamily: 'var(--font-barlow)', marginLeft: 4 }}>{filtered.length} locations</span>
+        {weather?.temp != null && (
+          <span style={{ fontSize: 12, color: '#5F5E5A', fontFamily: 'var(--font-barlow)', marginLeft: 8, paddingLeft: 8, borderLeft: '1px solid #D3D1C7', whiteSpace: 'nowrap' }}>
+            {weather.temp}°F
+            {weather.feelsLike != null && weather.feelsLike !== weather.temp && <> · Feels {weather.feelsLike}°F</>}
+            {weather.conditions && <> · {weather.conditions}</>}
+          </span>
+        )}
       </div>
 
       {/* Content */}
@@ -210,13 +241,13 @@ function LocationsContent() {
             {view === 'list' ? (
               <div className="locations-grid-single">
                 {filtered.map(loc => (
-                  <LocationCard key={loc.id} loc={loc} highlighted={hoveredId === loc.id} onMouseEnter={() => setHoveredId(loc.id)} onMouseLeave={() => setHoveredId(null)} />
+                  <LocationCard key={loc.id} loc={loc} highlighted={hoveredId === loc.id} onMouseEnter={() => setHoveredId(loc.id)} onMouseLeave={() => setHoveredId(null)} weather={weather} />
                 ))}
               </div>
             ) : (
               <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
                 {filtered.map(loc => (
-                  <LocationCard key={loc.id} loc={loc} highlighted={hoveredId === loc.id} onMouseEnter={() => setHoveredId(loc.id)} onMouseLeave={() => setHoveredId(null)} />
+                  <LocationCard key={loc.id} loc={loc} highlighted={hoveredId === loc.id} onMouseEnter={() => setHoveredId(loc.id)} onMouseLeave={() => setHoveredId(null)} weather={weather} />
                 ))}
               </div>
             )}
