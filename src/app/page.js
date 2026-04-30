@@ -737,7 +737,7 @@ export default function Home() {
           </div>
           <div className="hero-stats">
             <div className="stat-item">
-              <span className="stat-num">80+</span>
+              <span className="stat-num">50+</span>
               <span className="stat-label">Locations mapped</span>
             </div>
             <div className="stat-item">
