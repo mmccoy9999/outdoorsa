@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 
 export default function Home() {
   const [email, setEmail] = useState('')
@@ -272,9 +273,10 @@ export default function Home() {
           position: absolute;
           inset: 0;
           background:
-            radial-gradient(ellipse at 30% 60%, #4a7d18 0%, transparent 55%),
-            radial-gradient(ellipse at 80% 20%, #2d5a0e 0%, transparent 50%),
-            #3B6D11;
+            radial-gradient(ellipse at 30% 60%, rgba(74,125,24,0.55) 0%, transparent 55%),
+            radial-gradient(ellipse at 80% 20%, rgba(45,90,14,0.6) 0%, transparent 50%),
+            rgba(59,109,17,0.45);
+          z-index: 1;
         }
 
         .map-card-float {
@@ -284,6 +286,7 @@ export default function Home() {
           padding: 14px 18px;
           box-shadow: 0 8px 32px rgba(0,0,0,0.18);
           animation: floatUp 3s ease-in-out infinite alternate;
+          z-index: 3;
         }
 
         @keyframes floatUp {
@@ -450,30 +453,46 @@ export default function Home() {
         }
 
         .activity-tile {
-          background: rgba(255,255,255,0.06);
-          border: 1px solid rgba(255,255,255,0.1);
+          position: relative;
+          overflow: hidden;
           border-radius: 10px;
-          padding: 1.5rem 1rem;
-          text-align: center;
+          height: 190px;
           cursor: pointer;
-          transition: background 0.15s, border-color 0.15s, transform 0.1s;
+          transition: transform 0.2s;
         }
 
-        .activity-tile:hover {
-          background: rgba(151,196,89,0.15);
-          border-color: var(--green-light);
-          transform: translateY(-3px);
+        .activity-tile:hover { transform: translateY(-4px); }
+
+        .activity-tile-img { position: absolute; inset: 0; }
+
+        .activity-tile-overlay {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(to top, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.2) 55%, transparent 100%);
+          transition: background 0.2s;
+          z-index: 1;
         }
 
-        .activity-icon { font-size: 28px; margin-bottom: 0.6rem; display: block; }
+        .activity-tile:hover .activity-tile-overlay {
+          background: linear-gradient(to top, rgba(44,90,14,0.88) 0%, rgba(44,90,14,0.45) 55%, rgba(44,90,14,0.1) 100%);
+        }
+
+        .activity-tile-content {
+          position: absolute;
+          bottom: 0; left: 0; right: 0;
+          padding: 0.85rem 1rem;
+          z-index: 2;
+        }
+
         .activity-name {
           font-family: var(--font-barlow-condensed), sans-serif;
-          font-size: 15px;
-          font-weight: 600;
-          color: rgba(255,255,255,0.9);
+          font-size: 17px;
+          font-weight: 700;
+          color: white;
           display: block;
+          line-height: 1.1;
         }
-        .activity-count { font-size: 12px; color: var(--green-light); margin-top: 3px; display: block; }
+        .activity-count { font-size: 12px; color: rgba(255,255,255,0.7); margin-top: 3px; display: block; }
 
         .email-section {
           background: var(--green-dark);
@@ -733,8 +752,15 @@ export default function Home() {
         </div>
 
         <div className="hero-right">
+          <Image
+            src="https://images.unsplash.com/photo-1624664267579-d94b43372f18?w=1200&q=80&fit=crop&auto=format"
+            alt="Texas river surrounded by lush green trees"
+            fill
+            style={{objectFit:'cover'}}
+            priority
+          />
           <div className="hero-map-bg"></div>
-          <svg style={{position:'absolute',inset:0,width:'100%',height:'100%',opacity:0.12}} viewBox="0 0 600 700" preserveAspectRatio="xMidYMid slice">
+          <svg style={{position:'absolute',inset:0,width:'100%',height:'100%',opacity:0.12,zIndex:2}} viewBox="0 0 600 700" preserveAspectRatio="xMidYMid slice">
             <g fill="none" stroke="white" strokeWidth="1">
               <ellipse cx="300" cy="350" rx="80" ry="50"/>
               <ellipse cx="300" cy="350" rx="150" ry="100"/>
@@ -824,19 +850,24 @@ export default function Home() {
         <div className="section-title reveal" style={{transitionDelay:'80ms'}}>Every way to get outside.</div>
         <div className="activity-grid">
           {[
-            { icon: '🥾', name: 'Hiking', count: '32 spots' },
-            { icon: '🚴', name: 'Cycling', count: '18 routes' },
-            { icon: '🏃', name: 'Trail Running', count: '24 routes' },
-            { icon: '🛶', name: 'Kayaking', count: '8 launches' },
-            { icon: '🦅', name: 'Birding', count: '11 sites' },
-            { icon: '🏕️', name: 'Camping', count: '6 sites' },
-            { icon: '🥏', name: 'Disc Golf', count: '9 courses' },
-            { icon: '🧘', name: 'Outdoor Fitness', count: '14 parks' },
+            { name: 'Hiking',          count: '32 spots',   img: 'https://images.unsplash.com/photo-1759938894506-965368ace0f8?w=400&q=75&fit=crop&auto=format' },
+            { name: 'Cycling',         count: '18 routes',  img: 'https://images.unsplash.com/photo-1726506116661-f62368d9d6bb?w=400&q=75&fit=crop&auto=format' },
+            { name: 'Trail Running',   count: '24 routes',  img: 'https://images.unsplash.com/photo-1590646299178-1b26ab821e34?w=400&q=75&fit=crop&auto=format' },
+            { name: 'Kayaking',        count: '8 launches', img: 'https://images.unsplash.com/photo-1698246550885-cc4e82115944?w=400&q=75&fit=crop&auto=format' },
+            { name: 'Birding',         count: '11 sites',   img: 'https://images.unsplash.com/photo-1748469232301-1124c0a53633?w=400&q=75&fit=crop&auto=format' },
+            { name: 'Camping',         count: '6 sites',    img: 'https://images.unsplash.com/photo-1759665839780-b695f5f3e590?w=400&q=75&fit=crop&auto=format' },
+            { name: 'Disc Golf',       count: '9 courses',  img: 'https://images.unsplash.com/photo-1689514534472-791fadb755e5?w=400&q=75&fit=crop&auto=format' },
+            { name: 'Outdoor Fitness', count: '14 parks',   img: 'https://images.unsplash.com/photo-1686247166150-fe4ef9c56241?w=400&q=75&fit=crop&auto=format' },
           ].map((a, i) => (
             <div className="activity-tile reveal" key={a.name} style={{transitionDelay:`${i * 60}ms`}}>
-              <span className="activity-icon">{a.icon}</span>
-              <span className="activity-name">{a.name}</span>
-              <span className="activity-count">{a.count}</span>
+              <div className="activity-tile-img">
+                <Image src={a.img} alt={a.name} fill style={{objectFit:'cover'}} sizes="(max-width: 768px) 50vw, 160px" />
+              </div>
+              <div className="activity-tile-overlay" />
+              <div className="activity-tile-content">
+                <span className="activity-name">{a.name}</span>
+                <span className="activity-count">{a.count}</span>
+              </div>
             </div>
           ))}
         </div>
