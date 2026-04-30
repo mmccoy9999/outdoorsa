@@ -919,6 +919,7 @@ export default function Home() {
           <li><a href="#about">About</a></li>
           <li><a href="#early">Contact</a></li>
           <li><a href="#" style={{color:'rgba(151,196,89,0.6)'}}>Afuera SA →</a></li>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
         </ul>
         <div className="footer-copy">© 2026 OutdoorSA · San Antonio, TX</div>
       </footer>

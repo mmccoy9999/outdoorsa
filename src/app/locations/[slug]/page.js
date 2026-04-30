@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import locations from '@/data/locations.json'
+import AdUnit from '@/components/AdUnit'
 
 const ACTIVITY_LABELS = {
   hiking: 'Hiking', cycling: 'Cycling', trail_running: 'Trail Running',
@@ -191,9 +192,14 @@ export default async function LocationPage({ params }) {
             OUTDOOR<span style={{ color: '#3B6D11' }}>SA</span>
           </span>
         </Link>
-        <Link href="/locations" style={{ fontSize: 13, color: '#5F5E5A', textDecoration: 'none', fontFamily: 'var(--font-barlow)' }}>
-          ← All Locations
-        </Link>
+        <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
+          <Link href="/locations" style={{ fontSize: 13, color: '#5F5E5A', textDecoration: 'none', fontFamily: 'var(--font-barlow)' }}>
+            ← All Locations
+          </Link>
+          <Link href="/privacy-policy" style={{ fontSize: 13, color: '#9E9C94', textDecoration: 'none', fontFamily: 'var(--font-barlow)' }}>
+            Privacy Policy
+          </Link>
+        </div>
       </nav>
 
       {/* Hero */}
@@ -284,6 +290,11 @@ export default async function LocationPage({ params }) {
                   <span style={{ fontSize: 13, color: '#5F5E5A', marginLeft: 6, fontFamily: 'var(--font-barlow)' }}>{SHADE_LABELS[loc.shade_rating]}</span>
                 </div>
               </div>
+            </div>
+
+            {/* Ad — between stats bar and About */}
+            <div style={{ marginBottom: 28 }}>
+              <AdUnit slot="SLOT_ID_LEADERBOARD" format="auto" />
             </div>
 
             {/* Description */}
@@ -413,6 +424,11 @@ export default async function LocationPage({ params }) {
                 <CheckRow label="Basket condition" value={loc.disc_golf.basket_condition} />
               </div>
             )}
+
+            {/* Ad — bottom of sidebar */}
+            <div style={{ borderRadius: 10, overflow: 'hidden' }}>
+              <AdUnit slot="SLOT_ID_SIDEBAR" format="auto" style={{ minHeight: 100 }} />
+            </div>
 
             {/* Official site */}
             {loc.website && (
