@@ -13,9 +13,25 @@ const barlowCondensed = Barlow_Condensed({
   variable: '--font-barlow-condensed',
 })
 
+const BASE_URL = 'https://outdoorsa.com'
+
 export const metadata = {
+  metadataBase: new URL(BASE_URL),
   title: 'OutdoorSA — San Antonio Outdoor Guide',
-  description: 'Trails, parks, and outdoor activities in San Antonio, TX. Shade ratings, weather-aware filters, and more.',
+  description: 'Trails, parks, bike paths, kayak spots — curated for San Antonio with shade ratings, seasonal conditions, and everything AllTrails leaves out.',
+  openGraph: {
+    title: 'OutdoorSA — San Antonio Outdoor Guide',
+    description: 'Trails, parks, bike paths, kayak spots — curated for San Antonio with shade ratings, seasonal conditions, and everything AllTrails leaves out.',
+    url: BASE_URL,
+    siteName: 'OutdoorSA',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'OutdoorSA — San Antonio Outdoor Guide',
+    description: 'Trails, parks, bike paths, kayak spots — curated for San Antonio with shade ratings, seasonal conditions, and everything AllTrails leaves out.',
+  },
 }
 
 export default function RootLayout({ children }) {

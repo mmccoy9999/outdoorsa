@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="7" fill="#3B6D11"/>
+  <!-- Main peak -->
+  <path d="M16 8L5 24H27L16 8Z" fill="white"/>
+  <!-- Secondary peak (foreground) -->
+  <path d="M23 14L17 24H29L23 14Z" fill="#97C459"/>
+</svg>

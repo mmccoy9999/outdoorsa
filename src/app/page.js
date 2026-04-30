@@ -1,11 +1,28 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function Home() {
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState(null) // null | 'loading' | 'success' | 'error'
   const [errorMsg, setErrorMsg] = useState('')
+
+  useEffect(() => {
+    const els = document.querySelectorAll('.reveal')
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible')
+            observer.unobserve(entry.target)
+          }
+        })
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+    )
+    els.forEach((el) => observer.observe(el))
+    return () => observer.disconnect()
+  }, [])
 
   async function handleSubmit(e) {
     e.preventDefault()
@@ -584,6 +601,90 @@ export default function Home() {
         .footer-links a:hover { color: var(--green-light); }
 
         .footer-copy { font-size: 12px; color: rgba(255,255,255,0.3); }
+
+        /* ── Tablet (≤1024px) ── */
+        @media (max-width: 1024px) {
+          .hero-left { padding: 4rem 2.5rem 4rem 3rem; }
+          .features-strip { padding: 1.2rem 2rem; gap: 1.5rem; }
+          .section { padding: 5rem 2.5rem; }
+          .activity-section { padding: 4rem 2.5rem; }
+          .email-section { padding: 5rem 2.5rem; }
+          footer { padding: 2rem 2.5rem; }
+        }
+
+        /* ── Mobile (≤768px) ── */
+        @media (max-width: 768px) {
+          nav { padding: 0 1.25rem; }
+
+          /* hide text links, keep CTA */
+          .nav-links li:not(:last-child) { display: none; }
+
+          .hero {
+            grid-template-columns: 1fr;
+            min-height: auto;
+          }
+
+          .hero-right { display: none; }
+
+          .hero-left {
+            padding: 3rem 1.25rem 3.5rem;
+          }
+
+          .hero-desc { max-width: 100%; }
+
+          .hero-stats {
+            gap: 1.5rem;
+            flex-wrap: wrap;
+          }
+
+          .features-strip {
+            padding: 1rem 1.25rem;
+            flex-wrap: wrap;
+            gap: 0.6rem 1.25rem;
+            justify-content: flex-start;
+          }
+
+          .section { padding: 4rem 1.25rem; }
+          .section-title { margin-bottom: 2.5rem; }
+
+          .activity-section { padding: 3.5rem 1.25rem; }
+
+          .email-section { padding: 4rem 1.25rem; }
+
+          .email-form { flex-direction: column; }
+
+          .btn-email {
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+          }
+
+          footer {
+            padding: 2rem 1.25rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.25rem;
+          }
+
+          .footer-links { flex-wrap: wrap; gap: 1rem 1.5rem; }
+        }
+
+        /* ── Scroll reveal ── */
+        .reveal {
+          opacity: 0;
+          transform: translateY(22px);
+          transition: opacity 0.55s ease, transform 0.55s ease;
+        }
+        .reveal.visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        /* ── Small phones (≤480px) ── */
+        @media (max-width: 480px) {
+          .hero-actions { flex-direction: column; align-items: stretch; }
+          .btn-primary, .btn-secondary { justify-content: center; text-align: center; }
+        }
       `}</style>
 
       {/* NAV */}
@@ -678,7 +779,7 @@ export default function Home() {
       </section>
 
       {/* FEATURES STRIP */}
-      <div className="features-strip">
+      <div className="features-strip reveal">
         <div className="feature-item">Live weather conditions</div>
         <div className="feature-item">Shade ratings per trail</div>
         <div className="feature-item">12 activity categories</div>
@@ -687,28 +788,28 @@ export default function Home() {
 
       {/* WHY OUTDOORSA */}
       <section className="section" id="about">
-        <div className="section-label">Why OutdoorSA</div>
-        <div className="section-title">Built for this city, not every city.</div>
+        <div className="section-label reveal">Why OutdoorSA</div>
+        <div className="section-title reveal" style={{transitionDelay:'80ms'}}>Built for this city, not every city.</div>
         <div className="diff-grid">
-          <div className="diff-card">
+          <div className="diff-card reveal" style={{transitionDelay:'0ms'}}>
             <div className="diff-number">01</div>
             <div className="diff-card-title">Shade ratings that matter</div>
             <div className="diff-card-desc">San Antonio summers are brutal. Every listing tells you how much tree cover to expect — so you plan around the heat, not into it.</div>
             <span className="diff-tag">SA-specific</span>
           </div>
-          <div className="diff-card">
+          <div className="diff-card reveal" style={{transitionDelay:'80ms'}}>
             <div className="diff-number">02</div>
             <div className="diff-card-title">More than hiking</div>
             <div className="diff-card-desc">Kayaking the Medina. Birding at Mitchell Lake. Disc golf at McAllister. If you do it outside in SA, it&apos;s here.</div>
             <span className="diff-tag">12 activity types</span>
           </div>
-          <div className="diff-card">
+          <div className="diff-card reveal" style={{transitionDelay:'160ms'}}>
             <div className="diff-number">03</div>
             <div className="diff-card-title">Weather-aware filters</div>
             <div className="diff-card-desc">Live temperature, UV, and wind data baked into the filter. Know before you go whether today&apos;s actually a good day to go.</div>
             <span className="diff-tag">Real-time</span>
           </div>
-          <div className="diff-card">
+          <div className="diff-card reveal" style={{transitionDelay:'240ms'}}>
             <div className="diff-number">04</div>
             <div className="diff-card-title">En Español</div>
             <div className="diff-card-desc">Full Spanish-language version launching as Afuera SA — so the whole city can find its next adventure, not just part of it.</div>
@@ -719,8 +820,8 @@ export default function Home() {
 
       {/* ACTIVITIES */}
       <section className="activity-section" id="activities">
-        <div className="section-label">What&apos;s out there</div>
-        <div className="section-title">Every way to get outside.</div>
+        <div className="section-label reveal">What&apos;s out there</div>
+        <div className="section-title reveal" style={{transitionDelay:'80ms'}}>Every way to get outside.</div>
         <div className="activity-grid">
           {[
             { icon: '🥾', name: 'Hiking', count: '32 spots' },
@@ -731,8 +832,8 @@ export default function Home() {
             { icon: '🏕️', name: 'Camping', count: '6 sites' },
             { icon: '🥏', name: 'Disc Golf', count: '9 courses' },
             { icon: '🧘', name: 'Outdoor Fitness', count: '14 parks' },
-          ].map((a) => (
-            <div className="activity-tile" key={a.name}>
+          ].map((a, i) => (
+            <div className="activity-tile reveal" key={a.name} style={{transitionDelay:`${i * 60}ms`}}>
               <span className="activity-icon">{a.icon}</span>
               <span className="activity-name">{a.name}</span>
               <span className="activity-count">{a.count}</span>
@@ -743,7 +844,7 @@ export default function Home() {
 
       {/* EMAIL CAPTURE */}
       <section className="email-section" id="early">
-        <div className="email-inner">
+        <div className="email-inner reveal">
           <div className="section-label">Early access</div>
           <div className="email-title">San Antonio&apos;s trails are waiting.</div>
           <p className="email-sub">Be first to explore when OutdoorSA launches. No spam — just a heads-up when we&apos;re live.</p>
