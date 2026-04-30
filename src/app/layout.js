@@ -1,4 +1,5 @@
 import { Barlow, Barlow_Condensed } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 
 const barlow = Barlow({
@@ -37,7 +38,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${barlow.variable} ${barlowCondensed.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        {/* Replace ca-pub-XXXXXXXXXXXXXXXXX with your real publisher ID after AdSense approval */}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXXX"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+      </body>
     </html>
   )
 }
