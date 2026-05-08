@@ -1,96 +1,271 @@
 {
   "friedrich-wilderness-park": {
-    "Main Loop": { "difficulty": "moderate", "notes": "5+ miles of rolling terrain through oak-juniper woodland" },
-    "Vista Loop": { "difficulty": "moderate", "notes": "Elevation changes with hilltop views" },
-    "Bosque Trail": { "difficulty": "easy", "notes": "Relatively flat, follows creek drainage" },
-    "Juniper Ridge": { "difficulty": "moderate" },
-    "Juniper Barrens": { "difficulty": "moderate" },
-    "Water Trail": { "difficulty": "easy" },
-    "Fern Del": { "difficulty": "easy" },
-    "Upland Range": { "difficulty": "moderate" },
-    "Bear Grass Trail": { "difficulty": "moderate" },
-    "Forest Range Trail": { "difficulty": "easy" },
-    "Restoration Way Trail": { "difficulty": "moderate" },
-    "Scrub Jay Pass": { "difficulty": "easy" },
-    "Grey Fox Pass": { "difficulty": "easy" }
+    "Main Loop": {
+      "difficulty": "moderate",
+      "notes": "5+ miles of rolling terrain through oak-juniper woodland"
+    },
+    "Vista Loop": {
+      "difficulty": "moderate",
+      "notes": "Elevation changes with hilltop views"
+    },
+    "Bosque Trail": {
+      "difficulty": "easy",
+      "notes": "Relatively flat, follows creek drainage"
+    },
+    "Juniper Ridge": {
+      "difficulty": "moderate"
+    },
+    "Juniper Barrens": {
+      "difficulty": "moderate"
+    },
+    "Water Trail": {
+      "difficulty": "easy"
+    },
+    "Fern Del": {
+      "difficulty": "easy"
+    },
+    "Upland Range": {
+      "difficulty": "moderate"
+    },
+    "Bear Grass Trail": {
+      "difficulty": "moderate"
+    },
+    "Forest Range Trail": {
+      "difficulty": "easy"
+    },
+    "Restoration Way Trail": {
+      "difficulty": "moderate"
+    },
+    "Scrub Jay Pass": {
+      "difficulty": "easy"
+    },
+    "Grey Fox Pass": {
+      "difficulty": "easy"
+    }
   },
   "eisenhower-park": {
-    "Hillview Nature Trail": { "difficulty": "moderate", "notes": "Best views in the park, some rocky elevation gain" },
-    "Hillview Paved Trail": { "difficulty": "easy" },
-    "Cedar Flats Trail": { "difficulty": "easy", "notes": "Flat trail through shaded cedar canopy" },
-    "Yucca Nature Trail": { "difficulty": "easy" },
-    "Yucca Paved Trail": { "difficulty": "easy" },
-    "Shady Creek Trail": { "difficulty": "easy" },
-    "Davis Trail": { "difficulty": "moderate" },
-    "Live Oak Trail": { "difficulty": "easy" }
+    "Hillview Nature Trail": {
+      "difficulty": "moderate",
+      "notes": "Best views in the park, some rocky elevation gain"
+    },
+    "Hillview Paved Trail": {
+      "difficulty": "easy"
+    },
+    "Cedar Flats Trail": {
+      "difficulty": "easy",
+      "notes": "Flat trail through shaded cedar canopy"
+    },
+    "Yucca Nature Trail": {
+      "difficulty": "easy"
+    },
+    "Yucca Paved Trail": {
+      "difficulty": "easy"
+    },
+    "Shady Creek Trail": {
+      "difficulty": "easy"
+    },
+    "Davis Trail": {
+      "difficulty": "moderate"
+    },
+    "Live Oak Trail": {
+      "difficulty": "easy"
+    }
   },
   "government-canyon-state-natural-area": {
-    "Lytle's Loop": { "difficulty": "easy", "notes": "Good introductory loop, mostly flat" },
-    "Savannah Loop": { "difficulty": "easy" },
-    "SWR Parkway Walking Path": { "difficulty": "easy" },
-    "Old Stillwater Ranch Path": { "difficulty": "moderate" }
+    "Lytle's Loop": {
+      "difficulty": "easy",
+      "notes": "Good introductory loop, mostly flat"
+    },
+    "Savannah Loop": {
+      "difficulty": "easy"
+    },
+    "SWR Parkway Walking Path": {
+      "difficulty": "easy"
+    },
+    "Old Stillwater Ranch Path": {
+      "difficulty": "moderate"
+    }
   },
   "mcallister-park": {
-    "Blue Loop": { "difficulty": "easy" },
-    "Red Trail": { "difficulty": "easy" },
-    "Cactus Patch Trail": { "difficulty": "easy" },
-    "Short Cut": { "difficulty": "easy" },
-    "Baseball Field Trail": { "difficulty": "easy" }
+    "Blue Loop": {
+      "difficulty": "moderate",
+      "notes": "Mix of asphalt and natural surface, SA's best mountain bike loop",
+      "surface": "asphalt / natural",
+      "distance_override": 6
+    },
+    "Red Trail": {
+      "difficulty": "easy",
+      "notes": "Natural surface, good for trail running",
+      "surface": "natural",
+      "distance_override": 1.93
+    },
+    "Cactus Patch Trail": {
+      "difficulty": "easy",
+      "surface": "natural"
+    },
+    "Short Cut": {
+      "difficulty": "easy"
+    },
+    "Baseball Field Trail": {
+      "difficulty": "easy",
+      "surface": "asphalt"
+    }
   },
   "phil-hardberger-park": {
-    "Water Loop Trail": { "difficulty": "easy" },
-    "Geology Loop": { "difficulty": "moderate", "notes": "Explores canyon drainage and exposed limestone" },
-    "Oak Loop Trail": { "difficulty": "easy" },
-    "Savanna Loop Trail": { "difficulty": "easy" },
-    "Savanna Loop Bypass": { "difficulty": "easy" },
-    "Old Gold Lane": { "difficulty": "easy" },
-    "Land Bridge": { "difficulty": "easy", "notes": "Signature land bridge connecting north and south sections" },
-    "Geology Trail": { "difficulty": "moderate" },
-    "Silver Oaks": { "difficulty": "easy" }
+    "Water Loop Trail": {
+      "difficulty": "easy"
+    },
+    "Geology Loop": {
+      "difficulty": "moderate",
+      "notes": "Explores canyon drainage and exposed limestone"
+    },
+    "Oak Loop Trail": {
+      "difficulty": "easy"
+    },
+    "Savanna Loop Trail": {
+      "difficulty": "easy"
+    },
+    "Savanna Loop Bypass": {
+      "difficulty": "easy"
+    },
+    "Old Gold Lane": {
+      "difficulty": "easy"
+    },
+    "Land Bridge": {
+      "difficulty": "easy",
+      "notes": "Signature land bridge connecting north and south sections"
+    },
+    "Geology Trail": {
+      "difficulty": "moderate"
+    },
+    "Silver Oaks": {
+      "difficulty": "easy"
+    }
   },
   "enchanted-rock-sna": {
-    "Summit Trail": { "difficulty": "hard", "notes": "Steep granite dome climb — exposed and strenuous, especially in heat" },
-    "Loop Trail": { "difficulty": "moderate", "notes": "Circumnavigates the main dome" },
-    "Echo Canyon Trail": { "difficulty": "moderate", "notes": "Scrambles through boulder formations" },
-    "Frontside Trail": { "difficulty": "moderate" },
-    "Base Trail": { "difficulty": "easy" },
-    "Scenic View Trail": { "difficulty": "easy" },
-    "Turkey Pass Trail": { "difficulty": "moderate" },
-    "Walnut Springs Trail": { "difficulty": "easy" },
-    "Moss Lake Trail": { "difficulty": "easy" },
-    "Buzzard's Roost Trail": { "difficulty": "moderate" },
-    "Little Rock Summit trail": { "difficulty": "moderate" },
-    "Interpretive Loop Trail": { "difficulty": "easy" },
-    "Connecting Trail": { "difficulty": "easy" }
+    "Summit Trail": {
+      "difficulty": "hard",
+      "notes": "Steep granite dome climb — exposed and strenuous, especially in heat"
+    },
+    "Loop Trail": {
+      "difficulty": "moderate",
+      "notes": "Circumnavigates the main dome"
+    },
+    "Echo Canyon Trail": {
+      "difficulty": "moderate",
+      "notes": "Scrambles through boulder formations"
+    },
+    "Frontside Trail": {
+      "difficulty": "moderate"
+    },
+    "Base Trail": {
+      "difficulty": "easy"
+    },
+    "Scenic View Trail": {
+      "difficulty": "easy"
+    },
+    "Turkey Pass Trail": {
+      "difficulty": "moderate"
+    },
+    "Walnut Springs Trail": {
+      "difficulty": "easy"
+    },
+    "Moss Lake Trail": {
+      "difficulty": "easy"
+    },
+    "Buzzard's Roost Trail": {
+      "difficulty": "moderate"
+    },
+    "Little Rock Summit trail": {
+      "difficulty": "moderate"
+    },
+    "Interpretive Loop Trail": {
+      "difficulty": "easy"
+    },
+    "Connecting Trail": {
+      "difficulty": "easy"
+    }
   },
   "garner-state-park": {
-    "Old Baldy Trail": { "difficulty": "hard", "notes": "Steep rocky climb to summit — best views in the park" },
-    "Rim Trail": { "difficulty": "moderate" },
-    "Blinn River Trail": { "difficulty": "easy", "notes": "Follows the Frio River, mostly flat" },
-    "Crystal Cave Trail": { "difficulty": "easy" },
-    "Bridges Trail": { "difficulty": "easy" },
-    "White Rock Cave Trail": { "difficulty": "moderate" },
-    "Foshee Trail": { "difficulty": "moderate" },
-    "Old Horse Trail": { "difficulty": "easy" },
-    "Polly Trail": { "difficulty": "easy" },
-    "Wild Horse Creek Trail": { "difficulty": "moderate" },
-    "Wilks Trail": { "difficulty": "easy" },
-    "Donovan Trail": { "difficulty": "easy" },
-    "Old CCC Trail": { "difficulty": "moderate" },
-    "Bell Trail": { "difficulty": "easy" },
-    "Bird Trail": { "difficulty": "easy" },
-    "Ashe Juniper Trail": { "difficulty": "easy" },
-    "Nature Trail": { "difficulty": "easy" }
+    "Old Baldy Trail": {
+      "difficulty": "hard",
+      "notes": "Steep rocky climb to summit — best views in the park"
+    },
+    "Rim Trail": {
+      "difficulty": "moderate"
+    },
+    "Blinn River Trail": {
+      "difficulty": "easy",
+      "notes": "Follows the Frio River, mostly flat"
+    },
+    "Crystal Cave Trail": {
+      "difficulty": "easy"
+    },
+    "Bridges Trail": {
+      "difficulty": "easy"
+    },
+    "White Rock Cave Trail": {
+      "difficulty": "moderate"
+    },
+    "Foshee Trail": {
+      "difficulty": "moderate"
+    },
+    "Old Horse Trail": {
+      "difficulty": "easy"
+    },
+    "Polly Trail": {
+      "difficulty": "easy"
+    },
+    "Wild Horse Creek Trail": {
+      "difficulty": "moderate"
+    },
+    "Wilks Trail": {
+      "difficulty": "easy"
+    },
+    "Donovan Trail": {
+      "difficulty": "easy"
+    },
+    "Old CCC Trail": {
+      "difficulty": "moderate"
+    },
+    "Bell Trail": {
+      "difficulty": "easy"
+    },
+    "Bird Trail": {
+      "difficulty": "easy"
+    },
+    "Ashe Juniper Trail": {
+      "difficulty": "easy"
+    },
+    "Nature Trail": {
+      "difficulty": "easy"
+    }
   },
   "lost-maples-state-natural-area": {
-    "East Trail": { "difficulty": "hard", "notes": "Strenuous, 6+ miles with significant elevation — best fall color views" },
-    "West Trail": { "difficulty": "moderate" },
-    "Maple Trail": { "difficulty": "easy", "notes": "Short loop through the main maple grove" },
-    "East-West Trail": { "difficulty": "moderate" },
-    "Scenic Overlook": { "difficulty": "moderate", "notes": "Worth the climb for hilltop panoramas" }
+    "East Trail": {
+      "difficulty": "hard",
+      "notes": "Strenuous, 6+ miles with significant elevation — best fall color views"
+    },
+    "West Trail": {
+      "difficulty": "moderate"
+    },
+    "Maple Trail": {
+      "difficulty": "easy",
+      "notes": "Short loop through the main maple grove"
+    },
+    "East-West Trail": {
+      "difficulty": "moderate"
+    },
+    "Scenic Overlook": {
+      "difficulty": "moderate",
+      "notes": "Worth the climb for hilltop panoramas"
+    }
   },
   "op-schnabel-park": {
-    "Leon Creek Greenway Trail": { "difficulty": "easy", "notes": "Paved, follows the creek" }
+    "Leon Creek Greenway Trail": {
+      "difficulty": "easy",
+      "notes": "Paved, follows the creek"
+    }
   },
   "crownridge-canyon-natural-area": {},
   "kerrville-schreiner-park": {},
