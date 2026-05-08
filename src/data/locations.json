@@ -56,7 +56,10 @@
       "local_favorite"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1624664267579-d94b43372f18?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 5am–11pm",
+    "phone": "210-207-3000",
+    "entrance_fee": "free"
   },
   {
     "id": "friedrich-wilderness-park",
@@ -132,7 +135,11 @@
       "most_scenic"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1600465463960-1ff6f3cc71b0?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 7:30am–sunset",
+    "phone": "210-207-3000",
+    "acreage": 232,
+    "entrance_fee": "free"
   },
   {
     "id": "government-canyon-state-natural-area",
@@ -221,7 +228,11 @@
       "local_favorite"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1641694208384-3b47bdc9a854?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Fri–Mon 7am–10pm, Tue–Thu 7am–8pm",
+    "phone": "210-688-9055",
+    "acreage": 13000,
+    "entrance_fee": "$6/person (13+)"
   },
   {
     "id": "mitchell-lake-audubon-center",
@@ -297,7 +308,11 @@
       "avoid_midday"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1653365833452-f3a1b49605cf?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Sat–Sun 7am–5pm (members anytime)",
+    "phone": "210-628-1639",
+    "acreage": 1200,
+    "entrance_fee": "$5/person (non-members)"
   },
   {
     "id": "mcallister-park",
@@ -455,7 +470,11 @@
       "flood_risk"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1738548079377-e03c7d30ce71?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 7:30am–sunset",
+    "phone": "210-207-3000",
+    "acreage": 511,
+    "entrance_fee": "free"
   },
   {
     "id": "calaveras-lake",
@@ -537,7 +556,11 @@
       "avoid_midday"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1698246550885-cc4e82115944?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 6am–10pm (seasonal)",
+    "phone": "210-635-8289",
+    "acreage": 3558,
+    "entrance_fee": "$5/vehicle"
   },
   {
     "id": "eisenhower-park",
@@ -596,7 +619,11 @@
       "local_favorite"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1768159674553-b88a4e4038f0?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 5am–11pm",
+    "phone": "210-207-3000",
+    "acreage": 318,
+    "entrance_fee": "free"
   },
   {
     "id": "brackenridge-park",
@@ -683,7 +710,11 @@
       "afuera_pick"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1584010309854-8e3a04f7f9c8?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 5am–11pm",
+    "phone": "210-207-3000",
+    "acreage": 343,
+    "entrance_fee": "free"
   },
   {
     "id": "salado-creek-greenway",
@@ -742,7 +773,10 @@
       "family_first"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1666499681241-56eae6d80250?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 5am–11pm",
+    "phone": "210-207-3000",
+    "entrance_fee": "free"
   },
   {
     "id": "phil-hardberger-park",
@@ -823,7 +857,11 @@
       "hidden_gem"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 7:30am–sunset",
+    "phone": "210-207-3000",
+    "acreage": 311,
+    "entrance_fee": "free"
   },
   {
     "id": "op-schnabel-park",
@@ -882,7 +920,11 @@
       "hidden_gem"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 5am–11pm",
+    "phone": "210-207-3000",
+    "acreage": 200,
+    "entrance_fee": "free"
   },
   {
     "id": "mission-reach-trail",
@@ -963,7 +1005,10 @@
       "afuera_pick"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1642632015746-9409006e77c4?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 5am–11pm",
+    "phone": "210-534-8875",
+    "entrance_fee": "free"
   },
   {
     "id": "pearsall-park",
@@ -1029,7 +1074,11 @@
       "afuera_pick"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1627520568003-4676e77e039a?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 5am–11pm",
+    "phone": "210-207-3000",
+    "acreage": 133,
+    "entrance_fee": "free"
   },
   {
     "id": "braunig-lake",
@@ -1091,7 +1140,11 @@
       "avoid_midday"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1629646856652-c7a215e58664?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 6am–10pm (seasonal)",
+    "phone": "210-635-8289",
+    "acreage": 1350,
+    "entrance_fee": "$5/vehicle"
   },
   {
     "id": "woodlawn-lake-park",
@@ -1177,7 +1230,11 @@
       "afuera_pick"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1605242063056-c56f4785bb17?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 5am–11pm",
+    "phone": "210-207-3000",
+    "acreage": 77,
+    "entrance_fee": "free"
   },
   {
     "id": "crownridge-canyon-natural-area",
@@ -1235,7 +1292,11 @@
       "local_favorite"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 7:30am–sunset",
+    "phone": "210-207-3000",
+    "acreage": 107,
+    "entrance_fee": "free"
   },
   {
     "id": "san-pedro-springs-park",
@@ -1301,7 +1362,11 @@
       "local_favorite"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1757801721078-8446e918c5a2?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 5am–11pm",
+    "phone": "210-207-3000",
+    "acreage": 46,
+    "entrance_fee": "free"
   },
   {
     "id": "cibolo-nature-center",
@@ -1383,7 +1448,11 @@
       "best_beginner"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1669733512328-d0209e538687?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily dawn–dusk",
+    "phone": "830-249-4616",
+    "acreage": 100,
+    "entrance_fee": "free"
   },
   {
     "id": "garner-state-park",
@@ -1463,7 +1532,11 @@
       "sunset_spot"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1698245544285-4b348760809c?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 8am–10pm",
+    "phone": "830-232-6132",
+    "acreage": 1774,
+    "entrance_fee": "$8/person (13+)"
   },
   {
     "id": "guadalupe-river-state-park",
@@ -1544,7 +1617,11 @@
       "local_favorite"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1610660058858-214ce2279374?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 8am–10pm",
+    "phone": "830-438-2656",
+    "acreage": 1938,
+    "entrance_fee": "$7/person (13+)"
   },
   {
     "id": "enchanted-rock-sna",
@@ -1616,7 +1693,11 @@
       "avoid_midday"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1632452888109-af6d83269329?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 6:30am–10pm",
+    "phone": "830-685-3636",
+    "acreage": 1643,
+    "entrance_fee": "$8/person (13+)"
   },
   {
     "id": "canyon-lake",
@@ -1693,7 +1774,10 @@
       "most_scenic"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1593463575615-8029ef7a01b9?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily sunrise–sunset",
+    "phone": "830-964-3341",
+    "entrance_fee": "free (USACE park)"
   },
   {
     "id": "pedernales-falls-state-park",
@@ -1789,7 +1873,11 @@
       "flood_risk"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 8am–10pm",
+    "phone": "830-868-7304",
+    "acreage": 5212,
+    "entrance_fee": "$6/person (13+)"
   },
   {
     "id": "lost-maples-state-natural-area",
@@ -1877,7 +1965,11 @@
       "sunrise_spot"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1765563398711-e449ab3a744e?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 8:30am–4:30pm",
+    "phone": "830-966-3413",
+    "acreage": 2174,
+    "entrance_fee": "$6/person (13+)"
   },
   {
     "id": "blanco-state-park",
@@ -1956,7 +2048,11 @@
       "hidden_gem"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1669697427623-522d00cc7dbb?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 8am–10pm",
+    "phone": "830-833-4333",
+    "acreage": 110,
+    "entrance_fee": "$5/person (13+)"
   },
   {
     "id": "palmetto-state-park",
@@ -2047,7 +2143,11 @@
       "most_scenic"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1682458855022-b71fa850a085?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily (call for seasonal hours)",
+    "phone": "830-672-3266",
+    "acreage": 270,
+    "entrance_fee": "$3/person (13+)"
   },
   {
     "id": "kerrville-schreiner-park",
@@ -2126,7 +2226,11 @@
       "local_favorite"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1605973117553-47e3481b2bbc?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 6am–10pm",
+    "phone": "830-257-5392",
+    "acreage": 517,
+    "entrance_fee": "$5/person (13+)"
   },
   {
     "id": "san-marcos-river",
@@ -2192,7 +2296,10 @@
       "best_beginner"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1610660059460-f4fa987fb3ca?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily sunrise–sunset",
+    "phone": "512-393-8400",
+    "entrance_fee": "free (river access)"
   },
   {
     "id": "medina-lake",
@@ -2275,7 +2382,9 @@
       "flood_risk"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1585603785620-14afbb99c791?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily sunrise–sunset",
+    "entrance_fee": "free (public access points)"
   },
   {
     "id": "comanche-lookout-park",
@@ -2343,7 +2452,11 @@
       "dog-friendly"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1658144841600-3cd8cd485e4c?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 7:30am–sunset",
+    "phone": "210-207-3000",
+    "acreage": 96,
+    "entrance_fee": "free"
   },
   {
     "id": "tobin-preserve",
@@ -2413,7 +2526,11 @@
       "hidden-gem"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1625109923334-072af61cd389?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 7:30am–sunset",
+    "phone": "210-207-3000",
+    "acreage": 880,
+    "entrance_fee": "free"
   },
   {
     "id": "walker-ranch-park",
@@ -2472,7 +2589,11 @@
       "dog-friendly"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1669733510009-64b0cb8d9bae?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 7:30am–sunset",
+    "phone": "210-207-3000",
+    "acreage": 500,
+    "entrance_fee": "free"
   },
   {
     "id": "olmos-basin-park",
@@ -2546,7 +2667,11 @@
       "free"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1565554957017-7ebfb3f6820d?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 5am–11pm",
+    "phone": "210-207-3000",
+    "acreage": 287,
+    "entrance_fee": "free"
   },
   {
     "id": "hill-country-state-natural-area",
@@ -2625,7 +2750,11 @@
       "bird-sanctuary"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1605649784579-dd50c752a85a?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 8am–10pm",
+    "phone": "830-796-4413",
+    "acreage": 5370,
+    "entrance_fee": "$6/person (13+)"
   },
   {
     "id": "landa-park",
@@ -2695,7 +2824,11 @@
       "free"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1625496412488-257c4a7ba21c?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 6am–10pm",
+    "phone": "830-221-4000",
+    "acreage": 51,
+    "entrance_fee": "free"
   },
   {
     "id": "guadalupe-river-gruene",
@@ -2759,7 +2892,10 @@
       "dog-friendly"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1775572001738-69b46597e42e?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily (seasonal)",
+    "phone": "830-625-2800",
+    "entrance_fee": "free (river access); outfitter fees vary"
   },
   {
     "id": "canyon-lake-gorge",
@@ -2817,7 +2953,11 @@
       "great-views"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1562512497-ec1bf623a897?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Sat–Sun (guided tours only, reservations required)",
+    "phone": "830-935-2385",
+    "acreage": 25,
+    "entrance_fee": "$15–20/person (guided tour)"
   },
   {
     "id": "choke-canyon-state-park",
@@ -2895,7 +3035,11 @@
       "hidden-gem"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1675192174962-a0db294c8f08?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 6am–10pm",
+    "phone": "361-786-3868",
+    "acreage": 26000,
+    "entrance_fee": "$5/person (13+)"
   },
   {
     "id": "inks-lake-state-park",
@@ -2982,7 +3126,11 @@
       "kid-friendly"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1565453589662-4611540f0776?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 6am–10pm",
+    "phone": "512-793-2223",
+    "acreage": 1201,
+    "entrance_fee": "$7/person (13+)"
   },
   {
     "id": "boerne-city-park",
@@ -3047,7 +3195,11 @@
       "free"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1748192094783-932dcb4a42be?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 7am–10pm",
+    "phone": "830-249-9511",
+    "acreage": 37,
+    "entrance_fee": "free"
   },
   {
     "id": "old-tunnel-state-park",
@@ -3114,7 +3266,11 @@
       "kid-friendly"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily sunrise–5pm",
+    "phone": "866-978-2287",
+    "acreage": 16,
+    "entrance_fee": "free"
   },
   {
     "id": "medina-river-bandera",
@@ -3180,7 +3336,10 @@
       "dog-friendly"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1773775098175-07f0bbc39008?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily sunrise–sunset",
+    "phone": "830-796-3765",
+    "entrance_fee": "free"
   },
   {
     "id": "natural-bridge-caverns-trails",
@@ -3239,7 +3398,11 @@
       "free"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1776480307544-5244b679af9d?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 9am–5pm (seasonal variations)",
+    "phone": "210-651-6101",
+    "acreage": 64,
+    "entrance_fee": "$10 parking (trails); cavern tours extra"
   },
   {
     "id": "apache-creek-linear-park",
@@ -3299,7 +3462,10 @@
       "free"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1742490022025-f5b728ed3d63?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 5am–11pm",
+    "phone": "210-207-3000",
+    "entrance_fee": "free"
   },
   {
     "id": "stone-oak-park",
@@ -3373,7 +3539,11 @@
       "free"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1547347298-4074fc3086f0?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 5am–11pm",
+    "phone": "210-207-3000",
+    "acreage": 35,
+    "entrance_fee": "free"
   },
   {
     "id": "lake-dunlap",
@@ -3451,7 +3621,11 @@
       "dog-friendly"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1671356196036-79d60257358d?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 6am–10pm",
+    "phone": "830-625-8271",
+    "acreage": 200,
+    "entrance_fee": "$5/vehicle"
   },
   {
     "id": "coleto-creek-reservoir",
@@ -3529,7 +3703,11 @@
       "hidden-gem"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1660411814806-8d7c530b55c4?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily 6am–10pm",
+    "phone": "361-575-6366",
+    "acreage": 3100,
+    "entrance_fee": "$5/vehicle"
   },
   {
     "id": "purgatory-creek-natural-area",
@@ -3601,7 +3779,11 @@
       "free"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1704161703104-318447e73f28?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily sunrise–sunset",
+    "phone": "512-393-8400",
+    "acreage": 387,
+    "entrance_fee": "free"
   },
   {
     "id": "boerne-lake",
@@ -3680,6 +3862,10 @@
       "free"
     ],
     "hero_photo": "https://images.unsplash.com/photo-1471922694854-ff1b63b20054?w=1200&q=80&fit=crop&auto=format",
-    "photos": []
+    "photos": [],
+    "hours": "Daily dawn–dusk",
+    "phone": "830-249-9511",
+    "acreage": 120,
+    "entrance_fee": "free"
   }
 ]
