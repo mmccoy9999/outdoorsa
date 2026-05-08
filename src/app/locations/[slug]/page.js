@@ -3,14 +3,9 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { readFileSync, existsSync } from 'fs'
 import { join } from 'path'
-import dynamic from 'next/dynamic'
 import locations from '@/data/locations.json'
 import AdUnit from '@/components/AdUnit'
-
-const TrailMap = dynamic(() => import('./TrailMap'), {
-  ssr: false,
-  loading: () => <div style={{ height: 400, background: '#E8E6DF', borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#5F5E5A', fontFamily: 'var(--font-barlow)' }}>Loading map…</div>
-})
+import TrailMapWrapper from './TrailMapWrapper'
 
 // Haversine distance in miles between two [lng, lat] points
 function haversine([lng1, lat1], [lng2, lat2]) {
@@ -419,7 +414,7 @@ export default async function LocationPage({ params }) {
             {/* Trail Map & List */}
             <div style={{ marginBottom: 32 }}>
               <h2 style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: 22, fontWeight: 700, color: '#2C2C2A', margin: '0 0 14px' }}>Trails</h2>
-              <TrailMap locationId={loc.id} lat={loc.lat} lng={loc.lng} trails={trails} />
+              <TrailMapWrapper locationId={loc.id} lat={loc.lat} lng={loc.lng} trails={trails} />
               {trails.length > 0 && (
                 <div style={{ marginTop: 16, display: 'flex', flexDirection: 'column', gap: 0 }}>
                   {trails.map((trail, i) => (
