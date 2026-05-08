@@ -36,9 +36,11 @@ function loadTrails(locationId) {
       const dist = lineLength(f.geometry.coordinates)
       const surface = f.properties?.surface || null
       if (!byName[name]) byName[name] = { name, distance: 0, surface, ...overrides[name] }
-      byName[name].distance += dist
+      if (!overrides[name]?.distance_override) byName[name].distance += dist
     }
-    return Object.values(byName).sort((a, b) => b.distance - a.distance)
+    return Object.values(byName)
+      .map(t => ({ ...t, distance: t.distance_override ?? t.distance }))
+      .sort((a, b) => b.distance - a.distance)
   } catch { return [] }
 }
 
@@ -321,6 +323,9 @@ export default async function LocationPage({ params }) {
               <StatBlock label="Distance" value={loc.distance_miles ? `${loc.distance_miles} mi` : null} />
               <StatBlock label="Elevation" value={loc.elevation_gain_ft ? `+${loc.elevation_gain_ft} ft` : null} />
               <StatBlock label="Route Type" value={loc.route_type ? loc.route_type.replace(/_/g, ' ') : null} />
+              <StatBlock label="Acreage" value={loc.acreage ? `${loc.acreage.toLocaleString()} ac` : null} />
+              <StatBlock label="Hours" value={loc.hours || null} />
+              <StatBlock label="Entry" value={loc.entrance_fee === 'free' ? 'Free' : loc.entrance_fee || null} />
               <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
                 <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', color: '#5F5E5A', textTransform: 'uppercase', fontFamily: 'var(--font-barlow-condensed)' }}>Shade</span>
                 <div style={{ display: 'flex', gap: 3, alignItems: 'center' }}>
@@ -342,6 +347,12 @@ export default async function LocationPage({ params }) {
               <CheckRow label="Playground" value={loc.playground} />
               <CheckRow label="Bike racks" value={loc.bike_racks} />
               <CheckRow label="ADA accessible" value={loc.ada_accessible} />
+              {loc.phone && (
+                <div style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', fontSize: 14, fontFamily: 'var(--font-barlow)' }}>
+                  <span style={{ color: '#5F5E5A' }}>Phone</span>
+                  <a href={`tel:${loc.phone}`} style={{ color: '#3B6D11', fontWeight: 600, textDecoration: 'none' }}>{loc.phone}</a>
+                </div>
+              )}
             </div>
 
             {/* Description */}
