@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { readFileSync, existsSync } from 'fs'
 import { join } from 'path'
 import locations from '@/data/locations.json'
+import trailOverrides from '@/data/trail-overrides.json'
 import AdUnit from '@/components/AdUnit'
 import TrailMapWrapper from './TrailMapWrapper'
 
@@ -27,22 +28,17 @@ function loadTrails(locationId) {
   if (!existsSync(path)) return []
   try {
     const geojson = JSON.parse(readFileSync(path, 'utf8'))
-    // Group segments by name, sum distances
+    const overrides = trailOverrides[locationId] || {}
     const byName = {}
-    const unnamed = []
     for (const f of geojson.features) {
       const name = f.properties?.name
+      if (!name) continue
       const dist = lineLength(f.geometry.coordinates)
       const surface = f.properties?.surface || null
-      if (name) {
-        if (!byName[name]) byName[name] = { name, distance: 0, surface }
-        byName[name].distance += dist
-      } else {
-        unnamed.push({ name: null, distance: dist, surface })
-      }
+      if (!byName[name]) byName[name] = { name, distance: 0, surface, ...overrides[name] }
+      byName[name].distance += dist
     }
-    const named = Object.values(byName).sort((a, b) => b.distance - a.distance)
-    return named
+    return Object.values(byName).sort((a, b) => b.distance - a.distance)
   } catch { return [] }
 }
 
@@ -416,25 +412,48 @@ export default async function LocationPage({ params }) {
               <h2 style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: 22, fontWeight: 700, color: '#2C2C2A', margin: '0 0 14px' }}>Trails</h2>
               <TrailMapWrapper locationId={loc.id} lat={loc.lat} lng={loc.lng} trails={trails} />
               {trails.length > 0 && (
-                <div style={{ marginTop: 16, display: 'flex', flexDirection: 'column', gap: 0 }}>
-                  {trails.map((trail, i) => (
-                    <div key={trail.name} style={{
-                      display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-                      padding: '10px 0', fontFamily: 'var(--font-barlow)',
-                      borderBottom: i < trails.length - 1 ? '1px solid #F0EEE8' : 'none',
-                    }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                        <div style={{ width: 3, height: 32, borderRadius: 2, background: '#3B6D11', flexShrink: 0 }} />
-                        <div>
-                          <p style={{ margin: 0, fontSize: 14, fontWeight: 600, color: '#2C2C2A' }}>{trail.name}</p>
-                          {trail.surface && <p style={{ margin: '1px 0 0', fontSize: 12, color: '#5F5E5A', textTransform: 'capitalize' }}>{trail.surface.replace(/_/g, ' ')}</p>}
+                <div style={{ marginTop: 16 }}>
+                  {trails.map((trail, i) => {
+                    const diffColors = {
+                      easy: { bg: '#EAF3DE', color: '#3B6D11' },
+                      moderate: { bg: '#FAEEDA', color: '#BA7517' },
+                      hard: { bg: '#FDE8E8', color: '#B91C1C' },
+                      expert: { bg: '#2C2C2A', color: '#fff' },
+                    }
+                    const dc = trail.difficulty ? diffColors[trail.difficulty] : null
+                    return (
+                      <div key={trail.name} style={{
+                        padding: '12px 0',
+                        borderBottom: i < trails.length - 1 ? '1px solid #F0EEE8' : 'none',
+                        fontFamily: 'var(--font-barlow)',
+                      }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 12 }}>
+                          <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10, flex: 1 }}>
+                            <div style={{ width: 3, height: 36, borderRadius: 2, background: '#3B6D11', flexShrink: 0, marginTop: 2 }} />
+                            <div>
+                              <p style={{ margin: 0, fontSize: 14, fontWeight: 600, color: '#2C2C2A', lineHeight: 1.3 }}>{trail.name}</p>
+                              <div style={{ display: 'flex', gap: 6, alignItems: 'center', marginTop: 4, flexWrap: 'wrap' }}>
+                                {dc && (
+                                  <span style={{ background: dc.bg, color: dc.color, fontSize: 10, fontWeight: 700, padding: '2px 7px', borderRadius: 4, letterSpacing: '0.05em', fontFamily: 'var(--font-barlow-condensed)', textTransform: 'uppercase' }}>
+                                    {trail.difficulty}
+                                  </span>
+                                )}
+                                {trail.surface && (
+                                  <span style={{ fontSize: 11, color: '#5F5E5A', textTransform: 'capitalize' }}>{trail.surface.replace(/_/g, ' ')}</span>
+                                )}
+                              </div>
+                              {trail.notes && (
+                                <p style={{ margin: '4px 0 0', fontSize: 12, color: '#5F5E5A', lineHeight: 1.4 }}>{trail.notes}</p>
+                              )}
+                            </div>
+                          </div>
+                          <span style={{ fontSize: 14, fontWeight: 700, color: '#2C2C2A', fontFamily: 'var(--font-barlow-condensed)', whiteSpace: 'nowrap', paddingTop: 2 }}>
+                            {trail.distance < 0.1 ? `${Math.round(trail.distance * 5280)} ft` : `${trail.distance.toFixed(1)} mi`}
+                          </span>
                         </div>
                       </div>
-                      <span style={{ fontSize: 13, fontWeight: 700, color: '#5F5E5A', fontFamily: 'var(--font-barlow-condensed)', whiteSpace: 'nowrap' }}>
-                        {trail.distance < 0.1 ? `${Math.round(trail.distance * 5280)} ft` : `${trail.distance.toFixed(1)} mi`}
-                      </span>
-                    </div>
-                  ))}
+                    )
+                  })}
                 </div>
               )}
             </div>
