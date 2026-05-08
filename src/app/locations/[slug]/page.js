@@ -1,8 +1,55 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import { readFileSync, existsSync } from 'fs'
+import { join } from 'path'
+import dynamic from 'next/dynamic'
 import locations from '@/data/locations.json'
 import AdUnit from '@/components/AdUnit'
+
+const TrailMap = dynamic(() => import('./TrailMap'), {
+  ssr: false,
+  loading: () => <div style={{ height: 400, background: '#E8E6DF', borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#5F5E5A', fontFamily: 'var(--font-barlow)' }}>Loading map…</div>
+})
+
+// Haversine distance in miles between two [lng, lat] points
+function haversine([lng1, lat1], [lng2, lat2]) {
+  const R = 3958.8
+  const dLat = (lat2 - lat1) * Math.PI / 180
+  const dLng = (lng2 - lng1) * Math.PI / 180
+  const a = Math.sin(dLat/2)**2 + Math.cos(lat1*Math.PI/180) * Math.cos(lat2*Math.PI/180) * Math.sin(dLng/2)**2
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a))
+}
+
+function lineLength(coords) {
+  let total = 0
+  for (let i = 1; i < coords.length; i++) total += haversine(coords[i-1], coords[i])
+  return total
+}
+
+function loadTrails(locationId) {
+  const path = join(process.cwd(), 'public', 'trails', `${locationId}.geojson`)
+  if (!existsSync(path)) return []
+  try {
+    const geojson = JSON.parse(readFileSync(path, 'utf8'))
+    // Group segments by name, sum distances
+    const byName = {}
+    const unnamed = []
+    for (const f of geojson.features) {
+      const name = f.properties?.name
+      const dist = lineLength(f.geometry.coordinates)
+      const surface = f.properties?.surface || null
+      if (name) {
+        if (!byName[name]) byName[name] = { name, distance: 0, surface }
+        byName[name].distance += dist
+      } else {
+        unnamed.push({ name: null, distance: dist, surface })
+      }
+    }
+    const named = Object.values(byName).sort((a, b) => b.distance - a.distance)
+    return named
+  } catch { return [] }
+}
 
 const ACTIVITY_LABELS = {
   hiking: 'Hiking', cycling: 'Cycling', trail_running: 'Trail Running',
@@ -151,6 +198,8 @@ export default async function LocationPage({ params }) {
     publicAccess: true,
     ...(loc.ada_accessible === 'full' ? { amenityFeature: [{ '@type': 'LocationFeatureSpecification', name: 'Wheelchair accessible', value: true }] } : {}),
   }
+
+  const trails = loadTrails(loc.id)
 
   const difficultyColors = {
     easy: { bg: '#EAF3DE', color: '#3B6D11' },
@@ -366,6 +415,34 @@ export default async function LocationPage({ params }) {
                 </div>
               </div>
             )}
+
+            {/* Trail Map & List */}
+            <div style={{ marginBottom: 32 }}>
+              <h2 style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: 22, fontWeight: 700, color: '#2C2C2A', margin: '0 0 14px' }}>Trails</h2>
+              <TrailMap locationId={loc.id} lat={loc.lat} lng={loc.lng} trails={trails} />
+              {trails.length > 0 && (
+                <div style={{ marginTop: 16, display: 'flex', flexDirection: 'column', gap: 0 }}>
+                  {trails.map((trail, i) => (
+                    <div key={trail.name} style={{
+                      display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+                      padding: '10px 0', fontFamily: 'var(--font-barlow)',
+                      borderBottom: i < trails.length - 1 ? '1px solid #F0EEE8' : 'none',
+                    }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                        <div style={{ width: 3, height: 32, borderRadius: 2, background: '#3B6D11', flexShrink: 0 }} />
+                        <div>
+                          <p style={{ margin: 0, fontSize: 14, fontWeight: 600, color: '#2C2C2A' }}>{trail.name}</p>
+                          {trail.surface && <p style={{ margin: '1px 0 0', fontSize: 12, color: '#5F5E5A', textTransform: 'capitalize' }}>{trail.surface.replace(/_/g, ' ')}</p>}
+                        </div>
+                      </div>
+                      <span style={{ fontSize: 13, fontWeight: 700, color: '#5F5E5A', fontFamily: 'var(--font-barlow-condensed)', whiteSpace: 'nowrap' }}>
+                        {trail.distance < 0.1 ? `${Math.round(trail.distance * 5280)} ft` : `${trail.distance.toFixed(1)} mi`}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
 
             {/* Directions button */}
             <a
