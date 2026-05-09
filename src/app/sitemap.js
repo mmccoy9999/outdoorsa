@@ -1,4 +1,5 @@
 import locations from '@/data/locations.json'
+import { guides } from '@/data/guides/index'
 
 const BASE_URL = 'https://outdoorsa.co'
 
@@ -24,5 +25,17 @@ export default function sitemap() {
       priority: 0.9,
     },
     ...locationEntries,
+    {
+      url: `${BASE_URL}/guides`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    ...guides.map(g => ({
+      url: `${BASE_URL}/guides/${g.slug}`,
+      lastModified: new Date(g.updated),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    })),
   ]
 }
