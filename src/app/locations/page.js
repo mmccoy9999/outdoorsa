@@ -177,6 +177,7 @@ function LocationsContent() {
           </span>
         </Link>
         <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+          <Link href="/guides" style={{ fontSize: 13, color: '#5F5E5A', textDecoration: 'none', fontFamily: 'var(--font-barlow)' }}>Guides</Link>
           {/* View toggle */}
           <div style={{ display: 'flex' }}>
             <button className={`view-btn${view === 'list' ? ' active' : ''}`} onClick={() => setView('list')}>List</button>
