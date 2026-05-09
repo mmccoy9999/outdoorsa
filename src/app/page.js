@@ -715,6 +715,7 @@ export default function Home() {
           <li><a href="/locations">Locations</a></li>
           <li><a href="/locations?activity=hiking">Trails</a></li>
           <li><a href="/locations?activity=outdoor_fitness">Parks</a></li>
+          <li><a href="/guides">Guides</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#early" className="nav-cta">Get Early Access</a></li>
         </ul>
@@ -916,6 +917,7 @@ export default function Home() {
         <ul className="footer-links">
           <li><a href="/locations?activity=hiking">Trails</a></li>
           <li><a href="/locations?activity=outdoor_fitness">Parks</a></li>
+          <li><a href="/guides">Guides</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#early">Contact</a></li>
           <li><a href="#" style={{color:'rgba(151,196,89,0.6)'}}>Afuera SA →</a></li>
