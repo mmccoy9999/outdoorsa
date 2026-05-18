@@ -7,6 +7,7 @@ import locations from '@/data/locations.json'
 import trailOverrides from '@/data/trail-overrides.json'
 import AdUnit from '@/components/AdUnit'
 import TrailMapWrapper from './TrailMapWrapper'
+import ParkAreasGallery from './ParkAreasGallery'
 
 // Haversine distance in miles between two [lng, lat] points
 function haversine([lng1, lat1], [lng2, lat2]) {
@@ -367,24 +368,7 @@ export default async function LocationPage({ params }) {
             {loc.sections && loc.sections.length > 0 && (
               <div style={{ marginBottom: 28 }}>
                 <h2 style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: 22, fontWeight: 700, color: '#2C2C2A', margin: '0 0 14px' }}>Park Areas</h2>
-                <div className="sections-grid">
-                  {loc.sections.map((section, i) => (
-                    <div key={i} style={{ position: 'relative', borderRadius: 10, overflow: 'hidden', background: '#2C2C2A', aspectRatio: '4/3' }}>
-                      <Image
-                        src={section.photo}
-                        alt={section.label}
-                        fill
-                        style={{ objectFit: 'cover', opacity: 0.75 }}
-                        sizes="(max-width: 640px) 50vw, (max-width: 900px) 33vw, 220px"
-                      />
-                      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.1) 55%, transparent 100%)' }} />
-                      <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '10px 12px' }}>
-                        <p style={{ margin: 0, fontSize: 13, fontWeight: 800, color: '#fff', fontFamily: 'var(--font-barlow-condensed)', letterSpacing: '0.04em', textTransform: 'uppercase', lineHeight: 1.2 }}>{section.label}</p>
-                        <p style={{ margin: '3px 0 0', fontSize: 11, color: 'rgba(255,255,255,0.8)', fontFamily: 'var(--font-barlow)', lineHeight: 1.35 }}>{section.description}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                <ParkAreasGallery sections={loc.sections} />
               </div>
             )}
 
