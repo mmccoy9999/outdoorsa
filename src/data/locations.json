@@ -375,6 +375,43 @@
       "local_favorite",
       "sa_summer_pick"
     ],
+    "sections": [
+      {
+        "label": "Trails",
+        "description": "15+ miles of paved loops and natural-surface singletrack through live oak woodland",
+        "photo": "/photos/mcallister-park/IMG_9175.jpeg"
+      },
+      {
+        "label": "Pump Track",
+        "description": "Free pump track and bicycle skills course — open to all skill levels, built 2022",
+        "photo": "/photos/mcallister-park/IMG_9155.jpeg"
+      },
+      {
+        "label": "Fitness Stations",
+        "description": "Outdoor fitness equipment stations spaced throughout the park loop",
+        "photo": "/photos/mcallister-park/IMG_9127.jpeg"
+      },
+      {
+        "label": "Playground",
+        "description": "Family playground under live oak canopy near the main parking area",
+        "photo": "/photos/mcallister-park/IMG_9125.jpeg"
+      },
+      {
+        "label": "Dog Park",
+        "description": "Separate off-leash areas for large and small dogs — one of SA's most popular",
+        "photo": "/photos/mcallister-park/IMG_9222.jpeg"
+      },
+      {
+        "label": "Pavilions",
+        "description": "Shaded stone pavilions available for reservation — Al Becken and Turkey Roost",
+        "photo": "/photos/mcallister-park/IMG_9124.jpeg"
+      },
+      {
+        "label": "Baseball Fields",
+        "description": "8 lighted baseball and softball fields leased to youth leagues on weekends",
+        "photo": "/photos/mcallister-park/IMG_9185.jpeg"
+      }
+    ],
     "hero_photo": "/photos/mcallister-park/IMG_9175.jpeg",
     "photos": [
       "/photos/mcallister-park/IMG_9175.jpeg",
