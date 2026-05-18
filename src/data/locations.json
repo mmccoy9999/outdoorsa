@@ -379,8 +379,19 @@
       "local_favorite",
       "sa_summer_pick"
     ],
-    "hero_photo": "https://images.unsplash.com/photo-1689514534472-791fadb755e5?w=1200&q=80&fit=crop&auto=format",
-    "photos": [],
+    "hero_photo": "/photos/mcallister-park/IMG_9175.jpeg",
+    "photos": [
+      "/photos/mcallister-park/IMG_9175.jpeg",
+      "/photos/mcallister-park/IMG_9174.jpeg",
+      "/photos/mcallister-park/IMG_9176.jpeg",
+      "/photos/mcallister-park/IMG_9211.jpeg",
+      "/photos/mcallister-park/IMG_9200.jpeg",
+      "/photos/mcallister-park/IMG_9172.jpeg",
+      "/photos/mcallister-park/IMG_9195.jpeg",
+      "/photos/mcallister-park/IMG_9208.jpeg",
+      "/photos/mcallister-park/IMG_9221.jpeg",
+      "/photos/mcallister-park/IMG_9122.jpeg"
+    ],
     "hours": "Daily 5am–11pm",
     "phone": "210-207-3047",
     "acreage": 976,

@@ -101,14 +101,14 @@ export async function generateMetadata({ params }) {
       description,
       url: `${BASE_URL}/locations/${loc.id}`,
       siteName: 'OutdoorSA',
-      images: [{ url: loc.hero_photo, width: 1200, alt: loc.name }],
+      images: [{ url: loc.hero_photo.startsWith('/') ? `${BASE_URL}${loc.hero_photo}` : loc.hero_photo, width: 1200, alt: loc.name }],
       type: 'article',
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: [loc.hero_photo],
+      images: [loc.hero_photo.startsWith('/') ? `${BASE_URL}${loc.hero_photo}` : loc.hero_photo],
     },
     alternates: {
       canonical: `${BASE_URL}/locations/${loc.id}`,
@@ -172,7 +172,7 @@ export default async function LocationPage({ params }) {
     name: loc.name,
     description: loc.long_desc,
     url: `${BASE_URL}/locations/${loc.id}`,
-    image: loc.hero_photo,
+    image: loc.hero_photo.startsWith('/') ? `${BASE_URL}${loc.hero_photo}` : loc.hero_photo,
     address: {
       '@type': 'PostalAddress',
       streetAddress: loc.address,
@@ -360,6 +360,26 @@ export default async function LocationPage({ params }) {
               <h2 style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: 22, fontWeight: 700, color: '#2C2C2A', margin: '0 0 10px' }}>About</h2>
               <p style={{ fontSize: 15, lineHeight: 1.7, color: '#2C2C2A', margin: 0, fontFamily: 'var(--font-barlow)' }}>{loc.long_desc}</p>
             </div>
+
+            {/* Photo Gallery */}
+            {loc.photos && loc.photos.length > 1 && (
+              <div style={{ marginBottom: 28 }}>
+                <h2 style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: 22, fontWeight: 700, color: '#2C2C2A', margin: '0 0 12px' }}>Photos</h2>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 8 }}>
+                  {loc.photos.slice(1).map((photo, i) => (
+                    <div key={i} style={{ position: 'relative', aspectRatio: '1', borderRadius: 8, overflow: 'hidden', background: '#D3D1C7' }}>
+                      <Image
+                        src={photo}
+                        alt={`${loc.name} photo ${i + 2}`}
+                        fill
+                        style={{ objectFit: 'cover' }}
+                        sizes="(max-width: 900px) 33vw, 220px"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* Shade detail */}
             {loc.shade_notes && (
