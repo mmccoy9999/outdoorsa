@@ -317,8 +317,8 @@
   {
     "id": "mcallister-park",
     "name": "McAllister Park",
-    "short_desc": "North SA's busiest park — mountain bike trails, disc golf, and miles of running paths under live oak canopy.",
-    "long_desc": "McAllister Park packs a lot into 976 acres: a 18-hole disc golf course, mountain bike trails, paved loops, dog parks, and some of the best live oak tree cover of any city park in SA. The mountain bike trails are intermediate-level with some technical features. The disc golf course is well-maintained with good sightlines. Popular on weekends — arrive early for parking.",
+    "short_desc": "North SA's busiest park — 15+ miles of mountain bike and running trails, a pump track, two dog parks, and dense live oak canopy.",
+    "long_desc": "McAllister Park packs nearly 1,000 acres into the heart of North SA. The trail network totals over 15 miles of paved loops and natural-surface dirt trails, anchored by the 6.2-mile Blue Loop. A pump track and bicycle skills course (built 2022) sit near the Wurzbach Pkwy entrance. Two separate dog parks (large and small dog areas), outdoor fitness stations, baseball and softball fields, picnic pavilions, and the Bloom Series public art installations — 12-foot metal wildflower sculptures by local artist Leticia Huerta — round out the amenities. Popular on weekends; arrive early for parking at the main Jones Maltsberger entrance.",
     "address": "13102 Jones Maltsberger Rd, San Antonio, TX 78247",
     "lat": 29.5645,
     "lng": -98.4558,
@@ -326,20 +326,20 @@
     "website": "https://www.sanantonio.gov/ParksAndRec/Parks-Facilities/All-Parks-Facilities/Park-Details/ArtMID/19092/ArticleID/1563",
     "status": "active",
     "verified": true,
-    "updated_at": "2026-04-30",
+    "updated_at": "2026-05-17",
     "activities": [
-      "disc_golf",
       "cycling",
       "hiking",
       "trail_running",
-      "outdoor_fitness"
+      "outdoor_fitness",
+      "picnicking"
     ],
     "shade_rating": 4,
-    "shade_notes": "Mature live oak canopy throughout. One of the shadiest large parks in the city.",
+    "shade_notes": "Mature live oak canopy throughout the trail network. One of the shadiest large parks in the city — the wooded sections stay noticeably cooler than the open fields.",
     "best_time_summer": "early_morning",
     "heat_warning": false,
-    "distance_miles": 8,
-    "elevation_gain_ft": 120,
+    "distance_miles": 15,
+    "elevation_gain_ft": 229,
     "surface": [
       "dirt",
       "paved"
@@ -368,11 +368,7 @@
     ],
     "flood_prone": false,
     "drought_impact": null,
-    "seasonal_notes": "Parking fills fast on weekend mornings. Disc golf course busiest Saturdays 9am–2pm.",
-    "disc_golf": {
-      "num_holes": 18,
-      "basket_condition": "good"
-    },
+    "seasonal_notes": "Main parking lot fills by 8am on weekend mornings in spring and fall. Weekday mornings are much quieter. Baseball fields are heavily used on weekend afternoons — expect noise near that section of the park.",
     "badges": [
       "dog_favorite",
       "family_first",

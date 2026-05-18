@@ -89,25 +89,28 @@
   "mcallister-park": {
     "Blue Loop": {
       "difficulty": "moderate",
-      "notes": "Mix of asphalt and natural surface, SA's best mountain bike loop",
+      "notes": "SA's most popular mountain bike and trail running loop — mix of paved and natural surface with rolling terrain",
       "surface": "asphalt / natural",
-      "distance_override": 6
+      "distance_override": 6.2
     },
     "Red Trail": {
       "difficulty": "easy",
-      "notes": "Natural surface, good for trail running",
+      "notes": "Natural surface singletrack, good for hiking and trail running",
       "surface": "natural",
       "distance_override": 1.93
     },
     "Cactus Patch Trail": {
       "difficulty": "easy",
+      "notes": "Short natural surface connector through open brushland",
       "surface": "natural"
     },
     "Short Cut": {
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "notes": "Shortens the Blue Loop — useful if you want a quicker route back"
     },
     "Baseball Field Trail": {
       "difficulty": "easy",
+      "notes": "Paved path through the athletic field complex",
       "surface": "asphalt"
     }
   },
