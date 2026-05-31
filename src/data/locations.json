@@ -2484,7 +2484,6 @@
     "activities": [
       "hiking",
       "disc_golf",
-      "dog_walking",
       "birding"
     ],
     "shade_rating": 1,
@@ -2555,8 +2554,7 @@
     "updated_at": "2025-01-15",
     "activities": [
       "birding",
-      "hiking",
-      "dog_walking"
+      "hiking"
     ],
     "shade_rating": 3,
     "shade_notes": "Creek corridor offers good shade under mature oaks and pecans. Open grassland sections are exposed. Mostly shaded hiking if you stick to the creek trail.",
@@ -2629,8 +2627,7 @@
     "updated_at": "2025-01-15",
     "activities": [
       "hiking",
-      "biking",
-      "dog_walking",
+      "cycling",
       "birding"
     ],
     "shade_rating": 2,
@@ -2692,10 +2689,9 @@
     "updated_at": "2025-01-15",
     "activities": [
       "hiking",
-      "biking",
+      "cycling",
       "disc_golf",
       "birding",
-      "dog_walking",
       "outdoor_fitness",
       "picnicking"
     ],
@@ -2770,7 +2766,7 @@
     "updated_at": "2025-01-15",
     "activities": [
       "hiking",
-      "biking",
+      "cycling",
       "camping",
       "birding"
     ],
@@ -2856,8 +2852,7 @@
       "kayaking",
       "fishing",
       "picnicking",
-      "outdoor_fitness",
-      "dog_walking"
+      "outdoor_fitness"
     ],
     "shade_rating": 4,
     "shade_notes": "Huge oak and pecan trees shade most of the park grounds. The river itself is partially shaded. One of the better summer options for midday visits.",
@@ -3142,8 +3137,7 @@
       "kayaking",
       "swimming",
       "fishing",
-      "birding",
-      "rock_climbing"
+      "birding"
     ],
     "shade_rating": 2,
     "shade_notes": "Live oaks around campsites provide good shade. The lake and granite outcrops are mostly exposed. Water temperature makes sun exposure manageable on the lake.",
@@ -3231,7 +3225,6 @@
       "swimming",
       "hiking",
       "picnicking",
-      "dog_walking",
       "birding"
     ],
     "shade_rating": 5,
@@ -3501,8 +3494,7 @@
     "updated_at": "2025-01-15",
     "activities": [
       "hiking",
-      "biking",
-      "dog_walking",
+      "cycling",
       "outdoor_fitness"
     ],
     "shade_rating": 3,
@@ -3566,7 +3558,6 @@
       "disc_golf",
       "hiking",
       "picnicking",
-      "dog_walking",
       "outdoor_fitness"
     ],
     "shade_rating": 4,
@@ -3806,9 +3797,8 @@
     "updated_at": "2025-01-15",
     "activities": [
       "hiking",
-      "biking",
-      "birding",
-      "dog_walking"
+      "cycling",
+      "birding"
     ],
     "shade_rating": 3,
     "shade_notes": "Dense cedar provides heavy shade on most trails. Actually one of the cooler summer trail options — cedar canopy blocks direct sun effectively.",
