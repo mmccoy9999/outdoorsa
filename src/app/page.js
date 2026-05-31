@@ -1,54 +1,7 @@
-'use client'
-
-import { useState, useEffect } from 'react'
 import Image from 'next/image'
+import EmailCapture from './EmailCapture'
 
 export default function Home() {
-  const [email, setEmail] = useState('')
-  const [status, setStatus] = useState(null) // null | 'loading' | 'success' | 'error'
-  const [errorMsg, setErrorMsg] = useState('')
-
-  useEffect(() => {
-    const els = document.querySelectorAll('.reveal')
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible')
-            observer.unobserve(entry.target)
-          }
-        })
-      },
-      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
-    )
-    els.forEach((el) => observer.observe(el))
-    return () => observer.disconnect()
-  }, [])
-
-  async function handleSubmit(e) {
-    e.preventDefault()
-    setStatus('loading')
-    setErrorMsg('')
-    try {
-      const res = await fetch('/api/subscribe', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
-      })
-      const data = await res.json()
-      if (data.success) {
-        setStatus('success')
-        setEmail('')
-      } else {
-        setStatus('error')
-        setErrorMsg(data.error || 'Something went wrong.')
-      }
-    } catch {
-      setStatus('error')
-      setErrorMsg('Network error — please try again.')
-    }
-  }
-
   return (
     <>
       <style>{`
@@ -688,15 +641,17 @@ export default function Home() {
           .footer-links { flex-wrap: wrap; gap: 1rem 1.5rem; }
         }
 
-        /* ── Scroll reveal ── */
-        .reveal {
-          opacity: 0;
-          transform: translateY(22px);
-          transition: opacity 0.55s ease, transform 0.55s ease;
+        /* ── Scroll reveal — CSS-only, no JS required ── */
+        @keyframes revealUp {
+          from { opacity: 0; transform: translateY(22px); }
+          to   { opacity: 1; transform: translateY(0); }
         }
-        .reveal.visible {
-          opacity: 1;
-          transform: translateY(0);
+        .reveal {
+          animation: revealUp 0.55s ease both;
+          animation-delay: var(--reveal-delay, 0ms);
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .reveal { animation: none; }
         }
 
         /* ── Small phones (≤480px) ── */
@@ -816,27 +771,27 @@ export default function Home() {
       {/* WHY OUTDOORSA */}
       <section className="section" id="about">
         <div className="section-label reveal">Why OutdoorSA</div>
-        <div className="section-title reveal" style={{transitionDelay:'80ms'}}>Built for this city, not every city.</div>
+        <div className="section-title reveal" style={{'--reveal-delay':'80ms'}}>Built for this city, not every city.</div>
         <div className="diff-grid">
-          <div className="diff-card reveal" style={{transitionDelay:'0ms'}}>
+          <div className="diff-card reveal" style={{'--reveal-delay':'0ms'}}>
             <div className="diff-number">01</div>
             <div className="diff-card-title">Shade ratings that matter</div>
             <div className="diff-card-desc">San Antonio summers are brutal. Every listing tells you how much tree cover to expect — so you plan around the heat, not into it.</div>
             <span className="diff-tag">SA-specific</span>
           </div>
-          <div className="diff-card reveal" style={{transitionDelay:'80ms'}}>
+          <div className="diff-card reveal" style={{'--reveal-delay':'80ms'}}>
             <div className="diff-number">02</div>
             <div className="diff-card-title">More than hiking</div>
             <div className="diff-card-desc">Kayaking the Medina. Birding at Mitchell Lake. Disc golf at McAllister. If you do it outside in SA, it&apos;s here.</div>
             <span className="diff-tag">12 activity types</span>
           </div>
-          <div className="diff-card reveal" style={{transitionDelay:'160ms'}}>
+          <div className="diff-card reveal" style={{'--reveal-delay':'160ms'}}>
             <div className="diff-number">03</div>
             <div className="diff-card-title">Weather-aware filters</div>
             <div className="diff-card-desc">Live temperature, UV, and wind data baked into the filter. Know before you go whether today&apos;s actually a good day to go.</div>
             <span className="diff-tag">Real-time</span>
           </div>
-          <div className="diff-card reveal" style={{transitionDelay:'240ms'}}>
+          <div className="diff-card reveal" style={{'--reveal-delay':'240ms'}}>
             <div className="diff-number">04</div>
             <div className="diff-card-title">En Español</div>
             <div className="diff-card-desc">Full Spanish-language version launching as Afuera SA — so the whole city can find its next adventure, not just part of it.</div>
@@ -848,7 +803,7 @@ export default function Home() {
       {/* ACTIVITIES */}
       <section className="activity-section" id="activities">
         <div className="section-label reveal">What&apos;s out there</div>
-        <div className="section-title reveal" style={{transitionDelay:'80ms'}}>Every way to get outside.</div>
+        <div className="section-title reveal" style={{'--reveal-delay':'80ms'}}>Every way to get outside.</div>
         <div className="activity-grid">
           {[
             { name: 'Hiking',          count: '32 spots',   slug: 'hiking',         img: 'https://images.unsplash.com/photo-1759938894506-965368ace0f8?w=400&q=75&fit=crop&auto=format' },
@@ -861,7 +816,7 @@ export default function Home() {
             { name: 'Outdoor Fitness', count: '14 parks',   slug: 'outdoor_fitness',img: 'https://images.unsplash.com/photo-1686247166150-fe4ef9c56241?w=400&q=75&fit=crop&auto=format' },
           ].map((a, i) => (
             <a href={`/locations?activity=${a.slug}`} key={a.name} style={{textDecoration:'none',color:'inherit'}}>
-              <div className="activity-tile reveal" style={{transitionDelay:`${i * 60}ms`}}>
+              <div className="activity-tile reveal" style={{'--reveal-delay':`${i * 60}ms`}}>
                 <div className="activity-tile-img">
                   <Image src={a.img} alt={a.name} fill style={{objectFit:'cover'}} sizes="(max-width: 768px) 50vw, 160px" />
                 </div>
@@ -882,29 +837,7 @@ export default function Home() {
           <div className="section-label">Early access</div>
           <div className="email-title">San Antonio&apos;s trails are waiting.</div>
           <p className="email-sub">Be first to explore when OutdoorSA launches. No spam — just a heads-up when we&apos;re live.</p>
-          {status === 'success' ? (
-            <p style={{color:'var(--green-light)',fontSize:'17px',fontWeight:600,marginBottom:'1rem'}}>
-              You&apos;re on the list — we&apos;ll reach out when we launch!
-            </p>
-          ) : (
-            <form className="email-form" onSubmit={handleSubmit}>
-              <input
-                className="email-input"
-                type="email"
-                placeholder="your@email.com"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                disabled={status === 'loading'}
-              />
-              <button className="btn-email" type="submit" disabled={status === 'loading'}>
-                {status === 'loading' ? 'Sending…' : 'Notify Me'}
-              </button>
-            </form>
-          )}
-          {status === 'error' && (
-            <p style={{color:'#f87171',fontSize:'13px',marginTop:'0.75rem'}}>{errorMsg}</p>
-          )}
+          <EmailCapture />
           <div className="email-fine">Free forever to browse · No account required to explore</div>
         </div>
       </section>
