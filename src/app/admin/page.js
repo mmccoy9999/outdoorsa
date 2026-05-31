@@ -199,13 +199,14 @@ export default async function AdminDashboard() {
                 <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.45)', marginBottom: 4 }}>🤖 Automation</div>
                 <h2 style={{ margin: 0, fontSize: 18, fontWeight: 800 }}>County Road Reddit Monitor</h2>
               </div>
-              <StatusBadge status="pending" />
+              <StatusBadge status="active" />
             </div>
             <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.6)', lineHeight: 1.6 }}>
-              <div>📅 <strong style={{ color: '#fff' }}>Daily at 8:00 AM CT</strong> — routine not yet created</div>
-              <div style={{ marginTop: 6 }}>📬 Will deliver to <strong style={{ color: '#fff' }}>#reddit-monitor</strong> on Slack</div>
-              <div style={{ marginTop: 6 }}>🔍 Monitors: r/TexasHunting, r/whitetail, r/homestead, r/TexasLandTalk</div>
+              <div>📅 <strong style={{ color: '#fff' }}>Daily at 8:00 AM CT</strong></div>
+              <div style={{ marginTop: 6 }}>📬 Delivers to <strong style={{ color: '#fff' }}>#reddit-monitor</strong> on Slack</div>
+              <div style={{ marginTop: 6 }}>🔍 Monitors: r/TexasHunting, r/whitetail, r/homestead, r/land</div>
               <div style={{ marginTop: 6 }}>🎯 Keywords: wildlife exemption, ag exemption, protein feeder, stock tank, hog trapping, rollback taxes, land loan Texas</div>
+              <div style={{ marginTop: 6 }}>⚙️ Via Pullpush API (api.pullpush.io)</div>
             </div>
             <div style={{ marginTop: 16, display: 'flex', gap: 8 }}>
               <a
@@ -218,7 +219,7 @@ export default async function AdminDashboard() {
                   textDecoration: 'none', border: '1px solid rgba(255,255,255,0.1)',
                 }}
               >
-                Create Routine →
+                View Routine →
               </a>
               <a
                 href="https://app.slack.com/client"
