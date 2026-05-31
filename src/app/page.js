@@ -857,6 +857,12 @@ export default function Home() {
           <li><a href="/privacy-policy">Privacy Policy</a></li>
         </ul>
         <div className="footer-copy">© 2026 OutdoorSA · San Antonio, TX</div>
+        <div style={{ marginTop: "16px", fontSize: "13px", color: "rgba(255,255,255,0.4)" }}>
+          Interested in buying or managing Texas land?{" "}
+          <a href="https://www.thecountyroad.com" style={{ color: "var(--green-light)", textDecoration: "underline" }}>
+            Visit The County Road →
+          </a>
+        </div>
       </footer>
     </>
   )
