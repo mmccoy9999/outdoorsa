@@ -144,6 +144,13 @@ export default async function AdminDashboard() {
           <Card>
             <StatNumber value={siteStats.withGallery} label="Parks with Photo Galleries" sub={`${siteStats.total - siteStats.withGallery} photo-only`} />
           </Card>
+          <Card style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <a href="/admin/checklist" style={{ textAlign: 'center', textDecoration: 'none' }}>
+              <div style={{ fontSize: 28, marginBottom: 6 }}>📷</div>
+              <div style={{ fontSize: 13, fontWeight: 800, color: '#97C459' }}>Photo Checklist</div>
+              <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.35)', marginTop: 2 }}>{siteStats.total - siteStats.withSections} parks need visits</div>
+            </a>
+          </Card>
         </div>
 
         {/* Grid: Tools & Status */}
