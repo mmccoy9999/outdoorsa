@@ -529,7 +529,6 @@ export default async function LocationPage({ params }) {
               <h3 style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: 18, fontWeight: 700, color: '#2C2C2A', margin: '0 0 4px' }}>Who It's For</h3>
               <CheckRow label="Dogs" value={loc.dog_friendly} />
               <CheckRow label="Kids" value={loc.kid_friendly} />
-              <CheckRow label="Flood prone" value={loc.flood_prone} />
             </div>
 
             {/* Activity-specific */}
