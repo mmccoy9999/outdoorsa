@@ -502,7 +502,7 @@ export default async function LocationPage({ params }) {
 
             {/* Directions button */}
             <a
-              href={`https://www.google.com/maps/search/?api=1&query=${loc.lat},${loc.lng}`}
+              href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(loc.address || `${loc.lat},${loc.lng}`)}`}
               target="_blank"
               rel="noopener noreferrer"
               style={{

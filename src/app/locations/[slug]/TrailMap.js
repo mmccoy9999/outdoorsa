@@ -32,6 +32,7 @@ export default function TrailMap({ locationId, lat, lng, trails }) {
       style: 'mapbox://styles/mapbox/outdoors-v12',
       center: [lng, lat],
       zoom: 13.5,
+      scrollZoom: false,
     })
 
     map.current.addControl(new mapboxgl.NavigationControl(), 'top-right')
