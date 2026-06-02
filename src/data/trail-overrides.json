@@ -273,5 +273,42 @@
   "crownridge-canyon-natural-area": {},
   "kerrville-schreiner-park": {},
   "pedernales-falls-state-park": {},
-  "purgatory-creek-natural-area": {}
+  "purgatory-creek-natural-area": {},
+  "panther-springs-park": {
+    "Panther Springs Loop": {
+      "difficulty": "easy",
+      "notes": "Main paved spine connecting north (Wilderness Oak) and south (Parman Library) trailheads — accessible for all fitness levels, strollers, and wheelchairs",
+      "surface": "concrete / paved",
+      "distance_override": 4.2
+    },
+    "Bat Caves": {
+      "difficulty": "moderate",
+      "notes": "Named for the karst cave openings visible along the route — all gated for safety. Most popular MTB singletrack in the park, rated 5 stars on Trailforks",
+      "surface": "dirt singletrack",
+      "distance_override": 0.41
+    },
+    "Pebbles & Bam Bam": {
+      "difficulty": "moderate",
+      "notes": "Intermediate MTB singletrack, Flintstones-themed name. Rated 4.8 stars on Trailforks — one of the top 3 trails in the park",
+      "surface": "dirt singletrack",
+      "distance_override": 1.0
+    },
+    "Panther Springs Hiking Trail": {
+      "difficulty": "easy",
+      "notes": "Crushed stone creek trail running alongside the dry Panther Springs Creek bed — hiking only, dogs welcome",
+      "surface": "crushed stone / gravel"
+    },
+    "PS13": {
+      "difficulty": "moderate",
+      "notes": "Part of the numbered PS connector network — short but punchy with 36ft elevation gain",
+      "surface": "dirt singletrack",
+      "distance_override": 0.18
+    },
+    "Outfield": {
+      "difficulty": "moderate",
+      "notes": "Short connector singletrack, unsanctioned but well-used and stable",
+      "surface": "dirt singletrack",
+      "distance_override": 0.26
+    }
+  }
 }
