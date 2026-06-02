@@ -33,6 +33,7 @@ export default function TrailMap({ locationId, lat, lng, trails }) {
       center: [lng, lat],
       zoom: 13.5,
       scrollZoom: false,
+      cooperativeGestures: true,
     })
 
     map.current.addControl(new mapboxgl.NavigationControl(), 'top-right')
