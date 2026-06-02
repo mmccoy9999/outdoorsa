@@ -4003,6 +4003,68 @@
     ],
     "hours": "Sunrise to sunset daily",
     "phone": "(210) 207-3000",
-    "entrance_fee": "Free"
+    "entrance_fee": "Free",
+    "sections": [
+      {
+        "label": "Creek Trail",
+        "description": "Shaded dirt singletrack winding through the live oak motte along Panther Springs Creek",
+        "photo": "/photos/panther-springs-park/IMG_9274.jpeg",
+        "gallery": [
+          "/photos/panther-springs-park/IMG_9274.jpeg",
+          "/photos/panther-springs-park/IMG_9275.jpeg"
+        ]
+      },
+      {
+        "label": "Open Meadow Trails",
+        "description": "Rolling grassland with wide-open views and rocky limestone terrain — exposed but scenic",
+        "photo": "/photos/panther-springs-park/IMG_9279.jpeg",
+        "gallery": [
+          "/photos/panther-springs-park/IMG_9279.jpeg",
+          "/photos/panther-springs-park/IMG_9276.jpeg",
+          "/photos/panther-springs-park/IMG_9278.jpeg"
+        ]
+      },
+      {
+        "label": "Paved Trail",
+        "description": "3-mile paved connector linking both trailheads — accessible for all fitness levels",
+        "photo": "/photos/panther-springs-park/IMG_9277.jpeg",
+        "gallery": [
+          "/photos/panther-springs-park/IMG_9277.jpeg",
+          "/photos/panther-springs-park/IMG_9282.jpeg"
+        ]
+      },
+      {
+        "label": "Dog Park",
+        "description": "Separate off-leash areas for large and small dogs near the north trailhead",
+        "photo": "/photos/panther-springs-park/IMG_9291.jpeg",
+        "gallery": [
+          "/photos/panther-springs-park/IMG_9291.jpeg",
+          "/photos/panther-springs-park/IMG_9287.jpeg"
+        ]
+      },
+      {
+        "label": "Trailhead & Pavilion",
+        "description": "North trailhead with shaded pavilion, limestone boulder seating, and water fountain",
+        "photo": "/photos/panther-springs-park/IMG_9290.jpeg",
+        "gallery": [
+          "/photos/panther-springs-park/IMG_9290.jpeg",
+          "/photos/panther-springs-park/IMG_9288.jpeg",
+          "/photos/panther-springs-park/IMG_9289.jpeg"
+        ]
+      },
+      {
+        "label": "Park Entrance & Signs",
+        "description": "Limestone entry monument, interpretive kiosks, and trail wayfinding signs",
+        "photo": "/photos/panther-springs-park/IMG_9292.jpeg",
+        "gallery": [
+          "/photos/panther-springs-park/IMG_9292.jpeg",
+          "/photos/panther-springs-park/IMG_9285.jpeg",
+          "/photos/panther-springs-park/IMG_9286.jpeg",
+          "/photos/panther-springs-park/IMG_9280.jpeg",
+          "/photos/panther-springs-park/IMG_9284.jpeg",
+          "/photos/panther-springs-park/IMG_9283.jpeg"
+        ]
+      }
+    ]
   }
 ]
