@@ -23,6 +23,7 @@ export default function MapView({ locations, activeId, onHover }) {
       style: 'mapbox://styles/mapbox/outdoors-v12',
       center: [-98.494, 29.424],
       zoom: 10.5,
+      scrollZoom: false,
     })
 
     map.current.addControl(new mapboxgl.NavigationControl(), 'top-right')
