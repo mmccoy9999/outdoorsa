@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Track Tag</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&display=swap">
+<style>
+  :root {
+    --bg: #0E0B1A;
+    --surface: #1C1633;
+    --surface2: #261E42;
+    --accent: #6C3FF5;
+    --accent-dim: #3D2599;
+    --accent-glow: rgba(108,63,245,0.25);
+    --danger: #E85D5D;
+    --danger-dim: rgba(232,93,93,0.15);
+    --go: #3DDC84;
+    --go-dim: rgba(61,220,132,0.15);
+    --label: #B8A9F0;
+    --text: #EEE9FF;
+    --text-muted: #7A6FA8;
+    --border: rgba(184,169,240,0.12);
+    --strike-active: #E85D5D;
+    --strike-inactive: #2A2248;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* ── SCREENS ── */
+  .screen { display: none; flex-direction: column; height: 100dvh; }
+  .screen.active { display: flex; }
+
+  /* ── SETUP SCREEN ── */
+  #setup {
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .setup-header {
+    padding: 52px 28px 24px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .logo-mark {
+    width: 56px;
+    height: 56px;
+    background: var(--accent);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    font-size: 28px;
+  }
+
+  .app-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    letter-spacing: 3px;
+    color: var(--text);
+    line-height: 1;
+  }
+
+  .app-subtitle {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-top: 6px;
+    font-weight: 400;
+  }
+
+  .setup-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0 20px;
+  }
+
+  .add-player-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .input-field {
+    flex: 1;
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    padding: 14px 18px;
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .input-field::placeholder { color: var(--text-muted); }
+  .input-field:focus { border-color: var(--accent); }
+
+  .btn-add {
+    background: var(--accent);
+    border: none;
+    border-radius: 14px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    transition: opacity 0.15s;
+    flex-shrink: 0;
+  }
+  .btn-add:active { opacity: 0.7; }
+
+  .players-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--label);
+    margin-bottom: 10px;
+  }
+
+  .player-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .player-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--surface);
+    border-radius: 14px;
+    padding: 14px 16px;
+    border: 1.5px solid var(--border);
+  }
+
+  .player-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--accent-dim);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--label);
+    flex-shrink: 0;
+  }
+
+  .player-name-text {
+    flex: 1;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .btn-remove {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 20px;
+    padding: 4px;
+    line-height: 1;
+    transition: color 0.15s;
+  }
+  .btn-remove:active { color: var(--danger); }
+
+  .empty-state {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 14px;
+    padding: 24px 0;
+  }
+
+  .setup-footer {
+    padding: 16px 20px 32px;
+    flex-shrink: 0;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 18px;
+    background: var(--go);
+    color: #0E0B1A;
+    border: none;
+    border-radius: 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: opacity 0.15s;
+  }
+  .btn-primary:disabled { opacity: 0.3; cursor: not-allowed; }
+  .btn-primary:not(:disabled):active { opacity: 0.8; }
+
+  /* ── GAME SCREEN ── */
+  #game { overflow: hidden; }
+
+  .game-header {
+    padding: 48px 20px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+
+  .round-badge {
+    background: var(--surface2);
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--label);
+    letter-spacing: 0.5px;
+  }
+
+  .btn-icon {
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--text-muted);
+    transition: color 0.15s;
+  }
+
+  .dj-card {
+    margin: 0 20px;
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: 20px;
+    padding: 20px 24px;
+    flex-shrink: 0;
+  }
+
+  .dj-eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--label);
+    margin-bottom: 6px;
+  }
+
+  .dj-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: var(--text);
+    line-height: 1;
+  }
+
+  .category-zone {
+    margin: 14px 20px;
+    background: var(--accent-dim);
+    border: 1.5px solid var(--accent);
+    border-radius: 20px;
+    padding: 24px;
+    text-align: center;
+    flex-shrink: 0;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+    position: relative;
+  }
+  .category-zone.has-category { cursor: default; }
+  .category-zone.no-category { background: var(--surface2); border-color: var(--border); border-style: dashed; }
+  .category-zone:not(.has-category):active { background: var(--surface); }
+
+  .category-eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--label);
+    margin-bottom: 8px;
+  }
+
+  .category-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: var(--text);
+    line-height: 1.1;
+    text-wrap: balance;
+  }
+
+  .category-hint {
+    font-size: 14px;
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+
+  .players-section {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0 20px;
+    margin-top: 4px;
+  }
+
+  .players-section-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--label);
+    margin-bottom: 10px;
+  }
+
+  .game-player-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .game-player-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--surface);
+    border-radius: 14px;
+    padding: 12px 16px;
+    border: 1.5px solid var(--border);
+    transition: opacity 0.3s;
+  }
+
+  .game-player-item.is-dj {
+    border-color: var(--accent);
+    background: rgba(108,63,245,0.1);
+  }
+
+  .game-player-item.eliminated {
+    opacity: 0.35;
+  }
+
+  .game-player-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--surface2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--label);
+    flex-shrink: 0;
+  }
+
+  .is-dj .game-player-avatar {
+    background: var(--accent);
+    color: white;
+  }
+
+  .game-player-info { flex: 1; }
+
+  .game-player-name {
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .game-player-role {
+    font-size: 12px;
+    color: var(--label);
+    font-weight: 500;
+  }
+
+  .strike-dots {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+
+  .strike-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--strike-inactive);
+    transition: background 0.25s;
+  }
+  .strike-dot.active { background: var(--strike-active); }
+
+  .game-footer {
+    padding: 12px 20px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+
+  .btn-row { display: flex; gap: 10px; }
+
+  .btn-challenge {
+    flex: 1;
+    padding: 16px;
+    background: var(--danger-dim);
+    color: var(--danger);
+    border: 1.5px solid var(--danger);
+    border-radius: 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .btn-challenge:active { background: rgba(232,93,93,0.3); }
+
+  .btn-next {
+    flex: 1;
+    padding: 16px;
+    background: var(--go);
+    color: #0E0B1A;
+    border: none;
+    border-radius: 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  .btn-next:active { opacity: 0.8; }
+
+  /* ── MODALS ── */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(14,11,26,0.85);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 100;
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s;
+  }
+  .modal-overlay.open { opacity: 1; pointer-events: all; }
+
+  .modal-sheet {
+    background: var(--surface);
+    border-radius: 28px 28px 0 0;
+    width: 100%;
+    max-width: 480px;
+    padding: 12px 20px 40px;
+    transform: translateY(40px);
+    transition: transform 0.3s cubic-bezier(0.32,0.72,0,1);
+  }
+  .modal-overlay.open .modal-sheet { transform: translateY(0); }
+
+  .modal-handle {
+    width: 36px;
+    height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+    margin: 8px auto 20px;
+  }
+
+  .modal-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+
+  .modal-subtitle {
+    font-size: 14px;
+    color: var(--text-muted);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* Category picker */
+  .category-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+
+  .category-option {
+    background: var(--surface2);
+    border: 1.5px solid var(--border);
+    border-radius: 16px;
+    padding: 18px 20px;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+    text-align: left;
+    width: 100%;
+  }
+  .category-option:active { border-color: var(--accent); background: var(--accent-glow); }
+
+  .cat-opt-name {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--text);
+  }
+
+  .wildcard-option {
+    background: rgba(108,63,245,0.1);
+    border-color: var(--accent);
+  }
+
+  .wildcard-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+
+  .wildcard-input-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  /* Challenge modal */
+  .challenge-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .challenge-btn {
+    padding: 18px 20px;
+    border-radius: 16px;
+    border: 1.5px solid var(--border);
+    background: var(--surface2);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: left;
+    transition: border-color 0.15s, background 0.15s;
+    width: 100%;
+  }
+  .challenge-btn:active { border-color: var(--danger); background: var(--danger-dim); }
+
+  .challenge-sub {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-weight: 400;
+    margin-top: 2px;
+  }
+
+  .btn-cancel {
+    width: 100%;
+    padding: 16px;
+    background: transparent;
+    border: 1.5px solid var(--border);
+    border-radius: 16px;
+    color: var(--text-muted);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  /* ── END SCREEN ── */
+  #end { overflow-y: auto; }
+
+  .end-header {
+    padding: 60px 20px 32px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .trophy {
+    font-size: 72px;
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .game-over-label {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--label);
+    margin-bottom: 8px;
+  }
+
+  .winner-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 52px;
+    letter-spacing: 3px;
+    color: var(--go);
+    line-height: 1;
+  }
+
+  .winner-sub {
+    font-size: 16px;
+    color: var(--text-muted);
+    margin-top: 6px;
+  }
+
+  .standings-card {
+    margin: 0 20px;
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .standings-header {
+    padding: 16px 20px 12px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--label);
+    border-bottom: 1.5px solid var(--border);
+  }
+
+  .standing-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 20px;
+    border-bottom: 1.5px solid var(--border);
+  }
+  .standing-row:last-child { border-bottom: none; }
+
+  .rank-badge {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  .rank-1 { background: #F5A623; color: #0E0B1A; }
+  .rank-2 { background: #8E8E8E; color: #0E0B1A; }
+  .rank-other { background: var(--surface2); color: var(--text-muted); }
+
+  .standing-name { flex: 1; font-weight: 600; font-size: 16px; }
+
+  .standing-strikes {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+
+  .end-footer {
+    padding: 20px 20px 40px;
+    flex-shrink: 0;
+  }
+
+  .btn-play-again {
+    width: 100%;
+    padding: 18px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  .btn-play-again:active { opacity: 0.8; }
+
+  /* ── TOAST ── */
+  .toast {
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--surface2);
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    z-index: 200;
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.2s;
+    white-space: nowrap;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  /* scrollbar */
+  ::-webkit-scrollbar { width: 0; }
+</style>
+</head>
+<body>
+
+<!-- ══════════════ SETUP SCREEN ══════════════ -->
+<div id="setup" class="screen active">
+  <div class="setup-header">
+    <div class="logo-mark">🎵</div>
+    <div class="app-title">TRACK TAG</div>
+    <div class="app-subtitle">The music hot potato game</div>
+  </div>
+
+  <div class="setup-body">
+    <div class="add-player-row">
+      <input class="input-field" id="playerInput" type="text" placeholder="Enter player name…" maxlength="20" autocomplete="off">
+      <button class="btn-add" id="addPlayerBtn" onclick="addPlayer()">+</button>
+    </div>
+
+    <div class="players-label" id="playersLabel" style="display:none">PLAYERS</div>
+    <div class="player-list" id="playerList">
+      <div class="empty-state">Add at least 2 players to start</div>
+    </div>
+  </div>
+
+  <div class="setup-footer">
+    <button class="btn-primary" id="startGameBtn" disabled>START GAME</button>
+  </div>
+</div>
+
+<!-- ══════════════ GAME SCREEN ══════════════ -->
+<div id="game" class="screen">
+  <div class="game-header">
+    <div class="round-badge" id="roundBadge">Round 1 of 4</div>
+    <button class="btn-icon" id="resetBtn" title="Back to setup">←</button>
+  </div>
+
+  <div class="dj-card">
+    <div class="dj-eyebrow">🎧 Current DJ</div>
+    <div class="dj-name" id="djName">—</div>
+  </div>
+
+  <div class="category-zone no-category" id="categoryZone">
+    <div class="category-eyebrow">CATEGORY</div>
+    <div class="category-text" id="categoryDisplay">Tap to pick</div>
+  </div>
+
+  <div class="players-section">
+    <div class="players-section-label">Players</div>
+    <div class="game-player-list" id="gamePlayerList"></div>
+  </div>
+
+  <div class="game-footer">
+    <div class="btn-row">
+      <button class="btn-challenge" id="challengeBtn">⚡ Challenge</button>
+      <button class="btn-next" id="nextBtn">Next Round →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ END SCREEN ══════════════ -->
+<div id="end" class="screen">
+  <div class="end-header">
+    <span class="trophy" id="winnerTrophy">🏆</span>
+    <div class="game-over-label">Track Tag — Game Over</div>
+    <div class="winner-name" id="winnerName">—</div>
+    <div class="winner-sub" id="winnerSub">Last player standing</div>
+  </div>
+
+  <div class="standings-card">
+    <div class="standings-header">Results</div>
+    <div id="standingsList"></div>
+  </div>
+
+  <div class="end-footer">
+    <button class="btn-play-again" id="playAgainBtn">Play Again</button>
+  </div>
+</div>
+
+<!-- ══════════════ CATEGORY MODAL ══════════════ -->
+<div class="modal-overlay" id="categoryModal">
+  <div class="modal-sheet">
+    <div class="modal-handle"></div>
+    <div class="modal-title">PICK A CATEGORY</div>
+    <div class="modal-subtitle" id="djPickSubtitle">DJ's choice — pick one</div>
+    <div class="category-options" id="categoryOptions"></div>
+    <div class="category-option wildcard-option" id="wildcardOption">
+      <div class="wildcard-label">🎲 Wild Card</div>
+      <div class="cat-opt-name">Create your own</div>
+      <div class="wildcard-input-row" id="wildcardRow" style="display:none">
+        <input class="input-field" id="wildcardInput" placeholder="Type a category…" style="font-size:15px; padding:12px 16px;">
+        <button class="btn-add" id="wildcardConfirm" style="background: var(--go);">✓</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ CHALLENGE MODAL ══════════════ -->
+<div class="modal-overlay" id="challengeModal">
+  <div class="modal-sheet">
+    <div class="modal-handle"></div>
+    <div class="modal-title">WHO GETS THE STRIKE?</div>
+    <div class="modal-subtitle">Group decided — host picks the loser</div>
+    <div class="challenge-options" id="challengeOptions"></div>
+    <button class="btn-cancel" id="cancelChallenge">Cancel</button>
+  </div>
+</div>
+
+<!-- ══════════════ CONFIRM MODAL ══════════════ -->
+<div class="modal-overlay" id="confirmModal">
+  <div class="modal-sheet">
+    <div class="modal-handle"></div>
+    <div class="modal-title">EXIT GAME?</div>
+    <div class="modal-subtitle">This will end the current game and go back to setup.</div>
+    <div style="display:flex; flex-direction:column; gap:10px; margin-top:8px;">
+      <button class="btn-primary" id="confirmYes" style="background:var(--danger); color:white;">Yes, exit game</button>
+      <button class="btn-cancel" id="confirmNo">Keep playing</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ TOAST ══════════════ -->
+<div class="toast" id="toast"></div>
+
+<script>
+const CATEGORIES = [
+  // ── DECADE & GENRE ──
+  '60s Classics',
+  '70s Funk & Soul',
+  '80s Hair Bands',
+  '80s One-Hit Wonders',
+  '90s Hip Hop',
+  '90s Alt Rock',
+  '90s Boy Bands',
+  '90s R&B',
+  '2000s Pop Punk',
+  '2000s Throwbacks',
+  '2010s Hits',
+  'Classic Motown',
+  'Classic Soul',
+  'Classic Country',
+  'Outlaw Country',
+  'New Country',
+  'Bluegrass Bangers',
+  'Classic Rock Anthems',
+  'Arena Rock',
+  'Punk Rock',
+  'Heavy Metal',
+  'Soft Rock',
+  'Indie Anthems',
+  'Alternative 90s',
+  'EDM & Dance',
+  'Disco Fever',
+  'Jazz Standards',
+  'Blues Classics',
+  'Reggae Vibes',
+  'Latin Hits',
+  'K-Pop Bangers',
+  'Gospel & Inspirational',
+  'Rap God Verses',
+  'Old School Hip Hop',
+  'Trap Anthems',
+  'Neo Soul',
+  'R&B Slow Jams',
+  'New Wave 80s',
+  'Grunge Era',
+  'Garage Rock',
+  'Folk Songs Everyone Knows',
+  'Americana Roots',
+  'Tejano & Norteño',
+
+  // ── THEME & MOOD ──
+  'Songs to Cry in the Car To',
+  'Songs to Play at a Funeral (Wrong)',
+  'Songs Your Parents Slow Danced To',
+  'Songs Your Grandma Knows',
+  'Songs That Slap at a Cookout',
+  'Songs for the 3AM Drive Home',
+  'Songs That Start Every Wedding',
+  'Songs That End Every Wedding',
+  'Songs Everyone Knows But Pretends Not To',
+  'Songs You\'re Embarrassed You Love',
+  'Songs That Were Everywhere in Summer',
+  'Songs That Make You Feel Unstoppable',
+  'Songs to Ugly Cry To',
+  'Songs That Got You Through a Breakup',
+  'Songs You Learned All the Words to Accidentally',
+  'Songs That Sound Sad But Are Actually Upbeat',
+  'Songs That Sound Upbeat But Are Actually Depressing',
+  'Songs People Ruin at Karaoke',
+  'Songs That Instantly Transport You to High School',
+  'Songs From Your First Concert',
+  'Songs You Only Know From Commercials',
+  'Songs Ruined by a Movie Trailer',
+
+  // ── CONSTRAINT ──
+  'Songs With a Color in the Title',
+  'Songs With a Number in the Title',
+  'Songs With a City or State in the Title',
+  'Songs With a Name in the Title',
+  'Songs Under 2 Minutes',
+  'Songs With No Words',
+  'Songs Everyone Knows the Chorus But Not the Verses',
+  'Songs With a Whistle',
+  'Songs With a Spoken Word Intro',
+  'Songs With a Countdown',
+  'Songs With Clapping',
+  'Songs That Start With "I"',
+  'Songs About the Weekend',
+  'Songs About Cars',
+  'Songs About Money',
+  'Songs About Rain',
+  'Songs About Dancing',
+  'Songs That Are Basically Just One Word Repeated',
+  'Songs With a Key Change',
+  'Songs Everyone Gets the Lyrics Wrong',
+  'Songs You Can\'t Clap Along To (People Try Anyway)',
+
+  // ── POP CULTURE ──
+  'Disney Classics',
+  'Disney Villain Songs',
+  'Pixar Movie Songs',
+  'Songs From Superhero Movies',
+  'James Bond Themes',
+  'Songs That Were in a Super Bowl Ad',
+  'TikTok Made It Famous',
+  'TV Show Theme Songs',
+  'Songs From Quentin Tarantino Films',
+  'Songs That Were in a Video Game',
+  'Songs From Animated Movies (Not Disney)',
+  'Songs You Heard in a Sports Stadium',
+  'Songs That Defined a Sports Era',
+  'Walk-Up Songs',
+  'Songs From a Gym Playlist',
+  'Songs That Play in Every Sports Highlight Reel',
+
+  // ── PARTY & OCCASION ──
+  'Bachelorette Night Bangers',
+  'Bachelor Party Anthems',
+  'Game Day Hype Songs',
+  'Holiday Party Hits',
+  'New Year\'s Eve Countdown Songs',
+  'Songs for a Road Trip',
+  'Songs for a Pool Party',
+  'Songs for a Dive Bar',
+  'Songs That Start a Dance Floor',
+  'Songs That Clear a Dance Floor',
+  'First Dance Wedding Songs',
+  "Songs From a '90s Prom",
+  'Songs From a Graduation Playlist',
+  'Songs to Tailgate To',
+  'Campfire Sing-Along Songs',
+  'Slow Jam Sunday',
+  'Morning Motivation Songs',
+  'Friday Feeling Songs',
+  'Songs to Cook Dinner To',
+
+  // ── ARTIST CHALLENGES ──
+  'Taylor Swift Deep Cuts (Not the Hits)',
+  'Songs Everyone Thinks Are by the Wrong Artist',
+  'One-Hit Wonders Only',
+  'Girl Groups',
+  'Songs by Artists With One Name',
+  'Songs by Duos',
+  'Songs with a Famous Collaboration',
+  'Cover Songs Better Than the Original',
+  'Songs Originally by Someone Else',
+  'Songs That Sampled Another Song',
+  'Rock Songs With Strings',
+  'Hip Hop Songs With a Live Band',
+  'Country Songs That Cross Over',
+  'Pop Stars Gone Rock',
+  'Rappers Turned Singers',
+
+  // ── WILD & SPECIFIC ──
+  'Songs With the Worst Album Covers',
+  'Songs People Blast From Their Car',
+  'Songs That Were Banned From Radio',
+  'Songs Written About Another Famous Person',
+  'Songs With a Music Video More Famous Than the Song',
+  'Songs That Were #1 for Too Long',
+  'Songs That Should\'ve Been Bigger',
+  'Songs That Got Famous Way After Release',
+  'Songs With Iconic Bass Lines',
+  'Songs With a Guitar Solo Everyone Air-Guitars To',
+  'Songs With a Drum Intro You Recognize Instantly',
+  'Songs Where the Intro Is Better Than the Song',
+  'Songs That Go Hard in the First 10 Seconds',
+  'Songs You Forgot Were This Good',
+  'Songs That Defined a Generation (That Generation Argues About)',
+];
+
+let players = [];       // { name, strikes, eliminated }
+let currentDjIndex = 0;
+let currentCategory = '';
+let roundNumber = 1;
+let totalRounds = 0;
+let usedCategoryIndices = new Set();
+
+// ── DOM refs ──
+const setupScreen   = document.getElementById('setup');
+const gameScreen    = document.getElementById('game');
+const endScreen     = document.getElementById('end');
+const playerInput   = document.getElementById('playerInput');
+const addPlayerBtn  = document.getElementById('addPlayerBtn');
+const playerList    = document.getElementById('playerList');
+const playersLabel  = document.getElementById('playersLabel');
+const startGameBtn  = document.getElementById('startGameBtn');
+const roundBadge    = document.getElementById('roundBadge');
+const djName        = document.getElementById('djName');
+const categoryZone  = document.getElementById('categoryZone');
+const categoryDisplay = document.getElementById('categoryDisplay');
+const gamePlayerList  = document.getElementById('gamePlayerList');
+const challengeBtn  = document.getElementById('challengeBtn');
+const nextBtn       = document.getElementById('nextBtn');
+const resetBtn      = document.getElementById('resetBtn');
+const categoryModal = document.getElementById('categoryModal');
+const challengeModal= document.getElementById('challengeModal');
+const winnerName    = document.getElementById('winnerName');
+const standingsList = document.getElementById('standingsList');
+const toastEl       = document.getElementById('toast');
+
+// ── Setup ──
+function renderSetupList() {
+  if (players.length === 0) {
+    playerList.innerHTML = '<div class="empty-state">Add at least 2 players to start</div>';
+    playersLabel.style.display = 'none';
+  } else {
+    playersLabel.style.display = 'block';
+    playerList.innerHTML = players.map((p, i) => `
+      <div class="player-item">
+        <div class="player-avatar">${p.name[0].toUpperCase()}</div>
+        <div class="player-name-text">${p.name}</div>
+        <button class="btn-remove" data-i="${i}">✕</button>
+      </div>`).join('');
+    playerList.querySelectorAll('.btn-remove').forEach(btn => {
+      btn.addEventListener('click', () => {
+        players.splice(+btn.dataset.i, 1);
+        renderSetupList();
+        startGameBtn.disabled = players.length < 2;
+      });
+    });
+  }
+  startGameBtn.disabled = players.length < 2;
+}
+
+function addPlayer() {
+  const name = playerInput.value.trim();
+  if (!name) return;
+  players.push({ name, strikes: 0, eliminated: false });
+  playerInput.value = '';
+  renderSetupList();
+}
+
+addPlayerBtn.addEventListener('click', addPlayer);
+addPlayerBtn.addEventListener('touchend', e => { e.preventDefault(); addPlayer(); });
+playerInput.addEventListener('keydown', e => { if (e.key === 'Enter') addPlayer(); });
+
+startGameBtn.addEventListener('click', () => {
+  totalRounds = players.length;
+  currentDjIndex = 0;
+  roundNumber = 1;
+  currentCategory = '';
+  players.forEach(p => { p.strikes = 0; p.eliminated = false; });
+  showScreen('game');
+  renderGame();
+});
+
+// ── Game ──
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+function activeDjIndex() {
+  let idx = currentDjIndex % players.length;
+  let attempts = 0;
+  while (players[idx].eliminated && attempts < players.length) {
+    idx = (idx + 1) % players.length;
+    attempts++;
+  }
+  return idx;
+}
+
+function renderGame() {
+  const djIdx = activeDjIndex();
+  roundBadge.textContent = `Round ${roundNumber} of ${totalRounds}`;
+  djName.textContent = players[djIdx].name;
+
+  if (currentCategory) {
+    categoryZone.classList.remove('no-category');
+    categoryZone.classList.add('has-category');
+    categoryDisplay.textContent = currentCategory;
+  } else {
+    categoryZone.classList.add('no-category');
+    categoryZone.classList.remove('has-category');
+    categoryDisplay.textContent = 'Tap to pick';
+  }
+
+  gamePlayerList.innerHTML = players.map((p, i) => `
+    <div class="game-player-item ${i === djIdx ? 'is-dj' : ''} ${p.eliminated ? 'eliminated' : ''}">
+      <div class="game-player-avatar">${p.name[0].toUpperCase()}</div>
+      <div class="game-player-info">
+        <div class="game-player-name">${p.name}</div>
+        ${i === djIdx ? '<div class="game-player-role">🎧 DJ this round</div>' : ''}
+      </div>
+      <div class="strike-dots">
+        ${[0,1,2].map(s => `<div class="strike-dot ${s < p.strikes ? 'active' : ''}"></div>`).join('')}
+      </div>
+    </div>`).join('');
+}
+
+categoryZone.addEventListener('click', () => {
+  if (categoryZone.classList.contains('has-category')) return;
+  openCategoryModal();
+});
+
+nextBtn.addEventListener('click', () => {
+  if (!currentCategory) {
+    showToast('Pick a category first!');
+    return;
+  }
+  // advance to next non-eliminated DJ
+  currentCategory = '';
+  currentDjIndex++;
+  roundNumber++;
+
+  const activePlayers = players.filter(p => !p.eliminated);
+  if (roundNumber > totalRounds || activePlayers.length <= 1) {
+    showEndScreen();
+    return;
+  }
+
+  // skip eliminated
+  let attempts = 0;
+  while (players[currentDjIndex % players.length].eliminated && attempts < players.length) {
+    currentDjIndex++;
+    attempts++;
+  }
+
+  renderGame();
+});
+
+const confirmModal = document.getElementById('confirmModal');
+resetBtn.addEventListener('click', () => confirmModal.classList.add('open'));
+document.getElementById('confirmNo').addEventListener('click', () => confirmModal.classList.remove('open'));
+confirmModal.addEventListener('click', e => { if (e.target === confirmModal) confirmModal.classList.remove('open'); });
+document.getElementById('confirmYes').addEventListener('click', () => {
+  confirmModal.classList.remove('open');
+  players.forEach(p => { p.strikes = 0; p.eliminated = false; });
+  currentDjIndex = 0;
+  roundNumber = 1;
+  currentCategory = '';
+  usedCategoryIndices.clear();
+  showScreen('setup');
+  renderSetupList();
+});
+
+// ── Category Modal ──
+function openCategoryModal() {
+  const djIdx = activeDjIndex();
+  document.getElementById('djPickSubtitle').textContent = `${players[djIdx].name}'s pick`;
+
+  // pick 3 random unused categories
+  const available = CATEGORIES.map((c,i) => i).filter(i => !usedCategoryIndices.has(i));
+  const pool = available.length >= 3 ? available : CATEGORIES.map((_,i) => i);
+  const picks = [];
+  const poolCopy = [...pool];
+  for (let i = 0; i < 3 && poolCopy.length > 0; i++) {
+    const ri = Math.floor(Math.random() * poolCopy.length);
+    picks.push(poolCopy.splice(ri, 1)[0]);
+  }
+
+  // ~1-in-3 chance the wild card replaces the last preset option
+  const showWildcard = Math.random() < 0.33;
+  const displayPicks = showWildcard ? picks.slice(0, 2) : picks; // 2 presets + wildcard OR 3 presets
+
+  const opts = document.getElementById('categoryOptions');
+  const wildcardEl = document.getElementById('wildcardOption');
+
+  opts.innerHTML = displayPicks.map(idx => `
+    <button class="category-option" data-cat="${CATEGORIES[idx]}" data-idx="${idx}">
+      <div class="cat-opt-name">${CATEGORIES[idx]}</div>
+    </button>`).join('');
+
+  opts.querySelectorAll('.category-option').forEach(btn => {
+    btn.addEventListener('click', () => {
+      usedCategoryIndices.add(+btn.dataset.idx);
+      selectCategory(btn.dataset.cat);
+    });
+  });
+
+  wildcardEl.style.display = showWildcard ? 'block' : 'none';
+
+  if (showWildcard) {
+    const wildcardRow = document.getElementById('wildcardRow');
+    const wildcardInput = document.getElementById('wildcardInput');
+    wildcardRow.style.display = 'none';
+    wildcardInput.value = '';
+
+    wildcardEl.onclick = () => {
+      wildcardRow.style.display = wildcardRow.style.display === 'none' ? 'flex' : 'none';
+      if (wildcardRow.style.display === 'flex') wildcardInput.focus();
+    };
+
+    document.getElementById('wildcardConfirm').onclick = () => {
+      const val = wildcardInput.value.trim();
+      if (val) selectCategory(val);
+    };
+
+    wildcardInput.onkeydown = e => { if (e.key === 'Enter') { const val = wildcardInput.value.trim(); if (val) selectCategory(val); } };
+  }
+
+  categoryModal.classList.add('open');
+}
+
+function selectCategory(cat) {
+  currentCategory = cat;
+  categoryModal.classList.remove('open');
+  renderGame();
+}
+
+categoryModal.addEventListener('click', e => {
+  if (e.target === categoryModal) categoryModal.classList.remove('open');
+});
+
+// ── Challenge Modal ──
+challengeBtn.addEventListener('click', () => {
+  const djIdx = activeDjIndex();
+  const opts = document.getElementById('challengeOptions');
+  const activePlayers = players.map((p,i) => ({...p, i})).filter(p => !p.eliminated);
+
+  opts.innerHTML = activePlayers.map(p => `
+    <button class="challenge-btn" data-i="${p.i}">
+      ${p.name}
+      ${p.i === djIdx ? '<div class="challenge-sub">Current DJ</div>' : ''}
+    </button>`).join('');
+
+  opts.querySelectorAll('.challenge-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      assignStrike(+btn.dataset.i);
+      challengeModal.classList.remove('open');
+    });
+  });
+
+  challengeModal.classList.add('open');
+});
+
+document.getElementById('cancelChallenge').addEventListener('click', () => {
+  challengeModal.classList.remove('open');
+});
+
+challengeModal.addEventListener('click', e => {
+  if (e.target === challengeModal) challengeModal.classList.remove('open');
+});
+
+function assignStrike(playerIdx) {
+  const p = players[playerIdx];
+  p.strikes++;
+  if (p.strikes >= 3) {
+    p.eliminated = true;
+    showToast(`${p.name} is eliminated! 🚫`);
+  } else {
+    showToast(`Strike ${p.strikes} for ${p.name}`);
+  }
+
+  // check if only 1 left
+  const activePlayers = players.filter(p => !p.eliminated);
+  if (activePlayers.length <= 1) {
+    setTimeout(showEndScreen, 1000);
+    return;
+  }
+  renderGame();
+}
+
+// ── End Screen ──
+function showEndScreen() {
+  const activePlayers = players.filter(p => !p.eliminated);
+  const lastStanding = activePlayers.length === 1;
+
+  const trophy = document.getElementById('winnerTrophy');
+  const nameEl = document.getElementById('winnerName');
+  const subEl  = document.getElementById('winnerSub');
+
+  if (lastStanding) {
+    trophy.style.display = 'block';
+    trophy.textContent = '🏆';
+    nameEl.style.display = 'block';
+    nameEl.textContent = activePlayers[0].name;
+    subEl.textContent = 'Last player standing';
+  } else {
+    trophy.style.display = 'none';
+    nameEl.style.display = 'none';
+    subEl.textContent = `${totalRounds} rounds complete`;
+  }
+
+  // order: 0-strike players first (alpha), then 1-strike, 2-strike, eliminated last
+  const sorted = [...players].sort((a, b) => {
+    if (!a.eliminated && b.eliminated) return -1;
+    if (a.eliminated && !b.eliminated) return 1;
+    return a.strikes - b.strikes;
+  });
+
+  standingsList.innerHTML = sorted.map((p, i) => {
+    const rankClass = i === 0 && lastStanding ? 'rank-1' : i === 1 && lastStanding ? 'rank-2' : 'rank-other';
+    const strikeLabel = p.strikes === 1 ? '1 strike' : `${p.strikes} strikes`;
+    const icon = p.eliminated ? '❌' : p.strikes === 0 ? '✅' : '⚠️';
+    return `
+    <div class="standing-row">
+      <div class="rank-badge ${rankClass}">${i+1}</div>
+      <div class="standing-name">${p.name}</div>
+      <div class="standing-strikes">${icon} ${strikeLabel}</div>
+    </div>`;
+  }).join('');
+
+  showScreen('end');
+}
+
+document.getElementById('playAgainBtn').addEventListener('click', () => {
+  players.forEach(p => { p.strikes = 0; p.eliminated = false; });
+  currentDjIndex = 0;
+  roundNumber = 1;
+  currentCategory = '';
+  usedCategoryIndices.clear();
+  showScreen('setup');
+  renderSetupList();
+});
+
+// ── Wake Lock ──
+let wakeLock = null;
+async function requestWakeLock() {
+  if ('wakeLock' in navigator) {
+    try {
+      wakeLock = await navigator.wakeLock.request('screen');
+    } catch (e) {}
+  }
+}
+requestWakeLock();
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible') requestWakeLock();
+});
+
+// ── Toast ──
+let toastTimer;
+function showToast(msg) {
+  toastEl.textContent = msg;
+  toastEl.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toastEl.classList.remove('show'), 2200);
+}
+</script>
+</body>
+</html>
